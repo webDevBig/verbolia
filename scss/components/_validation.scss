@@ -1,0 +1,69 @@
+input.input-validation-error {
+    border: 1px solid red;
+}
+
+.block-profile, .block-login, #modalModifyPassword, .block-resetpassword {
+    .form {
+        &__field-holder {
+            position: relative;
+        }
+
+        &__error {
+            margin: 0 0 13px;
+        }
+    }
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.field-validation-error {
+    position: absolute;
+    right: 7px;
+    padding: 0;
+    margin: 0;
+    font-size: 36px;
+    color: transparent;
+    display: inline-block;
+    top: 0.225em;
+    width: 1.15em;
+    height: 1.15em;
+    overflow: hidden;
+    border: none;
+    background-color: transparent;
+    border-radius: 0.625em;
+
+    &::before,
+    &::after {
+        display: block;
+        position: absolute;
+        left: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    &::before {
+        top: -0.08em;
+        border: transparent 0.6em solid;
+        border-bottom-color: #fd3;
+        border-bottom-width: 1em;
+        border-top-width: 0;
+        box-shadow: #999 0 1px 1px;
+        content: "";
+    }
+
+    &::after {
+        top: 0.3em;
+        width: 100%;
+        padding: 0 1px;
+        text-align: center;
+        font: bold 0.65em "Garamond";
+        color: #333;
+        content: "!";
+    }
+
+    span {
+        display: none;
+    }
+}

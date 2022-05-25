@@ -1,0 +1,32 @@
+<div id="modalAddUser" class="modal">
+    <div class="modal__inner">
+        <div class="modal__header">
+            <h4>Add a user</h4>
+            <button class="btn-icon modal__close modal-close"><i class="icon-close"></i></button>
+        </div>
+        <div class="modal__content">
+            <form class="form">
+                <div class="form__field">
+                    <label for="email">Email</label>
+                    <div class="form__field-holder">
+                        <input id="email" type="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form__field">
+                    <label for="role">Role</label>
+                    <div class="form__field-holder full-width">
+                        <select id="role" data-placeholder="Select a role" class="chosen-select-nosearch">
+                            <option></option>
+                            <option>User</option>
+                            <option>Reader</option>
+                            <option>Admin</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form__action">
+                    <button class="btn btn-green modal-close">Send an invitation</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

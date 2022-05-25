@@ -1,0 +1,393 @@
+.icon-arrow-drop:before {
+  content: "\e90b";
+}
+
+.carousel {
+  .btn-action {
+    position: absolute;
+    top: -13px;
+    border: 1px solid #edeef3;
+    border-radius: 8px;
+    width: 48px;
+    height: 48px;
+    color: #6bacea;
+
+    &[disable="disable"] {
+      color: #989a9e;
+      cursor: auto;
+    }
+
+    i {
+      display: block;
+      font-size: 8px;
+    }
+
+    &.prev {
+      left: -20px;
+
+      .icon-arrow-drop {
+        transform: rotate(90deg);
+      }
+    }
+
+    &.next {
+      right: -48px;
+
+      .icon-arrow-drop {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  .carousel-holder {
+    overflow: hidden;
+  }
+
+  .chart-change-config {
+    display: flex;
+    margin: 0;
+
+    a {
+      margin: 0;
+      padding: 0 10px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+}
+
+.block-dashboard {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 2px;
+
+    @include media-query($tablet-lg) {
+      //display: block;
+      margin: 0;
+    }
+
+    @include media-query($tablet-md) {
+      display: block;
+    }
+
+    .area {
+      display: flex;
+      align-items: center;
+
+      @include media-query($tablet-lg) {
+        margin-bottom: 15px;
+      }
+
+      @include media-query($tablet-sm) {
+        margin: 0;
+      }
+
+      .chart-change-config,
+      .chart-change-data {
+        margin: 0 0 0 28px;
+
+        @include media-query($tablet-md) {
+          margin-left: 50px;
+        }
+      }
+
+      .chart-change-data {
+        margin-right: 40px;
+      }
+
+      .chart-change-config {
+        font-size: 16px;
+      }
+    }
+
+    .area-right {
+      max-width: 41%;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -10px 20px;
+
+    //@include media-query($desktop-sm) {
+    //  max-width: calc(100% + 10px);
+    //}
+
+    @include media-query($tablet) {
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    @include media-query($tablet-sm) {
+      order: 2;
+    }
+
+    div[class^="item-"] {
+      flex: 1 0 calc(20% - 20px);
+      margin: 0 10px 10px;
+      width: calc(20% - 20px);
+
+      @include media-query($tablet) {
+        flex: 1 0 calc(50% - 20px);
+        width: calc(50% - 20px);
+      }
+    }
+
+    .item {
+      flex: 1 0 calc(25% - 10px);
+      margin: 0 5px 10px;
+      max-width: calc(25% - 10px);
+
+      .mobile-version & {
+        @include media-query($tablet-sm) {
+          flex: 1 0 calc(50% - 10px);
+          max-width: calc(50% - 10px);
+        }
+
+        @include media-query($mobile) {
+          flex: 1 0 calc(100% - 10px);
+          max-width: calc(100% - 10px);
+        }
+      }
+
+      &.item-default {
+        flex: 1 0 calc(25% - 10px);
+        width: calc(25% - 10px);
+
+        @include media-query($tablet) {
+          flex: 1 0 calc(50% - 10px);
+          width: calc(50% - 10px);
+        }
+
+        @include media-query($mobile) {
+          flex: 1 0 calc(100% - 10px);
+          max-width: calc(100% - 10px);
+        }
+      }
+
+      &.item-small {
+        flex: 1 0 calc(20% - 10px);
+        width: calc(20% - 10px);
+        min-width: 105px;
+      }
+    }
+
+    &.center {
+      .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+
+    &.report {
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 0;
+
+      .area {
+        display: flex;
+        padding: 0 0 0 5px;
+        width: 100%;
+
+        & + .btn {
+          padding: 0;
+          min-width: 310px;
+        }
+      }
+
+      .item {
+        flex: 1 0 calc(26.5% - 10px);
+        max-width: calc(26.5% - 10px);
+        min-width: 200px;
+
+        @include media-query($tablet-lg) {
+          flex: 1 0 calc(33.3% - 10px);
+          max-width: calc(33.3% - 10px);
+        }
+
+        strong {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  &__twocolumns-chart {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 25px;
+
+    @include media-query($tablet-lg) {
+      display: block;
+      margin: 0;
+    }
+
+    .block-dashboard__chart {
+      margin: 0;
+      flex: 1 0 calc(50% - 14px);
+      width: calc(50% - 14px);
+
+      @include media-query($tablet-lg) {
+        margin: 0 0 25px;
+        width: 100%;
+      }
+
+      &:first-child {
+        margin-right: 14px;
+
+        @include media-query($tablet-lg) {
+          margin-right: 0;
+        }
+      }
+
+      &:last-child {
+        margin-left: 14px;
+
+        @include media-query($tablet-lg) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  &__threecolumns-chart {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 25px;
+
+    @include media-query($tablet-lg) {
+      display: block;
+      margin: 0;
+    }
+
+    .block-dashboard__chart {
+      margin: 0;
+      flex: 1 0 calc(33.3% - 14px);
+      width: calc(33.3% - 14px);
+
+      @include media-query($tablet-lg) {
+        margin: 0 0 25px;
+        width: 100%;
+      }
+
+      &:first-child {
+        margin-right: 14px;
+
+        @include media-query($tablet-lg) {
+          margin-right: 0;
+        }
+      }
+
+      &:last-child {
+        margin-left: 14px;
+
+        @include media-query($tablet-lg) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  &__chart {
+    margin: 0 0 25px;
+
+    .chart-change-config,
+    .chart-change-data {
+      margin: 0 0 31px 76px;
+
+      @include media-query($tablet-sm) {
+        margin: 0 15px 15px;
+      }
+    }
+
+    .chart-change-config {
+      a {
+        margin: 0 20px 0 0;
+      }
+    }
+
+    .chart-change-data {
+      a {
+        margin: 0 0 0 20px;
+      }
+    }
+
+    .carousel {
+      position: relative;
+      overflow: hidden;
+      margin: 0 20px;
+      padding: 10px 60px;
+      width: 615px;
+      white-space: nowrap;
+
+      @include media-query($tablet-sm) {
+        margin: 0 10px;
+      }
+
+      .chart-change-config {
+        overflow: hidden;
+      }
+    }
+  }
+
+  &__date {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 10px;
+
+    @media (max-width: 1400px) and (min-width: 1281px) {
+      flex: 1 0 100%;
+      margin-left: 0;
+    }
+
+    @media (max-width: 1130px) {
+      flex: 1 0 100%;
+      margin-left: 0;
+    }
+
+    @include media-query($tablet-sm) {
+      order: 1;
+    }
+
+    .chart-change-data {
+      a {
+        margin: 0 0 0 5px;
+      }
+    }
+  }
+
+  &__panel {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1400px) and (min-width: 1281px) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 1130px) {
+      flex-wrap: wrap;
+    }
+
+    .block-dashboard__info {
+      flex: 1 0 auto;
+      margin-bottom: 0;
+
+      @media (max-width: 840px) {
+        flex: 1 0 calc(100% + 10px);
+        max-width: calc(100% + 10px);
+      }
+    }
+  }
+}
+
+.carousel {
+  margin-left: 50px !important;
+}
+
+.glider-slide {
+  width: 175px !important;
+}

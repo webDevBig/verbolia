@@ -1,0 +1,334 @@
+.block-dashboard {
+  &__header {
+    height: 35px;
+
+    @include media-query($tablet-md) {
+      height: auto;
+    }
+
+    h3 {
+      margin: 0 0 0 30px;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 23px;
+
+      @include media-query($tablet-lg) {
+        margin-bottom: 15px;
+      }
+
+      @include media-query($tablet-md) {
+        margin-left: 50px;
+      }
+    }
+  }
+
+  &__info {
+    // start from backend side
+    padding: 4px 0 0px;
+    margin: 0 -10px 0px;
+
+    div[class^="item-"] {
+      @extend %card;
+      text-align: center;
+      background-repeat: no-repeat;
+      background-position: 12px 50%;
+      background-size: 66px auto;
+      border-radius: $btn-radius;
+      color: rgba($color-text, 0.8);
+      letter-spacing: 0.33px;
+      padding-bottom: 5px;
+
+      @media (max-width: 1080px) and (min-width: 841px) {
+        padding: 55px 15px 15px;
+        background-position: 50% 5px;
+        background-size: 50px auto;
+        text-align: center;
+      }
+
+      strong {
+        display: block;
+        margin: 0 0 6px;
+        font-size: 18px;
+        line-height: 23px;
+        color: $color-orange;
+        letter-spacing: 0.38px;
+      }
+    }
+    // end from backend side
+
+    .item {
+      @extend %card;
+      padding: 10px;
+      border-radius: $btn-radius;
+      color: rgba($color-text, 0.8);
+      font-size: 14px;
+      text-align: center;
+      letter-spacing: 0.33px;
+
+      strong {
+        display: block;
+        font-size: 18px;
+        line-height: 23px;
+        color: $color-orange;
+        letter-spacing: 0.38px;
+
+        &.link {
+          line-height: 15px;
+          word-break: break-all;
+        }
+
+        a {
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 15px;
+          letter-spacing: 0.25px;
+          text-decoration: none;
+        }
+      }
+
+      span.title {
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+      }
+
+      .serp-info {
+        margin: 0 auto;
+        padding-right: 13px;
+        width: 45px;
+        font-size: 11px;
+
+        &:after {
+          margin: 0;
+        }
+      }
+
+      &.item-default {
+        padding: 5px;
+      }
+    }
+  }
+
+  &__date {
+    @extend %card;
+    padding: 7px;
+    border-radius: $btn-radius;
+    font-size: 16px;
+    color: rgba($color-text, 0.5);
+
+    a {
+      color: rgba($color-text, 0.5);
+      text-decoration: none;
+      font-weight: bold;
+
+      &:hover,
+      &.active {
+        color: $color-text;
+      }
+    }
+
+    .chart-change-data {
+      white-space: nowrap;
+
+      a{
+        &.active {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__panel {
+    padding: 10px 0 4px;
+    border-top: 1px solid #b7cbd6;
+  }
+
+  &__chart {
+    @extend %card;
+    padding: 15px 0 30px;
+    font-weight: bold;
+    font-size: 16px;
+
+    @include media-query($tablet-sm) {
+      padding: 15px 0;
+    }
+
+    .chart-change-data {
+      margin: 0 0 0 76px;
+      max-width: 350px;
+
+      a {
+        &.active {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    a {
+      color: rgba($color-text, 0.5);
+      text-decoration: none;
+
+      &:hover,
+      &.active {
+        color: $color-text;
+      }
+    }
+
+    .chart-change-config {
+      font-size: 18px;
+      color: rgba($color-text, 0.5);
+
+      &.d-none {
+        display: none;
+      }
+    }
+
+    .chart-change-data {
+      margin: 0 0 0 76px;
+
+      a{
+        &.active {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .carousel {
+      .btn-action {
+        position: absolute;
+        top: 0;
+        border: 1px solid #edeef3;
+        border-radius: 8px;
+        width: 39px;
+        height: 39px;
+        color: #6bacea;
+
+        &[disable="disable"] {
+          color: #989a9e;
+          cursor: auto;
+        }
+
+        i {
+          display: block;
+          font-size: 8px;
+        }
+
+        &.prev {
+          left: 0;
+
+          .icon-arrow-drop {
+            transform: rotate(90deg);
+          }
+        }
+
+        &.next {
+          right: 0;
+
+          .icon-arrow-drop {
+            transform: rotate(-90deg);
+          }
+        }
+      }
+
+      .carousel-holder {
+        overflow: hidden;
+      }
+
+      .chart-change-config {
+        display: flex;
+        margin: 0;
+
+        a {
+          margin: 0;
+          padding: 0 10px;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+  &__panel {
+    padding: 10px 0 10px;
+    border-top: 1px solid #b7cbd6;
+    margin-left: 0;
+    margin-right: 0;
+
+    div[class^="item-"] {
+      padding-bottom: 15px;
+
+      #globalCalendar-container {
+        margin: 0 0 25px;
+        font-weight: bold;
+
+        .chart-change-config,
+        .chart-change-data {
+          margin: 0 0 31px 76px;
+        }
+
+        .chart-change-config {
+          a {
+            margin: 0 20px 0 0;
+          }
+        }
+
+        .chart-change-data {
+          margin: 0;
+          max-width: 350px;
+
+          a {
+            margin: 0 0 0 20px;
+
+            &.active {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        a {
+          color: rgba($color-text, 0.5);
+          text-decoration: none;
+
+          &:hover,
+          &.active {
+            color: $color-text;
+          }
+        }
+      }
+    }
+
+    .block-dashboard__info {
+      padding-top: 0;
+      margin: 0 -5px 0;
+    }
+  }
+}
+
+#chartVisits {
+  .chart-change-data {
+    position: relative;
+  }
+
+  .chart {
+    margin-top: -43px;
+
+    @include media-query($tablet-lg) {
+      margin-top: 0;
+    }
+  }
+}
+
+#globalCalendar {
+  font: 13px/20px Mulish, Arial,Helvetica,sans-serif;
+}
+
+#globalCalendar-container {
+  .calendar {
+    margin: 0 10px 0 0;
+  }
+
+  .chart-change-data {
+    margin-right: 5px;
+  }
+}

@@ -1,0 +1,171 @@
+.block-feed-import {
+  h2 {
+    margin: 0 0 16px;
+  }
+
+  &__tab-set {
+    margin: 0 0 30px;
+
+    a {
+      display: inline-block;
+      margin: 0 16px 0 0;
+      padding: 20px 10px 19px;
+      min-width: 125px;
+      vertical-align: top;
+    }
+
+    &.group {
+      a {
+        margin: 0 -4px 0 0;
+        padding: 14px 30px;
+      }
+    }
+  }
+
+  &__tab-content {
+    .tab {
+      display: none;
+      padding: 40px 20px;
+
+      &.active {
+        display: block;
+      }
+    }
+
+    &.simple {
+      .tab {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.form-feed-import {
+  margin: 0 -12px;
+
+  &[data-type="noAuth"] {
+    .usernamePassword, .amazonS3 {
+      display: none;
+    }
+    .noAuth {
+      display: block;
+    }
+  }
+
+  &[data-type="usernamePassword"] {
+    .noAuth, .amazonS3 {
+      display: none;
+    }
+    .usernamePassword {
+      display: block;
+    }
+  }
+
+  &[data-type="amazonS3"] {
+    .usernamePassword, .noAuth {
+      display: none;
+    }
+    .amazonS3 {
+      display: block;
+    }
+  }
+
+  .form__field-holder {
+    margin: 0 12px;
+    min-width: 1px;
+    width: 313px;
+
+    @include media-query($tablet-lg) {
+      margin-bottom: 24px;
+      min-width: calc(100% - 24px) !important;
+    }
+
+    &.small {
+      width: 200px;
+    }
+
+    &.large {
+      width: calc(100% - 594px);
+    }
+
+    label {
+      margin: 0 4px 0 12px;
+    }
+  }
+
+  .form__field-inline {
+    @include media-query($tablet-lg) {
+      margin-bottom: 0;
+
+      & > label {
+        padding-bottom: 7px;
+      }
+    }
+
+    label {
+      margin: 0 0 0 12px !important;
+    }
+  }
+
+  .actions {
+    text-align: right;
+
+    .btn {
+      margin: 0 12px;
+      text-align: center;
+    }
+  }
+}
+
+.form-product-import {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &.first-boot {
+    .text-info {
+      display: block;
+    }
+  }
+
+  .text-info {
+    display: none;
+    flex: 1 0 100%;
+    max-width: 100%;
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .holder {
+    display: none;
+    margin: 0 0 0 22px;
+
+    &.active {
+      display: block;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  label {
+    margin: 0 16px 0 0 !important;
+    font-weight: normal;
+  }
+
+  .btn {
+    margin: 0 16px;
+  }
+
+  .form__field-holder {
+    margin: 0 16px 0 0;
+    min-width: 1px;
+    width: 313px;
+  }
+
+  a, span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}

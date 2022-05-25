@@ -1,0 +1,41 @@
+.block-editor {
+  &__row {
+    margin: 0 0 24px;
+
+    p {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+
+  &__head {
+    margin: -1px 0 13px;
+  }
+
+  &__row-inline {
+    margin: 0 0 34px;
+
+    .holder {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      overflow: hidden;
+
+      @include media-query($tablet-lg) {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  &__footer {
+    padding: 24px 0 0;
+
+    &.border-none {
+      padding: 0;
+    }
+
+    .btn {
+      margin-left: 30px;
+    }
+  }
+}

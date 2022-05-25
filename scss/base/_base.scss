@@ -1,0 +1,149 @@
+body {
+  background: $bg-color-dark;
+  font-family: $main-font;
+  color: $color-text;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: $color-text;
+}
+
+button, input {
+  font-family: inherit;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.custom-link {
+  display: inline-block;
+  padding: 15px 16px 17px;
+  background: $bg-input;
+  border-radius: $btn-radius;
+  color: rgba($color-text, 0.3);
+  text-decoration: none;
+  vertical-align: middle;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.page-single {
+  .main-content {
+    padding: 0;
+  }
+
+  .content {
+    @extend %card;
+
+    &.information {
+      text-align: center;
+
+      .image-info {
+        margin: 0 0 12px;
+        width: 60px;
+        height: 60px;
+      }
+
+      h1 {
+        margin: 0 0 17px;
+        font-size: 24px;
+        line-height: 30px;
+      }
+
+      p {
+        margin: 0 0 40px;
+        color: $color-title;
+      }
+    }
+  }
+
+  h1 {
+    margin: 0 0 60px;
+    text-align: center;
+  }
+
+  h2 {
+    margin: 0 0 34px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: $color-orange;
+  }
+
+  .form__column {
+    .form__field-inline {
+      label:first-of-type {
+        display: inline-block;
+        margin-right: 30px;
+        min-width: 162px;
+      }
+    }
+
+    .form__field-holder {
+      min-width: 313px !important;
+    }
+  }
+
+  .form__action {
+    justify-content: flex-end;
+
+    .btn {
+      width: auto;
+    }
+  }
+}
+
+.icon-round {
+  margin: -2px 0 0 6px;
+  display: inline-block;
+  background: $color-orange;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  color: $color-white;
+  font-size: 8px;
+  line-height: 14px;
+  text-align: center;
+  vertical-align: middle;
+
+  &.icon-big {
+    width: 24px;
+    height: 24px;
+    
+    
+    &--important {
+      font-size: 14px !important;
+      line-height: 24px !important;
+    }
+  }
+}
+
+.text-green {
+  color: $color-green;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.mr-16 {
+  margin-right: 16px !important;
+}
+
+.js-selected-target:not(.js-selected-target-active) {
+  display: none !important;
+}

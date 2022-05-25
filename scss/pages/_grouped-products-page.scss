@@ -1,0 +1,18 @@
+.grouped-product-info-tooltip {
+  &__content {
+    display: flex;
+    color: $color-text-dark;
+    line-height: 1.4;
+  }
+
+  &__content-text {
+    max-width: 354px;
+  }
+
+  img {
+    width: 145px;
+    height: auto;
+    max-height: 400px;
+    margin-left: 20px;
+  }
+}

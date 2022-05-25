@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<!--head.html-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aurore</title>
+    <link rel="preload" href="css/critical-style.css" as="style">
+    <link rel="stylesheet" href="css/critical-style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/codemirror.css">
+    <link rel="stylesheet" href="css/theme-resources.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <!-- header-panel-top.html -->
+            <div class="header__panel-top">
+                <a href="" class="logo"><img src="images/logo.png" alt="Aurore"></a>
+                <div class="header__holder">
+                    <div class="notification-block">
+                        <span class="popup-open">
+                            <span class="notification-block__icon">
+                                <i class="icon-bell"></i>
+                                <span class="count">1</span>
+                            </span>
+                        </span>
+                        <div class="popup-content">
+                            <div class="notification-block__head">
+                                <span class="title">Notifications</span>
+                                <span class="count">1</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <p><strong>Duplicate content</strong> - We have detected keywords with a high level of duplication</p>
+                                    <p class="panel">
+                                        <span>Today at 15:13</span>
+                                        <a href="#">Mark as unread</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p><strong>Keyword opportunities</strong> - New keywords opportunities have been found</p>
+                                    <p class="panel">
+                                        <span>Today at 15:13</span>
+                                        <a href="#">Mark as unread</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p><strong>Duplicate content</strong> - We have detected keywords with a high level of duplication</p>
+                                    <p class="panel">
+                                        <span>Today at 15:13</span>
+                                        <a href="#">Mark as read</a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="user-block">
+                        <span class="popup-open">
+                            <span class="user-block__image">
+                                <img src="images/user-image.jpg" alt="user name">
+                            </span>
+                            <span class="user-block__name">Harry Potter</span>
+                        </span>
+                        <div class="popup-content">
+                            <ul>
+                                <li><a href="user-account.html">My account</a></li>
+                                <li><a href="#">Log out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-toggle-sidebar"><i class="icon-menu"></i></button>
+            </div>
+        </header>
+        <div class="main-content">
+            <!-- sidebar.html -->
+            <div class="sidebar">
+                <div class="form__field-holder">
+                    <select data-placeholder="Select web site" class="chosen-select select-dark">
+                        <option></option>
+                        <option>Kazidomi</option>
+                        <option>Waio</option>
+                    </select>
+                </div>
+                <nav class="navigation">
+                    <ul>
+                        <li class="item">
+                            <a href="dashboard.html" class="item-link"><i class="icon-overview"></i> Dashboard</a>
+                        </li>
+                        <li class="item">
+                            <a href="catalog_Navigator.html" class="item-link"><i class="icon-catalog"></i> Catalog Navigator</a>
+                        </li>
+                        <li class="item">
+                            <a href="configuration.html" class="item-link"><i class="icon-configuration"></i> Configuration</a>
+                        </li>
+
+                        <li class="item">
+                            <a href="#" class="item-link collapsible collapsible-active"><i class="icon-theme"></i> Theme</a>
+                            <ul class="collapsible-content">
+                                <li class="item">
+                                    <a href="theme.html" class="item-link active">Theme Editor</a>
+                                </li>
+                                <li class="item">
+                                    <a href="theme-ressources.html" class="item-link">Ressources</a>
+                                </li>
+                            </ul>
+                        </li>
+<!--
+                        <li class="item">
+                            <a href="ressources.html" class="item-link"><i class="icon-keyword"></i> Ressources</a>
+                        </li>
+-->
+                        <li class="item">
+                            <a href="feed-import-main.html" class="item-link"><i class="icon-feed-import"></i> Feed import</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="item-link collapsible"><i class="icon-keyword"></i>
+                                Pages management</a>
+                            <ul class="collapsible-content">
+                                <li class="item">
+                                    <a href="keyword-edition.html" class="item-link">Tag Management </a>
+                                </li>
+                                <li class="item">
+                                    <a href="keyword-management.html" class="item-link">Keyword Management</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <a href="keyword-suggestions.html" class="item-link">
+                                <i class="icon-keyword-suggestions"></i> Keyword suggestions
+                                <i class="icon-notification tooltip-sidebar tooltip-bottom" data-tooltip="You have new keyword suggestions"></i>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="item-link"><i class="icon-features-management"></i> Features Management</a>
+                        </li>
+                        <li class="item">
+                            <a href="users.html" class="item-link"><i class="icon-users"></i> Users</a>
+                        </li>
+                        <li class="item">
+                            <a href="website.html" class="item-link"><i class="icon-website"></i> Website</a>
+                        </li>
+                        <li class="item">
+                            <a href="distribution.html" class="item-link"><i class="icon-distribution"></i>Distribution page</a>
+                        </li>
+                        <li class="item">
+                            <a href="documentation.html" class="item-link"><i class="icon-content-mamagement"></i>Documentation</a>
+                        </li>
+                        <li class="item">
+                            <a href="product-list.html" class="item-link"><i class="icon-product-list"></i>Product list</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <main class="content">
+                <div class="pop_up_box">
+                    <div class="pop_up_window">
+                        <p><img alt="" src="images/image-theme/check.svg">Your changes have been saved</p>
+                        <div class="close_btn close_pop_up"></div>
+                    </div>
+                    <div class="pop_up_window pop_up_window_error">
+                        <p><img alt="" src="images/image-theme/error.svg">An unexpected error has occurred</p>
+                        <div class="close_btn close_pop_up"></div>
+                    </div>
+                </div>
+                <!-- content-header.html -->
+                <header class="content__header">
+                    <div>
+                        <h1>Resources</h1>
+                    </div>
+                </header>
+                <section class="block-code">
+                    <div class="block-code__panel">
+                        <div class="box">
+                            <div class="theme_name_box">
+                                <div class="form__field">
+
+                                    <label for="keyword" class="theme_name_title">Theme</label>
+
+
+                                    <div class="form__field-holder theme_name_input">
+                                        <select data-placeholder="Select the section to edit" class="chosen-select-nosearch ">
+                                            <option></option>
+                                            <option>Theme 280921</option>
+                                            <option>Theme 280921</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-search">
+                                <form class="form">
+                                    <div class="form__field-search">
+                                        <i class="icon-search"></i>
+                                        <input type="text">
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                        <div class="btn_box">
+                            <button class="btn btn-orange small-icon"> Format content</button>
+                            <button class="btn btn-orange small-icon validate"> Validate structure</button>
+                        </div>
+                    </div>
+
+
+                    <div class="block-code__body">
+                        <div class="block-code__aside">
+                            <div class="header">
+                                <strong class="block-code__aside-name">Folders </strong>
+                                <div class="chosen-container chosen-popup">
+                                    <a class=" chosen-default chosen-single a"></a>
+                                    <div class="chosen-drop">
+                                        <ul class="chosen-results">
+                                            <li class="active-result"><a class="modal-open" data-modal="modalCreateFile">Create new file</a></li>
+                                            <li class="active-result"><a class="modal-open" data-modal="modalUpload">Upload file</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="folder_content">
+                                <div class="folders_box">
+                                    <ul class="directory-list">
+                                        <li class="first_level"><img alt="" src="images/image-theme/folder_icon.svg">Font
+                                            <ul>
+                                                <li class="second_level click"><img alt="" src="images/image-theme/font_icon.svg">Font1</li>
+                                                <li class="second_level click"><img alt="" src="images/image-theme/font_icon.svg">Font2</li>
+                                                <li class="second_level click"><img alt="" src="images/image-theme/font_icon.svg">Font3</li>
+                                                <li class="second_level click"><img alt="" src="images/image-theme/font_icon.svg">Font4</li>
+                                            </ul>
+                                        </li>
+                                        <li class="first_level"><img alt="" src="images/image-theme/folder_icon.svg">Img
+                                            <ul>
+                                                <li class="second_level click"><img alt="" src="images/image-theme/img_icon.svg">Img1</li>
+                                                <li class="second_level click"><img alt="" src="images/image-theme/img_icon.svg">Img2</li>
+                                                <li class="second_level click"><img alt="" src="images/image-theme/img_icon.svg">Img3</li>
+                                                <li class="second_level click"> <img alt="" src="images/image-theme/img_icon.svg">Img4</li>
+                                            </ul>
+                                        </li>
+                                        <li class="first_level"><img alt="" src="images/image-theme/folder_icon.svg">JS
+                                            <ul>
+                                                <li class="second_level click show_file"><img alt="" src="images/image-theme/JS_icon.svg">JS1</li>
+                                                <li class="second_level click show_file"><img alt="" src="images/image-theme/JS_icon.svg">JS2</li>
+                                                <li class="second_level click show_file"><img alt="" src="images/image-theme/JS_icon.svg">JS3</li>
+                                                <li class="second_level click show_file"><img alt="" src="images/image-theme/JS_icon.svg">JS4</li>
+                                            </ul>
+                                        </li>
+                                        <li class="first_level"><img alt="" src="images/image-theme/folder_icon.svg">CSS
+                                            <ul>
+                                                <li class="second_level"><img alt="" src="images/image-theme/folder_icon.svg">SCCS
+                                                    <ul>
+                                                        <li class="third_level click"><img alt="" src="images/image-theme/scss_icon.svg">SCCS1</li>
+                                                        <li class="third_level click"><img alt="" src="images/image-theme/scss_icon.svg">SCCS2</li>
+                                                        <li class="third_level click"><img alt="" src="images/image-theme/scss_icon.svg">SCCS3</li>
+                                                    </ul>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="btn_box">
+                                    <button class="btn btn-transparent">Minify JS</button>
+                                    <button class="btn btn-transparent">Minify CSS</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-code__content">
+                            <div class="box">
+                                <button class="resize_btn actions_btn"></button>
+                                <button class="back_btn actions_btn"></button>
+                                <button class="front_btn actions_btn"></button>
+                                <button class="save_btn actions_btn"></button>
+                            </div>
+                            <div id="codeMirror"></div>
+
+                            <div class="tabs">
+                                <div class="tab">
+                                    <div class="header">
+                                        <img alt="" src="images/image-theme/close_modal.svg" class="close_info">
+                                        <label class="tab-label" for="chck1">structure validation</label>
+                                    </div>
+                                    <div class="tab-content">
+                                        <ul>
+                                            <li><span>1:</span>missing brackets</li>
+                                            <li><span>2:</span>lorem ipsum</li>
+                                            <li><span>3:</span>missing dash</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+
+
+
+    <!--modal-delete theme code-->
+    <div id="modalCreateFile" class="modal">
+        <div class="modal__inner">
+            <div class="close_btn modal-close"></div>
+            <div class="modal__content">
+                <p class="h1">Create new file</p>
+                <form class="form">
+                    <div class="form__field-holder theme_name_input">
+                        <select data-placeholder="Choose a folder" class="chosen-select-nosearch ">
+                            <option></option>
+                            <option class="item1">Font</option>
+                            <option class="item2">Img</option>
+                            <option class="item3">JS</option>
+                            <option class="item4">CSS</option>
+                        </select>
+                    </div>
+                    <div class="theme_name_box">
+                        <p class="theme_name_title">File name</p>
+                        <input type="text" value="">
+                    </div>
+                    <div class="field-buttons">
+                        <a class="btn btn-transparent  modal-close">Cancel</a>
+                        <button class="btn btn-orange small-icon modal-close"> Create new file</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--modal-delete theme code-->
+    <div id="modalUpload" class="modal">
+        <div class="modal__inner">
+            <div class="close_btn modal-close"></div>
+            <div class="modal__content">
+                <p class="h1">Upload file</p>
+                <form class="form">
+                    <div class="form__field-holder theme_name_input">
+                        <select data-placeholder="Choose a folder" class="chosen-select-nosearch ">
+                            <option></option>
+                            <option class="item1">Font</option>
+                            <option class="item2">Img</option>
+                            <option class="item3">JS</option>
+                            <option class="item4">CSS</option>
+                        </select>
+                    </div>
+                    <div class="drop-zone">
+                        <span class="drop-zone__prompt">
+                            <img alt="" src="images/drag-drop.png" class="drag-drop-img">
+                            Drag-and-drop file here or upload</span>
+                        <input type="file" name="myFile" class="drop-zone__input">
+                    </div>
+                    <div class="field-buttons">
+
+                        <a class="btn btn-transparent modal-close" href="">Cancel</a>
+                        <button class="btn btn-orange small-icon modal-close "> Upload file</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- scripts.html -->
+    <script type="application/json" src="data/pages-crawled.json"></script>
+    <script type="application/json" src="data/pages-indexed.json"></script>
+    <script type="application/json" src="data/visits.json"></script>
+    <script type="application/json" src="data/position-history.json"></script>
+    <script type="application/json" src="data/average-position.json"></script>
+    <script type="application/json" src="data/top-10.json"></script>
+    <script type="application/json" src="data/top-30.json"></script>
+    <script type="application/json" src="data/average-position-keyword.json"></script>
+    <script type="application/json" src="data/information-all-visits.json"></script>
+    <script type="application/json" src="data/information-sea-visits.json"></script>
+    <script type="application/json" src="data/information-seo-visits.json"></script>
+    <script type="application/json" src="data/crawl-rate.json"></script>
+
+    <script src="scripts/jquery-3.5.1.min.js"></script>
+    <script src="scripts/components/multiselect/chosen.jquery.min.js"></script>
+    <script src="scripts/components/multiselect/prism.js"></script>
+    <script src="scripts/components/daterangepicker/moment.min.js"></script>
+    <script src="scripts/components/daterangepicker/daterangepicker.min.js"></script>
+    <script src="scripts/components/sortable.min.js"></script>
+    <script src="scripts/components/chart.min.js"></script>
+    <script src="scripts/components/chosenPopup.js"></script>
+    <script src="scripts/components/accordion.js"></script>
+    <script src="scripts/components/popup.js"></script>
+    <script src="scripts/components/sidebar.js"></script>
+    <script src="scripts/components/form.js"></script>
+    <script src="scripts/components/tooltip.js"></script>
+    <script src="scripts/components/modal.js"></script>
+    <script src="scripts/components/alert.js"></script>
+    <script src="scripts/components/checkAll.js"></script>
+    <script src="scripts/components/chartCustomBar.js"></script>
+    <script src="scripts/components/tab.js"></script>
+    <script src="scripts/components/dropUploadFile.js"></script>
+    <script src="scripts/components/panel-option.js"></script>
+    <script src="scripts/components/productMatchingRules.js"></script>
+    <script src="scripts/components/crawlerSchedule.js"></script>
+    <script src="scripts/components/tableCreateAssets.js"></script>
+    <script src="scripts/codemirror/codemirror.js"></script>
+    <script src="scripts/codemirror/javascript.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
+
+
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.6.0//js/froala_editor.pkgd.min.js"></script>
+    <script src="scripts/theme-resources_script.js"></script>
+    <script src="scripts/drag_drop_file_script.js"></script>
+</body></html>

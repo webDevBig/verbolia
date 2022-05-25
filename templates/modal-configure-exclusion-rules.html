@@ -1,0 +1,104 @@
+<div id="modalConfigureExclusionRules" class="modal">
+    <div class="modal__inner">
+        <div class="modal__header">
+            <h4>Configure exclusion rules</h4>
+            <button class="btn-icon modal__close modal-close"><i class="icon-close"></i></button>
+        </div>
+        <div class="modal__content">
+            <p>Configure exclusion rules</p>
+            <form class="form form-exclusion-rules">
+                <div class="form__field-inline">
+                    <div class="form__field-holder">
+                        <select class="chosen-select-nosearch" data-placeholder="Availability">
+                            <option></option>
+                            <option>Availability</option>
+                            <option>Availability</option>
+                        </select>
+                    </div>
+                    <div class="form__field-holder">
+                        <select class="chosen-select-nosearch" data-placeholder="Contains">
+                            <option></option>
+                            <option>Contains</option>
+                            <option>Contains</option>
+                        </select>
+                    </div>
+                    <div class="form__field-holder small">
+                        <input type="text" placeholder="In stock">
+                    </div>
+                </div>
+                <div class="form__field">
+                    <div class="form__field-holder">
+                        <span class="text">or</span>
+                        <label class="switch">
+                            <input id="isShowListRules" type="checkbox">
+                            <span></span>
+                        </label>
+                        <span>and</span>
+                    </div>
+                </div>
+                <div class="field-cloning">
+                    <div class="form__field-inline">
+                        <div class="form__field-holder">
+                            <select data-placeholder="Select a filed">
+                                <option></option>
+                                <option>Select a filed</option>
+                                <option>Select a filed</option>
+                            </select>
+                        </div>
+                        <div class="form__field-holder">
+                            <select data-placeholder="Includes">
+                                <option></option>
+                                <optgroup label="Text">
+                                    <option>Is empty</option>
+                                    <option>Starts with</option>
+                                    <option>End with</option>
+                                    <option>Contains</option>
+                                    <option>Doesn’t contain</option>
+                                    <option>Is equal to</option>
+                                </optgroup>
+                                <optgroup label="Number">
+                                    <option>Is higher than</option>
+                                    <option>Is lower than</option>
+                                    <option>Is equal to</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-rules">
+                    <div class="form__field-inline">
+                        <div class="form__field-holder">
+                            <select class="chosen-select-nosearch" data-placeholder="Select a filed">
+                                <option></option>
+                                <option>Select a filed</option>
+                                <option>Select a filed</option>
+                            </select>
+                        </div>
+                        <div class="form__field-holder">
+                            <select class="chosen-select-nosearch" data-placeholder="Includes">
+                                <option></option>
+                                <optgroup label="Text">
+                                    <option>Is empty</option>
+                                    <option>Starts with</option>
+                                    <option>End with</option>
+                                    <option>Contains</option>
+                                    <option>Doesn’t contain</option>
+                                    <option>Is equal to</option>
+                                </optgroup>
+                                <optgroup label="Number">
+                                    <option>Is higher than</option>
+                                    <option>Is lower than</option>
+                                    <option>Is equal to</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="action">
+                    <button class="btn-icon btn-green add-rules"><i class="icon-add"></i></button>
+                    <button class="btn btn-green modal-close right">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

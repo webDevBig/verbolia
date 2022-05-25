@@ -1,0 +1,66 @@
+.header {
+  padding: 25px 0 24px;
+
+  @include media-query($tablet-lg) {
+    padding-bottom: 15px;
+  }
+
+  &__panel-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__holder {
+    display: flex;
+  }
+}
+
+.logo {
+  margin: 7px 0 0;
+  //width: 203px;
+
+  &-beta {
+    font-size: 16px;
+    color: #a3a4a8;
+    text-transform: uppercase;
+    vertical-align: top;
+    padding-left: 10px;
+    line-height: 13px;
+  }
+
+  img {
+    display: block;
+    //width: 100%;
+    width: 203px;
+    height: auto;
+  }
+}
+
+.user-block {
+  padding: 0 16px 0 0;
+
+  &__image {
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 9px 0 0;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    vertical-align: middle;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__name {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.notification-block {
+  margin: 0 16px 0 0;
+}

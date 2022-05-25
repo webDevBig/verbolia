@@ -1,0 +1,404 @@
+<div class="block-table">
+    <div class="block-table__header">
+        <button class="btn btn-white modal-open" data-modal="modalAddKeyword"><i class="icon-add"></i> Add another keywords</button>
+        <button class="btn btn-white"><i class="icon-export"></i>Export Google ads campaign</button>
+        <div class="block-import">
+            <button class="btn btn-white">Import keyword list</button>
+            <button class="btn-icon btn-tooltip" data-tooltip="Lorem"><i class="icon-info-letter"></i></button>
+        </div>
+        <button class="btn btn-green"><i class="icon-export"></i>Export keyword list</button>
+        <div class="block-search">
+            <form class="form">
+                <div class="form__field-search">
+                    <i class="icon-search"></i>
+                    <input type="text">
+                </div>
+            </form>
+        </div>
+        <div class="block-filter">
+            <button class="btn btn-white btn-icon-default popup-open"><i class="icon-filter"></i></button>
+            <div class="block-filter__popup popup-content">
+                <form class="form">
+                    <div class="form__field">
+                        <label for="keyword">Keyword</label>
+                        <div class="form__field-holder">
+                            <select data-placeholder="Include" class="chosen-select-nosearch">
+                                <option></option>
+                                <option>Include</option>
+                                <option>Include</option>
+                            </select>
+                            <input id="keyword" type="text">
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <label for="ams">AMS</label>
+                        <div class="form__field-range">
+                            <input id="ams" type="number" min="0" placeholder="Min">
+                            <span>to</span>
+                            <input type="number" max="100" placeholder="Max">
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <label for="product">#Product</label>
+                        <div class="form__field-range">
+                            <input id="product" type="number" min="0" placeholder="Min">
+                            <span>to</span>
+                            <input type="number" max="100" placeholder="Max">
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <label for="date">Last crawl by Google bot</label>
+                        <div class="form__field-holder">
+                            <input id="date" type="date">
+                            <input type="date">
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <label>Indexation</label>
+                        <div class="form__field-holder">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span></span>
+                            </label>
+                            <span>Indexed</span>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <label for="visits">#Visits last 30 d</label>
+                        <div class="form__field-range">
+                            <input id="visits" type="number" min="0" placeholder="Min">
+                            <span>to</span>
+                            <input type="number" max="100" placeholder="Max">
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <label for="serp">SERP</label>
+                        <div class="form__field-range">
+                            <input id="serp" type="number" min="0" placeholder="Min">
+                            <span>to</span>
+                            <input type="number" max="100" placeholder="Max">
+                        </div>
+                    </div>
+                    <div class="form__action">
+                        <button class="btn btn-default-light popup-close">Show Keywords</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <table class="table-checked">
+        <thead>
+        <tr>
+            <th>
+                <div class="field-checkbox checked-single field-checked-white">
+                    <input type="checkbox" id="checkAll">
+                    <label for="checkAll"></label>
+                </div>
+            </th>
+            <th class="cell-sort">
+                Keyword
+                <button class="btn-icon btn-icon-small"><i class="icon-sort"></i></button>
+            </th>
+            <th class="cell-sm cell-sort">
+                AMS
+                <button class="btn-icon btn-icon-small"><i class="icon-sort-solid"></i></button>
+            </th>
+            <th>H1</th>
+            <th class="cell-sm">SERP position</th>
+            <th class="cell-sm cell-sort">
+                #Product
+                <button class="btn-icon btn-icon-small"><i class="icon-sort-solid"></i></button>
+            </th>
+            <th class="cell-sm">Last crawl by Google bot</th>
+            <th class="cell-sm">Indexed</th>
+            <th class="cell-sm cell-sort">
+                #SEO visits last 30d
+                <button class="btn-icon btn-icon-small"><i class="icon-sort-solid"></i></button>
+            </th>
+            <th class="cell-sm cell-sort">
+                #SEA visits last 30d”
+                <button class="btn-icon btn-icon-small"><i class="icon-sort-solid"></i></button>
+            </th>
+            <th class="column-action"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <div class="field-checkbox checked-single">
+                    <input type="checkbox" id="check-01" name="check">
+                    <label for="check-01"></label>
+                </div>
+            </td>
+            <td>
+                <a href="#" class="link">Hogwarts castle lego</a>
+            </td>
+            <td>150</td>
+            <td>Hogwarts castle lego for sale website</td>
+            <td><span class="serp-info up">5</span></td>
+            <td>150</td>
+            <td>06/07/2020</td>
+            <td>
+                <span class="indexed green"></span>
+            </td>
+            <td>150</td>
+            <td>50</td>
+            <td>
+                <button class="btn-icon"><i class="icon-delete"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="field-checkbox checked-single">
+                    <input type="checkbox" id="check-02" name="check">
+                    <label for="check-02"></label>
+                </div>
+            </td>
+            <td>
+                <a href="#" class="link">Hogwarts castle lego</a>
+            </td>
+            <td>150</td>
+            <td>Hogwarts castle lego for sale website</td>
+            <td><span class="serp-info down">10</span></td>
+            <td>150</td>
+            <td>06/07/2020</td>
+            <td>
+                <span class="indexed red"></span>
+            </td>
+            <td>150</td>
+            <td>50</td>
+            <td>
+                <button class="btn-icon"><i class="icon-delete"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="field-checkbox checked-single">
+                    <input type="checkbox" id="check-03" name="check">
+                    <label for="check-03"></label>
+                </div>
+            </td>
+            <td>
+                <a href="#" class="link">Hogwarts castle lego</a>
+            </td>
+            <td>150</td>
+            <td>Hogwarts castle lego for sale website</td>
+            <td><span class="serp-info default">15</span></td>
+            <td>150</td>
+            <td>06/07/2020</td>
+            <td>
+                <span class="indexed green"></span>
+            </td>
+            <td>150</td>
+            <td>50</td>
+            <td>
+                <button class="btn-icon"><i class="icon-delete"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="field-checkbox checked-single">
+                    <input type="checkbox" id="check-04" name="check">
+                    <label for="check-04"></label>
+                </div>
+            </td>
+            <td>
+                <a href="#" class="link">Hogwarts castle lego</a>
+            </td>
+            <td>150</td>
+            <td>Hogwarts castle lego for sale website</td>
+            <td><span class="serp-info up">5</span></td>
+            <td>150</td>
+            <td>06/07/2020</td>
+            <td>
+                <span class="indexed red"></span>
+            </td>
+            <td>150</td>
+            <td>50</td>
+            <td>
+                <button class="btn-icon"><i class="icon-delete"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="field-checkbox checked-single">
+                    <input type="checkbox" id="check-05" name="check">
+                    <label for="check-05"></label>
+                </div>
+            </td>
+            <td>
+                <a href="#" class="link">Hogwarts castle lego</a>
+            </td>
+            <td>150</td>
+            <td>Hogwarts castle lego for sale website</td>
+            <td><span class="serp-info down">10</span></td>
+            <td>150</td>
+            <td>06/07/2020</td>
+            <td>
+                <span class="indexed green"></span>
+            </td>
+            <td>150</td>
+            <td>50</td>
+            <td>
+                <button class="btn-icon"><i class="icon-delete"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="field-checkbox checked-single">
+                    <input type="checkbox" id="check-06" name="check">
+                    <label for="check-06"></label>
+                </div>
+            </td>
+            <td>
+                <a href="#" class="link">Hogwarts castle lego</a>
+            </td>
+            <td>150</td>
+            <td>Hogwarts castle lego for sale website</td>
+            <td><span class="serp-info default">15</span></td>
+            <td>150</td>
+            <td>06/07/2020</td>
+            <td>
+                <span class="indexed red"></span>
+            </td>
+            <td>150</td>
+            <td>50</td>
+            <td>
+                <button class="btn-icon"><i class="icon-delete"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="field-checkbox checked-single">
+                    <input type="checkbox" id="check-07" name="check">
+                    <label for="check-07"></label>
+                </div>
+            </td>
+            <td>
+                <a href="#" class="link">Hogwarts castle lego</a>
+            </td>
+            <td>150</td>
+            <td>Hogwarts castle lego for sale website</td>
+            <td><span class="serp-info up">5</span></td>
+            <td>150</td>
+            <td>06/07/2020</td>
+            <td>
+                <span class="indexed green"></span>
+            </td>
+            <td>150</td>
+            <td>50</td>
+            <td>
+                <button class="btn-icon"><i class="icon-delete"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="field-checkbox checked-single">
+                    <input type="checkbox" id="check-08" name="check">
+                    <label for="check-08"></label>
+                </div>
+            </td>
+            <td>
+                <a href="#" class="link">Hogwarts castle lego</a>
+            </td>
+            <td>150</td>
+            <td>Hogwarts castle lego for sale website</td>
+            <td><span class="serp-info down">10</span></td>
+            <td>150</td>
+            <td>06/07/2020</td>
+            <td>
+                <span class="indexed red"></span>
+            </td>
+            <td>150</td>
+            <td>50</td>
+            <td>
+                <button class="btn-icon"><i class="icon-delete"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="field-checkbox checked-single">
+                    <input type="checkbox" id="check-09" name="check">
+                    <label for="check-09"></label>
+                </div>
+            </td>
+            <td>
+                <a href="#" class="link">Hogwarts castle lego</a>
+            </td>
+            <td>150</td>
+            <td>Hogwarts castle lego for sale website</td>
+            <td><span class="serp-info default">15</span></td>
+            <td>150</td>
+            <td>06/07/2020</td>
+            <td>
+                <span class="indexed green"></span>
+            </td>
+            <td>150</td>
+            <td>50</td>
+            <td>
+                <button class="btn-icon"><i class="icon-delete"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="field-checkbox checked-single">
+                    <input type="checkbox" id="check-10" name="check">
+                    <label for="check-10"></label>
+                </div>
+            </td>
+            <td>
+                <a href="#" class="link">Hogwarts castle lego</a>
+            </td>
+            <td>150</td>
+            <td>Hogwarts castle lego for sale website</td>
+            <td><span class="serp-info up">5</span></td>
+            <td>150</td>
+            <td>06/07/2020</td>
+            <td>
+                <span class="indexed"></span>
+            </td>
+            <td>150</td>
+            <td>50</td>
+            <td>
+                <button class="btn-icon"><i class="icon-delete"></i></button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="block-table__pagination">
+        <p>1035 Keywords</p>
+        <nav class="pagination">
+            <button class="btn-icon btn-first" disabled="disabled">
+                <i class="icon-arrow-double"></i>
+            </button>
+            <button class="btn-icon btn-prev" disabled="disabled">
+                <i class="icon-arrow"></i>
+            </button>
+            <span class="page-item active" aria-current="page">
+                              <span class="page-link">1</span>
+                            </span>
+            <span class="page-item">
+                                <a class="page-link" href="#">2</a>
+                            </span>
+            <span class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </span>
+            <span class="page-item">
+                                <a class="page-link" href="#">4</a>
+                            </span>
+            <span class="page-item">
+                                <a class="page-link" href="#">5</a>
+                            </span>
+            <span class="page-item">...</span>
+            <span class="page-item">
+                                <a class="page-link" href="#">25</a>
+                            </span>
+            <button class="btn-icon btn-next">
+                <i class="icon-arrow"></i>
+            </button>
+            <button class="btn-icon btn-last">
+                <i class="icon-arrow-double"></i>
+            </button>
+        </nav>
+    </div>
+</div>

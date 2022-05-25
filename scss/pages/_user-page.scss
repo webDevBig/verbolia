@@ -1,0 +1,19 @@
+.usermanagment-page {
+    .row-disabled {
+        .chosen-container-active {
+            box-shadow: none;
+
+            .chosen-drop {
+                display: none;
+            }
+        }
+    }
+
+    .no-user {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 45px 0;
+        color :#96989c;
+    }
+}

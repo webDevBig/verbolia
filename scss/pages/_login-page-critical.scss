@@ -1,0 +1,41 @@
+.login-page {
+  height: 100vh;
+
+  .wrapper {
+    height: auto;
+    min-height: 100%;
+  }
+}
+
+.block-login {
+  margin: auto;
+  width: 100%;
+  max-width: 556px;
+
+  .logo {
+    display: block;
+    margin: 20px auto 63px;
+    width: 80%;
+    max-width: 422px;
+  }
+
+  .subhead {
+    margin: 0 0 44px;
+  }
+
+  .form {
+    margin: 0 0 44px;
+
+    &__field {
+      margin: 0 0 44px;
+    }
+
+    &__error {
+      margin: 0 0 13px;
+    }
+
+    &__contactus {
+      margin-top: 30px;
+    }
+  }
+}

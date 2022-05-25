@@ -1,0 +1,25 @@
+.popup-open {
+  cursor: pointer;
+}
+
+.popup-content {
+  z-index: 99;
+  top: 100%;
+  left: 0;
+
+  &.popup-active {
+    visibility: visible;
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s;
+  }
+}
+
+.block-slide-popup {
+  .popup-content {
+    &.popup-active {
+      position: static;
+    }
+  }
+}
+
+

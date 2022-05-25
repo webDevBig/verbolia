@@ -1,0 +1,231 @@
+@font-face {
+  font-family: 'Mulish';
+  src: url('../fonts/muli/Muli-Regular.woff2') format('woff2'),
+  url('../fonts/muli/Muli-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url('../fonts/muli/Muli-Bold.woff2') format('woff2'),
+  url('../fonts/muli/Muli-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icons/icomoon.eot?evsb5l');
+  src:  url('../fonts/icons/icomoon.eot?evsb5l#iefix') format('embedded-opentype'),
+        url('../fonts/icons/icomoon.ttf?evsb5l') format('truetype'),
+        url('../fonts/icons/icomoon.woff?evsb5l') format('woff'),
+        url('../fonts/icons/icomoon.svg?evsb5l#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'icomoonv2';
+  src:  url('../fonts/iconsv2/icomoonv2.eot');
+  src:  url('../fonts/iconsv2/icomoonv2.eot') format('embedded-opentype'),
+        url('../fonts/iconsv2/icomoonv2.ttf') format('truetype'),
+        url('../fonts/iconsv2/icomoonv2.wof') format('woff'),
+        url('../fonts/iconsv2/icomoonv2.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
+@mixin iconsFont {
+  font-family: 'icomoon', 'icomoonv2';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  @include iconsFont;
+}
+
+.icon-feed-analytics:before {
+  content: "\e900";
+}
+.icon-overview:before {
+  content: "\e901";
+}
+.icon-rules-editor:before {
+  content: "\e902";
+}
+.icon-tag-management:before {
+  content: "\e903";
+}
+.icon-content-mamagement:before {
+  content: "\e904";
+}
+.icon-keyword:before {
+  content: "\e905";
+}
+.icon-configuration:before {
+  content: "\e906";
+}
+.icon-edit-small:before {
+  content: "\e907";
+}
+.icon-sort-solid:before {
+  content: "\e908";
+}
+.icon-add:before {
+  content: "\e909";
+}
+.icon-close:before {
+  display: block;
+  transform: rotate(-45deg);
+  content: "\e909";
+}
+.icon-arrow-double:before {
+  content: "\e90a";
+}
+.icon-arrow-drop:before {
+  content: "\e90b";
+}
+.icon-arrow:before {
+  content: "\e90c";
+}
+.icon-checked:before {
+  content: "\e90d";
+}
+.icon-delete:before {
+  content: "\e90e";
+}
+.icon-edit:before {
+  content: "\e90f";
+}
+.icon-filter:before {
+  content: "\e910";
+}
+.icon-preview:before {
+  content: "\e911";
+}
+.icon-refresh:before {
+  content: "\e912";
+}
+.icon-search:before {
+  content: "\e913";
+}
+.icon-forward:before {
+  content: "\e914";
+}
+.icon-replay:before {
+  display: block;
+  transform: scale(-1, 1);
+  content: "\e914";
+}
+.icon-link:before {
+  content: "\e915";
+}
+.icon-copy:before {
+  content: "\e916";
+}
+.icon-menu:before {
+  content: "\e917";
+}
+.icon-more_vert:before {
+  content: "\e918";
+}
+.icon-move:before {
+  content: "\e919";
+}
+.icon-info:before {
+  content: "\e91a";
+}
+.icon-info-letter:before {
+  content: "\e91b";
+}
+.icon-error-outline:before {
+  content: "\e91c";
+}
+.icon-export:before {
+  content: "\e91d";
+}
+.icon-sort:before {
+  content: "\e91e";
+}
+.icon-user:before {
+  content: "\e91f";
+}
+.icon-eye:before {
+  content: "\e920";
+}
+.icon-eye-off:before {
+  content: "\e921";
+}
+.icon-users:before {
+  content: "\e922";
+}
+.icon-website:before {
+  content: "\e923";
+}
+.icon-calendar:before {
+  content: "\e924";
+}
+.icon-distribution:before {
+  content: "\e925";
+}
+.icon-features-management:before {
+  content: "\e926";
+}
+.icon-theme:before {
+  content: "\e927";
+}
+.icon-launch:before {
+  content: "\e928";
+}
+.icon-feed-import:before {
+  content: "\e929";
+}
+.icon-import:before {
+  content: "\e92a";
+}
+.icon-product-list:before {
+  content: "\e92b";
+}
+.icon-cross:before {
+  content: "\e92c";
+}
+.icon-keyword-suggestions:before {
+  content: "\e92d";
+}
+.icon-notification:before {
+  content: "\e92e";
+}
+.icon-setup:before {
+  content: "\e92f";
+}
+.icon-play:before {
+  content: "\ea15";
+}
+.icon-bell:before {
+  content: "\e930";
+}
+.icon-assets-small:before {
+  content: "\e931";
+}
+.icon-assets:before {
+  content: "\e932";
+}
+
+.icon-plus3:before {
+  content: "\e932";
+}
+
+.icon-play3:before {
+  content: "\ea1c";
+}

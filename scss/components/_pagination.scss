@@ -1,0 +1,113 @@
+.pagination {
+  margin: 0 -6px;
+
+  .btn-icon {
+    //margin: 0 6px;
+    border-radius: 3px;
+    width: 35px;
+    height: 35px;
+
+    // start from backend side
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1px 6px;
+    background: none;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(74, 74, 74));
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: button;
+    text-align: center;
+    outline: none;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0;
+    text-shadow: none;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    font: 400 13.3333px Arial;
+    color: -internal-light-dark(buttontext, rgb(170, 170, 170));
+    text-decoration: none;
+    // end from backend side
+
+    i {
+      display: block;
+      font-size: 12px;
+      //line-height: 12px;
+
+      // start from backend side
+      height: 100%;
+      padding-top: 5px;
+      text-decoration: none;
+      // end from backend side
+    }
+
+    &:not([disabled="disabled"]) {
+      transition: box-shadow 0.4s;
+      background: $color-yellow-dark;
+      color: #fff;
+
+      &:hover {
+        box-shadow: 2px 2px 8px 0 rgba(213, 113, 45, 0.9);
+      }
+    }
+
+    &[disabled="disabled"] {
+      background: $color-yellow-light;
+      color: $color-yellow-dark;
+      cursor: default;
+    }
+
+    &.btn-next,
+    &.btn-last {
+      i {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+  .page-item {
+    position: relative;
+    display: inline-block;
+    min-width: 17px;
+    height: 35px;
+    font-size: 13px;
+    line-height: 35px;
+    letter-spacing: 1.3px;
+    text-align: center;
+    vertical-align: top;
+
+    &.active {
+      .page-link {
+        color: $color-text;
+      }
+
+      &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: $color-yellow-dark;
+        border-radius: 2px;
+        width: 100%;
+        height: 2px;
+        content: "";
+      }
+    }
+  }
+
+  .page-link {
+    display: block;
+    transition: color 0.4s;
+    height: 100%;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-yellow-dark;
+    }
+  }
+}

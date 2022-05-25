@@ -1,0 +1,85 @@
+.sidebar {
+  position: fixed;
+  top: 87px;
+  bottom: 26px;
+  margin-left: -#{$sidebar-width};
+  width: $sidebar-width;
+
+  @include media-query($desktop-sm) {
+    overflow-x: hidden;
+    margin: 0;
+    width: 0;
+    min-width: 0;
+  }
+
+  &__information {
+    margin: 0 0 34px;
+    padding: 0 0 22px;
+
+    & ~ .navigation {
+      height: calc(100% - 128px);
+    }
+
+    p.error {
+      position: relative;
+      margin: 0;
+      padding: 0 33px;
+    }
+
+    .count {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.navigation {
+  margin: 0 -15px;
+  padding: 1px 0;
+  height: calc(100% - 52px);
+  overflow: auto;
+
+  @include media-query($tablet-sm) {
+    height: calc(100% - 82px);
+  }
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
+  & > ul > .item {
+    padding: 10px 0;
+  }
+
+  .item-link {
+    display: block;
+    padding: 15px 25px 14px 47px;
+
+    &.collapsible {
+      padding-right: 30px;
+    }
+
+    @media (max-width: #{$desktop-lg}) and (min-width: #{$desktop-sm + 1px})  {
+      padding-top: 10px;
+      padding-bottom: 9px;
+    }
+  }
+
+  ul ul {
+    .item-link {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 15px;
+
+      @media (max-width: #{$desktop-lg}) and (min-width: #{$desktop-sm + 1px})  {
+        padding-top: 6px;
+        padding-bottom: 6px;
+      }
+    }
+  }
+}
+
+

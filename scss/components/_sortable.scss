@@ -1,0 +1,50 @@
+.chosen-container {
+  ul.list-sortable {
+    counter-reset: count;
+
+    li.list-group-item {
+      cursor: move;
+
+      &:after {
+        display: inline-block;
+        margin: 0 0 0 20px;
+        padding: 2px;
+        border-radius: $btn-radius;
+        background: $bg-input;
+        min-width: 24px;
+        height: 24px;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: normal;
+        color: rgba($color-text, 0.3);
+        text-align: center;
+        vertical-align: middle;
+        counter-increment: count;
+        content:counter(count);
+      }
+
+      &.sortable-chosen {
+        border: none;
+      }
+
+      &.sortable-ghost-chosen {
+        overflow: hidden;
+        background: $bg-input;
+        border-radius: $btn-radius;
+        height: 47px;
+        text-indent: -9999px;
+
+        * {
+          visibility: hidden;
+        }
+      }
+
+      &.sortable-ghost-chosen,
+      &.sortable-chosen {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}

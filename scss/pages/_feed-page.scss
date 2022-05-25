@@ -1,0 +1,106 @@
+﻿.feedmapping-page {
+    .hide {
+        display: none;
+    }
+
+    .form__field-edit.field-customName button {
+        margin: 0;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        line-height: unset;
+        padding: 0;
+    }
+
+    .block-table tbody tr:hover td {
+        position: unset;
+        box-shadow: none;
+    }
+
+    .form__field-edit.small .btn-icon {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        margin: -11px 0 0;
+        color: #e6e6e7;
+    }
+
+    .block-table td .field-customName .field-medium {
+        width: 300px;
+        min-width: 300px;
+    }
+
+    .block-table td .form__field-edit.small {
+        margin: -12px 0;
+    }
+
+    .block-table .form__field-inline {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .block-table__header {
+        padding: 0;
+    }
+
+    .block-table td, .block-table td .chosen-container .chosen-single {
+        text-align: left;
+    }
+}
+
+td.edit{
+    cursor:pointer;
+}
+
+.btn-testurl {
+    &.ok::after {
+        content: "✔";
+        color: green;
+        border: 2px solid green;
+        padding: 2px 5px;
+        border-radius: 12px;
+        margin: 5px;
+    }
+
+    &.nok::after {
+        content: "✘";
+        color: red;
+        border: 2px solid red;
+        padding: 2px 5px;
+        border-radius: 12px;
+        margin: 5px;
+    }
+}
+
+.feeds-page {
+    .hide {
+        display: none !important;
+    }
+
+    .chosen-container .chosen-single span {
+        text-align: left;
+    }
+
+    .form__field-inline button.btn-icon.btn-tooltip {
+        width: unset;
+        margin: 0;
+    }
+
+    .icon-round {
+        margin: -2px 0 0 6px;
+        display: inline-block;
+        background: #31353e;
+        border-radius: 50%;
+        width: 14px;
+        height: 14px;
+        color: #fff;
+        font-size: 8px !important;
+        line-height: 14px !important;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .feedrelationkey {
+        display: inline-block;
+    }
+}

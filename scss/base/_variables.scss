@@ -1,0 +1,176 @@
+// FONTS
+$main-font: Mulish, Arial, Helvetica, sans-serif;
+
+// COLORS
+
+$bg-color: #ebf3fa;
+$bg-color-dark: #eaecf0;
+$bg-input: #f5f8fc;
+$bg-input-dark: #394a54;
+$bg-checkbox: #f2f4f6;
+$bd-color: #f3f9ff;
+$bd-sortable: #989a9f;
+
+$color-text: #31353e;
+$color-text-yellow: #ffd6ae;
+$color-text-blue: #b9d8f4;
+$color-text-red: #f3aeb1;
+$color-text-gray: #cfd3df;
+$color-text-normal: #5B5151;
+$color-text-normal-o: rgba(91, 81, 81, 0.7);
+$color-text-gray-dark: #a0a7bf;
+$color-text-dark: #617078;
+$color-title: #221d1d;
+$color-link-light: #9da6ab;
+
+$color-white: #fff;
+$color-red: #e85e63;
+$color-red-light: #fbe4e6;
+$color-red-dark: #e02020;
+$color-orange: #ffad5d;
+$color-orange-light: #fbeece;
+$color-yellow-dark: #fead5d;
+$color-yellow-light: #fbeece;
+$color-green: #3dcba0;
+$color-green-light: #b2f1de;
+$color-gray: #eaeaeb;
+$color-gray-light: #e0e1e2;
+$color-gray-dark: #babdc2;
+$color-black: #000;
+$color-black-light: #3c4e58;
+$color-blue: #619fe5;
+$color-upload-page: #d8d8d8;
+// New added
+$color-orange-dark: #e37d38;
+$color-orange1: #eeab34;
+//
+$bg-login: #f3f6fa;
+$color-text-login: #919191;
+$color-title-login: #221d1d;
+
+// LAYOUT SIZES
+
+$max-width: 1920px;
+$min-width: 1080px;
+$sidebar-width: 17.1%;
+$card-radius: 12px;
+$btn-radius: 7px;
+
+// BREAKPOINTS
+
+$desktop-lg: 1650px;
+$desktop-md: 1370px;
+$desktop-sm: 1280px;
+$tablet-lg: 1080px;
+$tablet: 1080px; // was -> 840px
+$tablet-md: 980px;
+$tablet-sm: 700px;
+$mobile: 480px;
+
+// LAYOUT STYLE
+
+%card {
+  padding: 15px;
+  background: $color-white;
+  border-radius: $card-radius;
+}
+
+@mixin media-query($point) {
+  @media (max-width: $point) {
+    @content;
+  }
+}
+
+@mixin arrowDropDown {
+  position: relative;
+
+  &::after {
+    @include iconsFont;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin: -1px 0 0;
+    font-size: 6px;
+    content: "\e90b";
+  }
+}
+
+@mixin popupDropDown {
+  margin: 8px 0 0;
+  padding: 15px;
+  background: $color-white;
+  border-radius: $btn-radius;
+  box-shadow: 1px 8px 19px 0 rgba(110, 110, 110, 0.8);
+}
+
+@mixin popupList {
+  li {
+    margin-top: 27px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  a {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: $color-text;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+%customScroll {
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $bg-input;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $color-orange-dark;
+    border-radius: 5px;
+    border: 2px solid $bg-input;
+  }
+}
+
+// ANIMATION
+
+$progress-bar-animation-timing: 1s linear infinite;
+
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+
+@include keyframes(fadeIn) {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@include keyframes(fadeOut) {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

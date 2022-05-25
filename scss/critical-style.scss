@@ -1,0 +1,23 @@
+@import "base/reset";
+@import "base/variables";
+@import "base/base-critical";
+@import "base/buttons-critical";
+
+@import "templates/header-critical";
+@import "templates/sidebar-critical";
+@import "templates/content-critical";
+@import "templates/block-editor-critical";
+@import "templates/block-table-critical";
+@import "templates/block-dashboard-critical";
+@import "templates/block-profile-critical";
+@import "templates/block-distribution-critical";
+@import "templates/block-theme-critical";
+@import "templates/block-code-critical";
+@import "templates/block-import-critical";
+
+@import "components/popup-critical";
+@import "components/form-critical";
+@import "components/badge-critical";
+@import "components/modal-critical";
+
+@import "pages/login-page-critical";

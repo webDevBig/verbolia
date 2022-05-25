@@ -1,0 +1,153 @@
+*[data-tooltip] {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+  }
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 100;
+  padding: 5px 15px;
+  background: $color-white;
+  box-shadow: 6px 6px 12px 0 rgba(210, 210, 210, 0.4);
+  border-radius: 12px;
+  font-size: 10px;
+  line-height: 13px;
+  color: rgba($color-text, 0.4);
+  white-space: nowrap;
+
+  &:before {
+    position: absolute;
+    z-index: 102;
+    bottom: -11px;
+    left: 50%;
+    margin-left: -7px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: $color-white transparent transparent transparent;
+    content: "";
+  }
+
+  &.tooltip-bottom {
+    max-width: 380px;
+    font-size: 14px;
+    line-height: 1.43;
+    color: rgba($color-text, 0.7);
+    white-space: normal;
+
+    &:before {
+      top: -11px;
+      bottom: auto;
+      border-width: 7px;
+      border-style: solid;
+      border-color: transparent transparent $color-white transparent;
+    }
+
+    p {
+      margin: 0 0 15px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      &.mark {
+        &:before {
+          color: $color-green;
+          content: '• ';
+        }
+      }
+    }
+  }
+
+  &.tooltip-sidebar {
+    z-index: 992;
+    margin-left: -39px;
+    padding: 17px 20px;
+    box-shadow: 1px 8px 19px 0 rgba(110, 110, 110, 0.8);
+  }
+
+  &.tooltip-link {
+    z-index: 992;
+    margin-left: -44px;
+  }
+
+  a {
+    color: $color-red;
+  }
+}
+
+// start from backend side
+.tooltip-errors {
+  position: fixed;
+  z-index: 1000;
+  padding: 5px 15px;
+  background: $color-white;
+  box-shadow: 6px 6px 12px 0 rgba(210, 210, 210, 0.4);
+  border-radius: 7px;
+  margin-left:10px;
+  font-size: 12px;
+  line-height: 13px;
+  white-space: nowrap;
+  color: $color-red;
+}
+
+.tooltip.bottom {
+  position: absolute;
+  z-index: 100;
+  padding: 5px 15px;
+  background: $color-white;
+  box-shadow: 6px 6px 12px 0 rgba(210, 210, 210, 0.4);
+  border-radius: 12px;
+  font-size: 12px;
+  line-height: 13px;
+  color: rgba($color-text, 0.4);
+  white-space: nowrap;
+
+  &:before {
+    position: absolute;
+    z-index: 102;
+    top: -14px;
+    bottom: unset;
+    left: 50%;
+    margin-left: -7px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent $color-white transparent;
+    content: "";
+  }
+
+  a {
+    color: $color-red;
+  }
+}
+// end from backend side
+
+.area-tooltip {
+  position: relative;
+  display: inline-block;
+  margin: -16px 0 0;
+  padding: 16px 0 0;
+  width: auto;
+  vertical-align: middle;
+
+  &:hover {
+    .tooltip {
+      display: block;
+    }
+  }
+
+  .tooltip {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}

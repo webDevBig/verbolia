@@ -1,0 +1,265 @@
+.calendar {
+  margin: 0 10px 0 0;
+
+  &__field {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #edeef3;
+    border-radius: 8px;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+
+    &:hover {
+      i {
+        color: $color-blue;
+      }
+    }
+
+    i {
+      color: $bg-input-dark;
+      font-size: 20px;
+      line-height: 46px;
+    }
+  }
+
+  input.calendar__data {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    width: 100%;
+    height: 46px;
+    text-indent: -9999px;
+    cursor: pointer;
+  }
+
+  &.calendar-open {
+    .calendar__field {
+      i {
+        color: $color-blue;
+      }
+    }
+  }
+
+  &.calendar-apply {
+    .calendar__field {
+      min-width: 280px;
+      width: auto;
+
+      &:after {
+        @include iconsFont;
+        position: absolute;
+        top: 50%;
+        right: 18px;
+        transform: translateY(-50%);
+        font-size: 6px;
+        line-height: 12px;
+        color: #908e8e;
+        content: "\e90b";
+      }
+
+      i {
+        display: none;
+      }
+    }
+
+    input.calendar__data {
+      position: relative;
+      padding: 15px 40px 15px 18px;
+      color: #929090;
+      text-indent: 0;
+    }
+  }
+}
+
+.daterangepicker {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  z-index: 3001;
+  margin-top: 6px;
+  padding: 0;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 1px 8px 19px 0 rgba(110, 110, 110, 0.8);
+  width: 340px;
+  max-width: none;
+
+  @include media-query($mobile) {
+    margin-left: 1px;
+    width: calc(100% - 20px);
+    max-width: 460px;
+  }
+
+  &.show-calendar {
+    .drp-calendar,
+    .drp-buttons {
+      display: block;
+    }
+  }
+
+  &.auto-apply {
+    .drp-buttons {
+      display: none;
+    }
+  }
+
+  .drp-calendar {
+    display: none;
+    max-width: 340px;
+
+    @include media-query($mobile) {
+      max-width: 100%;
+    }
+
+    &.left {
+      padding: 16px;
+    }
+
+    &.right {
+      display: none;
+    }
+  }
+
+  .calendar-table {
+    .next, .prev {
+      span {
+        display: inline-block;
+        padding: 3px;
+        border: solid #7d7b7b;
+        border-width: 0 2px 2px 0;
+        border-radius: 0;
+        color: $color-white;
+      }
+
+      &:hover {
+        span {
+          border-color: $color-blue;
+        }
+      }
+    }
+
+    .next span {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+
+    .prev span {
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+    }
+
+    table {
+      margin: 0;
+      border-spacing: 0;
+      border-collapse: collapse;
+      width: 100%;
+
+      th, td {
+        border: 1px solid transparent;
+        text-align: center;
+        vertical-align: middle;
+        min-width: 44px;
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        font-size: 16px;
+        white-space: nowrap;
+        color: $color-black;
+        cursor: pointer;
+
+        @include media-query($mobile) {
+          min-width: 38px;
+        }
+      }
+
+      thead {
+        tr:last-child {
+          th {
+            border-bottom-color: #edeef3;
+            color: #a3a4a7;
+          }
+        }
+      }
+
+      tbody {
+        td {
+          border-color: #edeef3;
+        }
+      }
+
+      th {
+        &.month {
+          font-weight: bold;
+        }
+      }
+
+      td {
+        &.available {
+          &:hover {
+            background: rgba($color-blue, 0.25);
+          }
+        }
+
+        &.in-range {
+          background: rgba($color-blue, 0.15);
+        }
+
+        &.active, &.active:hover {
+          background: $color-blue;
+          color: $color-white;
+          font-weight: bold;
+        }
+
+        &.today, &.today:hover {
+          position: relative;
+          background: transparent;
+          font-weight: bold;
+          color: $color-white;
+
+          &.in-range {
+            background: rgba($color-blue, 0.15);
+            color: $color-black;
+            font-weight: normal;
+
+            &:before {
+              display: none;
+            }
+          }
+
+          &.available {
+            &:hover {
+              background: rgba($color-blue, 0.25);
+              color: $color-black;
+              font-weight: normal;
+
+              &:before {
+                display: none;
+              }
+            }
+          }
+
+          &:before {
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: $color-blue;
+            border-radius: 50%;
+            width: 34px;
+            height: 34px;
+            content: '';
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+.block-code {
+  &__body {
+    @extend %card;
+    position: relative;
+    padding: 0;
+  }
+
+  &__aside {
+    border-right: 1px solid $bg-color-dark;
+  }
+
+  &__project-folder {
+    overflow: hidden;
+
+    &.parent-popup-active {
+      .popup-open {
+        &::after {
+          transform: rotate(-180deg);
+        }
+      }
+    }
+
+    & > a {
+      display: block;
+      padding: 5px 0;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 23px;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-green;
+      }
+    }
+
+    .popup-open {
+      position: relative;
+      padding-right: 25px;
+
+      &::after {
+        @include iconsFont;
+        transition: transform 0.4s;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -3px;
+        font-size: 6px;
+        content: '\e90b';
+      }
+    }
+
+    .popup-content {
+      p {
+        margin: 0 0 5px 15px;
+      }
+
+      a {
+        display: block;
+        text-decoration: none;
+
+        &:hover,
+        &.active {
+          color: $color-green;
+        }
+      }
+    }
+
+    a.subfolder {
+      position: relative;
+      padding-left: 15px;
+
+      &::after {
+        @include iconsFont;
+        transition: transform 0.4s;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -3px;
+        font-size: 6px;
+        content: '\e90b';
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  &__aside-name {
+    border-bottom: 1px solid $bg-color-dark;
+  }
+
+  &__panel-actions {
+    border-bottom: 1px solid $bg-color-dark;
+
+    .btn.btn-icon-default {
+      .icon-launch {
+        font-size: 23px;
+      }
+    }
+  }
+}
+
+#codeMirror {
+  height: calc(100% - 65px);
+
+  .CodeMirror {
+    height: 100%;
+    max-height: calc(100vh - 332px);
+
+    &.CodeMirror-fullscreen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: auto;
+      z-index: 9;
+      max-height: unset;
+    }
+  }
+}

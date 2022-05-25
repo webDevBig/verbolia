@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+<!--head.html-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aurore</title>
+    <link rel="preload" href="css/critical-style.css" as="style">
+    <link rel="stylesheet" href="css/critical-style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <!-- header-panel-top.html -->
+            <div class="header__panel-top">
+                <a href="" class="logo"><img src="images/logo.png" alt="Aurore"></a>
+                <div class="header__holder">
+                    <div class="notification-block">
+                        <span class="popup-open">
+                            <span class="notification-block__icon">
+                                <i class="icon-bell"></i>
+                                <span class="count">1</span>
+                            </span>
+                        </span>
+                        <div class="popup-content">
+                            <div class="notification-block__head">
+                                <span class="title">Notifications</span>
+                                <span class="count">1</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <p><strong>Duplicate content</strong> - We have detected keywords with a high level of duplication</p>
+                                    <p class="panel">
+                                        <span>Today at 15:13</span>
+                                        <a href="#">Mark as unread</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p><strong>Keyword opportunities</strong> - New keywords opportunities have been found</p>
+                                    <p class="panel">
+                                        <span>Today at 15:13</span>
+                                        <a href="#">Mark as unread</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p><strong>Duplicate content</strong> - We have detected keywords with a high level of duplication</p>
+                                    <p class="panel">
+                                        <span>Today at 15:13</span>
+                                        <a href="#">Mark as read</a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="user-block">
+                        <span class="popup-open">
+                            <span class="user-block__image">
+                                <img src="images/user-image.jpg" alt="user name">
+                            </span>
+                            <span class="user-block__name">Harry Potter</span>
+                        </span>
+                        <div class="popup-content">
+                            <ul>
+                                <li><a href="user-account.html">My account</a></li>
+                                <li><a href="#">Log out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-toggle-sidebar"><i class="icon-menu"></i></button>
+            </div>
+        </header>
+        <div class="main-content">
+            <!-- sidebar.html -->
+            <div class="sidebar">
+                <div class="form__field-holder">
+                    <select data-placeholder="Select web site" class="chosen-select select-dark">
+                        <option></option>
+                        <option>Kazidomi</option>
+                        <option>Waio</option>
+                    </select>
+                </div>
+                <nav class="navigation">
+                    <ul>
+                        <li class="item">
+                            <a href="dashboard.html" class="item-link"><i class="icon-overview"></i> Dashboard</a>
+                        </li>
+                        <li class="item">
+                            <a href="catalog_Navigator.html" class="item-link"><i class="icon-catalog"></i> Catalog Navigator</a>
+                        </li>
+                        <li class="item">
+                            <a href="configuration.html" class="item-link"><i class="icon-configuration"></i> Configuration</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="item-link collapsible collapsible-active"><i class="icon-theme"></i> Theme</a>
+                            <ul class="collapsible-content">
+                                <li class="item">
+                                    <a href="theme.html" class="item-link active">Theme Editor</a>
+                                </li>
+                                <li class="item">
+                                    <a href="theme-ressources.html" class="item-link">Ressources</a>
+                                </li>
+                            </ul>
+                        </li>
+<!--
+                        <li class="item">
+                            <a href="ressources.html" class="item-link"><i class="icon-keyword"></i> Ressources</a>
+                        </li>
+-->
+                        <li class="item">
+                            <a href="feed-import-main.html" class="item-link"><i class="icon-feed-import"></i> Feed import</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="item-link collapsible"><i class="icon-keyword"></i>
+                                Pages management</a>
+                            <ul class="collapsible-content">
+                                <li class="item">
+                                    <a href="keyword-edition.html" class="item-link">Tag Management </a>
+                                </li>
+                                <li class="item">
+                                    <a href="keyword-management.html" class="item-link">Keyword Management</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <a href="keyword-suggestions.html" class="item-link">
+                                <i class="icon-keyword-suggestions"></i> Keyword suggestions
+                                <i class="icon-notification tooltip-sidebar tooltip-bottom" data-tooltip="You have new keyword suggestions"></i>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="item-link"><i class="icon-features-management"></i> Features Management</a>
+                        </li>
+                        <li class="item">
+                            <a href="users.html" class="item-link"><i class="icon-users"></i> Users</a>
+                        </li>
+                        <li class="item">
+                            <a href="website.html" class="item-link"><i class="icon-website"></i> Website</a>
+                        </li>
+                        <li class="item">
+                            <a href="distribution.html" class="item-link"><i class="icon-distribution"></i>Distribution page</a>
+                        </li>
+                        <li class="item">
+                            <a href="documentation.html" class="item-link"><i class="icon-content-mamagement"></i>Documentation</a>
+                        </li>
+                        <li class="item">
+                            <a href="product-list.html" class="item-link"><i class="icon-product-list"></i>Product list</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <main class="content">
+                <!-- content-header.html -->
+                <header class="content__header">
+                    <div>
+                        <h1>Theme Editor</h1>
+                    </div>
+                    <div>
+                        <button class="btn btn-white modal-open btn-orange small-icon" data-modal="modalCreateTheme"><i class="icon-add"></i> Add a new theme</button>
+                    </div>
+                </header>
+                <div class="block-theme">
+                    <div class="block-theme__item block-theme__item__active">
+                        <div class="block-theme__header">
+                            <button class="btn btn-gray">Active</button>
+                            <div class="chosen-container chosen-container-single chosen-popup open_actions ">
+                                <a class=" chosen-default chosen-single">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                                <div class="chosen-drop">
+                                    <div class="actions-header">
+                                        <h1>Actions</h1>
+                                        <button class="btn-icon popup-close close-actions"><i class="icon-close"></i></button>
+                                    </div>
+                                    <ul class="chosen-results">
+
+                                        <li class="active-result">
+                                            <div class="img_box"><img alt="" src="images/image-theme/edit.svg"></div>
+                                            <a class="modal-open" href="#"> Edit</a>
+
+                                        </li>
+                                        <li class="active-result">
+                                            <div class="img_box"><img alt="" src="images/image-theme/preview.svg"></div>
+                                            <a class="modal-open" data-modal="modalPreviewCode"> Preview</a>
+                                        </li>
+                                        <li class="active-result">
+                                            <div class="img_box"><img alt="" src="images/image-theme/bx_download.svg"></div>
+                                            <a class="modal-open" href="#"> Download code</a>
+                                        </li>
+                                        <li class="active-result">
+                                            <div class="img_box"><img alt="" src="images/image-theme/copy_theme.svg"></div>
+                                            <a class="modal-open" data-modal="modalCopyTheme">Duplicate theme</a>
+                                        </li>
+                                        <li class="active-result">
+                                            <div class="img_box"><img alt="" src="images/image-theme/activate.svg"></div>
+                                            <a class="modal-open" data-modal="modalActivateTheme"> Activate the theme</a>
+                                        </li>
+                                        <li class="active-result">
+                                            <div class="img_box"><img alt="" src="images/image-theme/lighthouse.svg"> </div>
+                                            <a class=" manage_keywords_show">Lighthouse audit</a>
+                                        </li>
+                                        <li class="active-result">
+                                            <div class="img_box"><img alt="" src="images/image-theme/delete_theme.svg"></div>
+                                            <a class=" manage_keywords_show modal-open" data-modal="modalDeleteTheme"> Delete</a>
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-theme__panel">
+                            <h2 class="theme_name">Theme name here can be in one or two lines</h2>
+                            <div class="actions">
+                                <p class="title">Last edit time:</p>
+                                <p class="edit_time_text">06/07/2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-theme__item">
+                        <div class="block-theme__header">
+                            <button class="btn btn-gray">Active</button>
+                            <div class="chosen-container chosen-container-single chosen-popup open_actions ">
+                                <a class=" chosen-default chosen-single">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                                <div class="chosen-drop">
+                                    <div class="actions-header">
+                                        <h1>Actions</h1>
+                                        <button class="btn-icon popup-close close-actions"><i class="icon-close"></i></button>
+                                    </div>
+
+                                    <ul class="chosen-results">
+
+                                        <li class="active-result">
+                                            <div class="img_box"><img alt="" src="images/image-theme/edit.svg"></div>
+                                            <a class="modal-open" href="#"> Edit</a>
+
+                                        </li>
+                                        <li class="active-result">
+                                            <div class="img_box"><img alt="" src="images/image-theme/preview.svg"></div>
+                                            <a class="modal-open" data-modal="modalPreviewCode"> Preview</a>
+                                        </li>
+                                        <li class="active-result">
+                                            <div class="img_box"><img alt="" src="images/image-theme/bx_download.svg"></div>
+                                            <a class="modal-open" href="#"> Download code</a>
+                                        </li>
+                                        <li class="active-result">
+                                            <div class="img_box"><img alt="" src="images/image-theme/copy_theme.svg"></div>
+                                            <a class="modal-open" data-modal="modalCopyTheme">Duplicate theme</a>
+                                        </li>
+                                        <li class="active-result">
+                                            <div class="img_box"><img alt="" src="images/image-theme/activate.svg"></div>
+                                            <a class="modal-open" data-modal="modalActivateTheme"> Activate the theme</a>
+                                        </li>
+                                        <li class="active-result">
+                                            <div class="img_box"><img alt="" src="images/image-theme/lighthouse.svg"> </div>
+                                            <a class=" manage_keywords_show">Lighthouse audit</a>
+                                        </li>
+                                        <li class="active-result">
+                                            <div class="img_box"><img alt="" src="images/image-theme/delete_theme.svg"></div>
+                                            <a class=" manage_keywords_show modal-open" data-modal="modalDeleteTheme"> Delete</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-theme__panel">
+                            <h2 class="theme_name">Theme name here can be in one or two lines</h2>
+                            <div class="actions">
+                                <p class="title">Last edit time:</p>
+                                <p class="edit_time_text">06/07/2020</p>
+                                <!--
+                                <button class="btn btn-green btn-small">Activate</button>
+                                <button class="btn btn-green-light btn-small modal-open" data-modal="modalDetailsTheme">Details</button>
+-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-theme__item">
+                        <div class="block-theme__header">
+                            <button class="btn btn-gray">Active</button>
+                            <div class="chosen-container chosen-container-single chosen-popup open_actions ">
+                                <a class=" chosen-default chosen-single">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                                <div class="chosen-drop">
+                                    <div class="actions-header">
+                                        <h1>Actions</h1>
+                                        <button class="btn-icon popup-close close-actions"><i class="icon-close"></i></button>
+                                    </div>
+                                    <ul class="chosen-results">
+
+                                        <li class="active-result">
+                                            <div class="img_box"><img alt="" src="images/image-theme/edit.svg"></div>
+                                            <a class="modal-open" href="#"> Edit</a>
+
+                                        </li>
+                                        <li class="active-result">
+                                            <div class="img_box"><img alt="" src="images/image-theme/preview.svg"></div>
+                                            <a class="modal-open" data-modal="modalPreviewCode"> Preview</a>
+                                        </li>
+                                        <li class="active-result">
+                                            <div class="img_box"><img alt="" src="images/image-theme/bx_download.svg"></div>
+                                            <a class="modal-open" href="#"> Download code</a>
+                                        </li>
+                                        <li class="active-result">
+                                            <div class="img_box"><img alt="" src="images/image-theme/copy_theme.svg"></div>
+                                            <a class="modal-open" data-modal="modalCopyTheme">Duplicate theme</a>
+                                        </li>
+                                        <li class="active-result">
+                                            <div class="img_box"><img alt="" src="images/image-theme/activate.svg"></div>
+                                            <a class="modal-open" data-modal="modalActivateTheme"> Activate the theme</a>
+                                        </li>
+                                        <li class="active-result">
+                                            <div class="img_box"><img alt="" src="images/image-theme/lighthouse.svg"> </div>
+                                            <a class=" manage_keywords_show">Lighthouse audit</a>
+                                        </li>
+                                        <li class="active-result">
+                                            <div class="img_box"><img alt="" src="images/image-theme/delete_theme.svg"></div>
+                                            <a class=" manage_keywords_show modal-open" data-modal="modalDeleteTheme"> Delete</a>
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-theme__panel">
+                            <h2 class="theme_name">Theme name here can be in one or two lines</h2>
+                            <div class="actions">
+                                <p class="title">Last edit time:</p>
+                                <p class="edit_time_text">06/07/2020</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="pop_up_box">
+                        <div class="pop_up_window">
+                            <p><img alt="" src="images/image-theme/check.svg">Theme upload is complete</p>
+                            <div class="close_btn close_pop_up"></div>
+                        </div>
+
+                        <div class="pop_up_window">
+                            <p><img alt="" src="images/image-theme/check.svg">Theme has been activated</p>
+                            <div class="close_btn close_pop_up"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+
+    <!--modal-preview code-->
+    <div id="modalPreviewCode" class="modal">
+        <div class="modal__inner">
+            <div class="close_btn modal-close"></div>
+            <div class="modal__content">
+                <p class="h1">Select a keyword to get a preview</p>
+                <form class="form">
+                    <div class="form__field-group inline">
+                        <div class="field-radio">
+                            <input type="radio" id="random" name="redirection" checked="checked">
+                            <label for="random">Random</label>
+                        </div>
+                        <div class="field-radio ">
+                            <input type="radio" id="select_keyword" name="redirection">
+                            <label for="select_keyword">Select your keyword</label>
+                            <div class="form__field-holder full-width">
+<!--                                <p class="theme_name_title">Select a keyword</p>-->
+                                <select id="searchword-in-field" data-placeholder="Keyword" class="chosen-select select-light" multiple="multiple">
+                                    <option>Keyword</option>
+                                    <option>Keyword</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="field-radio">
+
+                        </div>
+                    </div>
+                    <div class="field-buttons">
+
+                        <button class="btn btn-transparent modal-close">Cancel</button>
+                        <button class="btn btn-orange small-icon modal-close " id="delete_theme"> Preview</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!--modal-copy theme code-->
+    <div id="modalCopyTheme" class="modal">
+        <div class="modal__inner">
+            <div class="close_btn modal-close"></div>
+            <div class="modal__content">
+                <p class="h1">Duplicate theme</p>
+                <div class="theme_name_box">
+                    <p class="theme_name_title">Theme name</p>
+                    <input type="text" value="Keyword">
+                </div>
+                <form class="form">
+                    <div class="field-buttons">
+
+                        <button class="btn btn-transparent modal-close">Cancel</button>
+                        <button class="btn btn-orange small-icon modal-close " id="delete_theme">Duplicate theme</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--modal-activate theme code-->
+    <div id="modalActivateTheme" class="modal">
+        <div class="modal__inner">
+            <div class="close_btn modal-close"></div>
+            <div class="modal__content">
+                <p class="h1">Are you sure you want to activate <br> this theme?</p>
+                <p class="note">Clicking “Activate” will activate the theme on all the pages already created</p>
+                <form class="form">
+                    <div class="field-buttons">
+
+                        <button class="btn btn-transparent modal-close">Cancel</button>
+                        <button class="btn btn-orange small-icon modal-close"> Activate theme</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--modal-delete theme code-->
+    <div id="modalDeleteTheme" class="modal">
+        <div class="modal__inner">
+            <div class="close_btn modal-close"></div>
+            <div class="modal__content">
+                <p class="h1">Are you sure you want to delete <br> this theme?</p>
+                <p class="note">Clicking “Delete” will remove the theme and all the ressources associated</p>
+                <form class="form">
+                    <div class="field-buttons">
+
+                        <button class="btn btn-transparent modal-close">Cancel</button>
+                        <button class="btn btn-orange small-icon modal-close " id="delete_theme"> Delete theme</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--modal-upload-theme.html-->
+    <div id="modalUploadTheme" class="modal">
+        <div class="modal__inner">
+            <div class="modal__content">
+                <h4>Upload a theme</h4>
+                <p>Select a file in a .zip format to install a new theme</p>
+                <form class="form">
+                    <div class="form__field-group inline">
+                        <div class="field-radio">
+                            <input id="public-theme" type="radio" checked="checked" name="themes">
+                            <label for="public-theme">Public theme</label>
+                        </div>
+                        <div class="field-radio">
+                            <input id="private-theme" type="radio" name="themes">
+                            <label for="private-theme">Private theme</label>
+                        </div>
+                    </div>
+                    <div class="field-buttons">
+                        <button class="btn btn-green-light modal-close">Chose your file</button>
+                        <button class="btn btn-green modal-close">Upload a theme</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--modal-create-theme.html-->
+  
+     <div id="modalCreateTheme" class="modal">
+        <div class="modal__inner">
+            <div class="close_btn modal-close"></div>
+            <div class="modal__content">
+                <p class="h1">Add a new theme</p>
+                <div class="theme_name_box">
+                    <p class="theme_name_title">Theme name</p>
+                    <input type="text" value="Theme1">
+                </div>
+                <form class="form">
+                    <div class="field-buttons">
+
+                        <button class="btn btn-transparent modal-close">Cancel</button>
+                        <button class="btn btn-orange small-icon modal-close " >Add new theme</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--modal-details-theme.html-->
+    <div id="modalDetailsTheme" class="modal">
+        <div class="modal__inner">
+            <div class="modal__header">
+                <h4>Light ecommerce by Verbolia</h4>
+                <button class="btn-icon modal__close modal-close"><i class="icon-close"></i></button>
+            </div>
+            <div class="modal__content">
+                <div class="block-detail">
+                    <div class="desktop-view">
+                        <p>Desktop view of the theme</p>
+                        <img src="images/image-theme/theme02.png" alt="Light ecommerce">
+                    </div>
+                    <div class="mobile-view">
+                        <p>Mobile view of the theme</p>
+                        <img src="images/image-theme/theme02.png" alt="Light ecommerce">
+                    </div>
+                </div>
+                <div class="form__action">
+                    <button class="btn btn-default-light modal-close">Create</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- scripts.html -->
+    <script type="application/json" src="data/pages-crawled.json"></script>
+    <script type="application/json" src="data/pages-indexed.json"></script>
+    <script type="application/json" src="data/visits.json"></script>
+    <script type="application/json" src="data/position-history.json"></script>
+    <script type="application/json" src="data/average-position.json"></script>
+    <script type="application/json" src="data/top-10.json"></script>
+    <script type="application/json" src="data/top-30.json"></script>
+    <script type="application/json" src="data/average-position-keyword.json"></script>
+    <script type="application/json" src="data/information-all-visits.json"></script>
+    <script type="application/json" src="data/information-sea-visits.json"></script>
+    <script type="application/json" src="data/information-seo-visits.json"></script>
+    <script type="application/json" src="data/crawl-rate.json"></script>
+
+    <script src="scripts/jquery-3.5.1.min.js"></script>
+    <script src="scripts/components/multiselect/chosen.jquery.min.js"></script>
+    <script src="scripts/components/multiselect/prism.js"></script>
+    <script src="scripts/components/daterangepicker/moment.min.js"></script>
+    <script src="scripts/components/daterangepicker/daterangepicker.min.js"></script>
+    <script src="scripts/components/sortable.min.js"></script>
+    <script src="scripts/components/chart.min.js"></script>
+    <script src="scripts/components/chosenPopup.js"></script>
+    <script src="scripts/components/accordion.js"></script>
+    <script src="scripts/components/popup.js"></script>
+    <script src="scripts/components/sidebar.js"></script>
+    <script src="scripts/components/form.js"></script>
+    <script src="scripts/components/tooltip.js"></script>
+    <script src="scripts/components/modal.js"></script>
+    <script src="scripts/components/alert.js"></script>
+    <script src="scripts/components/checkAll.js"></script>
+    <script src="scripts/components/chartCustomBar.js"></script>
+    <script src="scripts/components/tab.js"></script>
+    <script src="scripts/components/dropUploadFile.js"></script>
+    <script src="scripts/components/panel-option.js"></script>
+    <script src="scripts/components/productMatchingRules.js"></script>
+    <script src="scripts/components/crawlerSchedule.js"></script>
+    <script src="scripts/components/tableCreateAssets.js"></script>
+    <script src="scripts/codemirror/codemirror.js"></script>
+    <script src="scripts/codemirror/javascript.js"></script>
+    <script src="scripts/script.js"></script>
+    <script>
+        $(document).on('click', '.close-actions', function() {
+            $(this).parents('.chosen-container').toggleClass('chosen-with-drop');
+            $(this).parents('.chosen-container').toggleClass('chosen-container-active');
+        });
+        
+         $(document).on('click', '.close_pop_up', function() {
+            $(this).parents('.pop_up_window').toggleClass('hide');
+        });
+       
+    </script>
+</body>
+
+</html>

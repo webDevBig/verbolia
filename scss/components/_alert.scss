@@ -1,0 +1,52 @@
+.alert {
+  position: relative;
+  padding: 19px 50px 20px;
+  background: $color-orange;
+  border-radius: $card-radius;
+  color: $color-white;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  transition: height 0.4s, padding 0.4s;
+
+  &:not(.show) {
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 0;
+  }
+
+  i:not(.icon-close) {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    font-size: 26px;
+    line-height: 26px;
+    vertical-align: middle;
+  }
+
+  a {
+    color: $color-white;
+  }
+
+  &__close {
+    position: absolute;
+    top: 19px;
+    right: 20px;
+    color: $color-white;
+  }
+
+  &.slick-bottom {
+    position: fixed;
+    z-index: 899;
+    bottom: 26px;
+    width: calc(100% - #{$sidebar-width} - 50px);
+    max-width: calc(#{$max-width} - #{$sidebar-width} - 50px);
+
+    @include media-query($desktop-sm) {
+      left: 10px;
+      right: 10px;
+      width: auto;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.block-distribution {
+  display: flex;
+  flex-wrap: wrap;
+  //margin: 0 -13px;
+
+  .hide {
+    display: none !important;
+  }
+
+  .switch {
+    height: 32px;
+    display: flex;
+    align-items: center;
+
+    span {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+}
+
+.block-category {
+  flex: 1 0 calc(33.3% - 26px);
+  margin: 0 13px 26px;
+  width: calc(33.3% - 26px);
+  min-height: 400px;
+
+  @media screen and (max-width: 1160px) {
+    flex: 0 0 calc(50% - 26px);
+    width: calc(50% - 26px);
+  }
+}

@@ -1,0 +1,60 @@
+.content {
+  padding: 0 0 0 32px;
+
+  @include media-query($desktop-sm) {
+    padding-left: 0;
+  }
+
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 0 35px;
+
+    @include media-query($tablet-lg) {
+      display: block;
+      margin: 0 0 25px;
+    }
+
+    h1 {
+      margin: 0;
+
+      @include media-query($tablet-lg) {
+        margin-bottom: 15px;
+      }
+    }
+
+    p {
+      margin: 8px 0 0;
+    }
+
+    button.btn {
+      margin: 7px 0 0;
+
+      &.btn-research {
+        padding: 0 20px;
+
+        i {
+          top: 3px;
+        }
+      }
+    }
+
+    .block-search {
+      width: 338px;
+
+      @include media-query($tablet-lg) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__body {
+    margin: 49px 0 0;
+    min-height: calc(100vh - 204px);
+  }
+}
+
+.block-slide {
+  display: none;
+}

@@ -1,0 +1,52 @@
+<div id="modalSetupNewKeyword" class="modal">
+    <div class="modal__inner">
+        <div class="modal__header">
+            <h4>Set up your keyword research</h4>
+            <button class="btn-icon modal__close modal-close"><i class="icon-close"></i></button>
+        </div>
+        <div class="modal__content">
+            <form class="form">
+                <div class="form__field">
+                    <label for="name">Keyword research name</label>
+                    <input class="text-field" id="name" type="text" placeholder="Name" value="14/05/21">
+                </div>
+                <p>Select the source of your keyword research</p>
+                <div class="form__field">
+                    <div class="form__field-group inline">
+                        <div class="field-radio">
+                            <input id="product-feed" type="radio" checked="checked" name="source">
+                            <label for="product-feed">Product feed</label>
+                        </div>
+                        <div class="field-radio">
+                            <input id="text-file" type="radio" name="source">
+                            <label for="text-file">Text file</label>
+                        </div>
+                    </div>
+                    <div class="field-upload">
+                        <div class="btn-file">
+                            <input class="file" type="file">
+                            <button class="btn btn-green-light">Upload a file</button>
+                        </div>
+                        <div class="file-chosen">
+                            <span class="text-file-chosen">No file chosen</span>
+                            <button class="btn btn-red btn-icon-default"><i class="icon-delete"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__field">
+                    <div class="field-checkbox">
+                        <input id="autocomplete" type="checkbox" name="autocomplete">
+                        <label for="autocomplete">Enrich with autosuggest</label>
+                    </div>
+                    <div class="field-checkbox">
+                        <input id="position" type="checkbox" name="position">
+                        <label for="position">Calculate SERP position</label>
+                    </div>
+                </div>
+                <div class="action">
+                    <button class="btn btn-green modal-close">Start keyword research</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

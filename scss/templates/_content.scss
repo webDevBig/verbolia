@@ -1,0 +1,39 @@
+.content {
+  &__header {
+    div:last-of-type {
+      text-align: right;
+
+      @include media-query($tablet-lg) {
+        text-align: left;
+      }
+
+      p {
+        color: rgba($color-title, 0.3)
+      }
+    }
+
+    div:first-of-type {
+      text-align: left;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 18px;
+      color: rgba($color-title, 0.3);
+
+      .icon-round {
+        background: $color-text;
+      }
+    }
+
+    .btn-tooltip {
+      margin: 0 0 0 32px;
+      color: rgba($color-title, 0.3);
+      text-decoration: underline;
+    }
+  }
+
+  &__body {
+    @extend %card;
+  }
+}

@@ -1,0 +1,72 @@
+.feed-import-information {
+
+  &__card {
+    .card__content {
+      padding-bottom: 57px;
+    }
+  }
+
+  &__tabs {
+    margin-bottom: 24px;
+  }
+
+  &__play-btn {
+    width: 24px;
+    height: 24px;
+    background: #EAECF0;
+    border-radius: 2px;
+
+    &:hover {
+      box-shadow: 2px 2px 8px 0 rgba($color-black, 0.07);
+    }
+    
+    i {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
+  &__row {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__inner-col {
+    padding-left: 28px;
+    position: relative;
+      
+    &:before {
+      content: '';
+      position: absolute;
+      left: 10px;
+      top: 16px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: currentColor;
+
+    }
+  }
+
+  &__dropdown {
+    width: 174px;
+    min-width: auto;
+  }
+
+  &__edit-field {
+    width: 149px;
+  }
+
+  &__pagination {
+    margin-top: 30px;
+  }
+  
+  &__save-btn {
+    width: 85px;
+    display: block;
+    margin: 39px 0 0 auto;
+  }
+}

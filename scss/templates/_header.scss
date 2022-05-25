@@ -1,0 +1,244 @@
+.header {
+  &__panel-top {
+    @include media-query($desktop-sm) {
+      position: relative;
+      padding-right: 55px;
+    }
+  }
+}
+
+.user-block {
+  @include arrowDropDown;
+
+  @include media-query($tablet-sm) {
+    position: fixed !important;
+    z-index: 995;
+    top: 15px;
+    left: -300px;
+    padding: 0;
+    width: 300px;
+    transition: left 0.025s;
+
+    &::after {
+      right: 31px;
+      color: rgba($color-white, 0.5);
+    }
+
+    &.active {
+      left: 0;
+    }
+
+    .popup-open {
+      position: relative;
+      z-index: 2;
+      display: block;
+      margin: 0 15px;
+      padding: 12px 35px 12px 66px;
+      background: rgba($bg-color, 0.2);
+      border-radius: 7px;
+      transition: box-shadow 0.4s;
+      height: 52px;
+      font-size: 16px;
+      line-height: 28px;
+      color: $color-white;
+    }
+
+    .user-block__image {
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      transform: translate(0, -50%);
+      margin: 0;
+    }
+
+    .user-block__name {
+      display: block;
+      overflow: hidden;
+      width: 100%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  .popup-content {
+    @include popupDropDown;
+    left: auto;
+    right: 0;
+    min-width: 314px;
+
+    @include media-query($tablet-sm) {
+      padding: 15px 8px;
+      min-width: 270px;
+      left: 15px;
+      right: auto;
+      background: #263842;
+      box-shadow: 4px 4px 20px 0 rgba(2, 2, 2, 0.25);
+    }
+
+    ul {
+      @include popupList;
+
+      li {
+        margin: 0;
+        padding: 10px 0;
+        border-top: 1px solid $bd-color;
+
+        @include media-query($tablet-sm) {
+          padding: 0;
+          border-color: #303f47;
+        }
+
+        &:first-child {
+          border-top: none;
+        }
+      }
+
+      a {
+        font-weight: bold;
+        font-size: 14px;
+
+        @include media-query($tablet-sm) {
+          display: block;
+          padding: 13px 8px;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 20px;
+          color: #9da6ab;
+
+          &:hover {
+            color: $color-orange;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.notification-block {
+  &__icon {
+    position: relative;
+
+    .icon-bell {
+      font-size: 22px;
+      line-height: 38px;
+      color: $color-gray-dark;
+    }
+
+    .count {
+      position: absolute;
+      top: -8px;
+      right: -3px;
+      background: $color-orange;
+      border: 2px solid $bg-color-dark;
+      border-radius: 50%;
+      width: 14px;
+      height: 14px;
+      color: $color-white;
+      font-weight: bold;
+      font-size: 6px;
+      line-height: 10px;
+      text-align: center;
+    }
+  }
+
+  .popup-content {
+    @include popupDropDown;
+    left: 50%;
+    margin-left: -190px;
+    padding: 15px 14px;
+    min-width: 380px;
+
+    &::before {
+      position: absolute;
+      z-index: 102;
+      top: -19px;
+      left: 50%;
+      margin-left: -10px;
+      border-width: 10px;
+      border-style: solid;
+      border-color: transparent transparent $color-white transparent;
+      content: "";
+    }
+
+    @include media-query($tablet-sm) {
+      left: auto;
+      right: -71px;
+      margin-left: 0;
+
+      &::before {
+        left: auto;
+        right: 71px;
+      }
+    }
+
+    @include media-query(400px) {
+      min-width: 300px;
+    }
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 21px;
+
+    .title {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: $color-text;
+    }
+
+    .count {
+      display: block;
+      background: $color-orange;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      color: $color-white;
+      font-weight: bold;
+      font-size: 10px;
+      line-height: 20px;
+    }
+  }
+
+  ul {
+    overflow: auto;
+    max-height: 229px;
+    font-size: 14px;
+    line-height: 1.43;
+    color: rgba($color-text, 0.7);
+
+    li {
+      padding: 26px 0 0;
+
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+
+    p {
+      margin: 0;
+
+      strong {
+        font-weight: 600;
+        color: $color-text;
+      }
+
+      &.panel {
+        display: flex;
+        justify-content: space-between;
+        padding: 6px 0 0;
+        font-size: 10px;
+        line-height: 13px;
+        color: rgba($color-title, 0.7);
+
+        a {
+          color: rgba($color-title, 0.7);
+        }
+      }
+    }
+  }
+}

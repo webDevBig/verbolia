@@ -1,0 +1,167 @@
+.login-page {
+  background-color: $bg-login;
+
+  .main-content {
+    padding: 0;
+    display: flex;
+    height: 100vh;
+  }
+
+  .wrapper {
+    transition: background-position 0.6s;
+    background-image: url('../images/bg-login-1.svg'), url('../images/bg-login-2.svg'), url('../images/bg-login-3.svg'), url('../images/bg-login-4.svg');
+    background-position: 0 -18px, 100% -45px, 100% calc(100% + 20px), 0 100%;
+    background-repeat: no-repeat;
+
+    @include media-query($tablet-lg) {
+      background-position: -210px -18px, calc(100% + 90px) -45px, calc(100% + 70px) calc(100% + 20px), 0 100%;
+    }
+  }
+}
+
+.block-login {
+  text-align: center;
+  color: $color-text-login;
+
+  // start from backend side
+  max-width: 600px;
+  min-height: 450px;
+  margin: auto;
+  border-radius: 5px;
+  padding: 11px;
+  // end from backend side
+
+  .subhead {
+    color: #5B5151;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  p {
+    br {
+      display: none;
+
+      @include media-query($mobile) {
+        display: block;
+      }
+    }
+  }
+
+  .form {
+    text-align: left;
+
+    &__field {
+      p:not(.form__text-error) {
+        text-align: center;
+      }
+
+      input {
+        background-color: white;
+      }
+    }
+
+    &__error {
+      margin: 0 0 13px;
+    }
+
+    button.btn-red {
+      background-image: linear-gradient(to left, #ec9398, #d55a5f), linear-gradient(to bottom, #ffffff, #ffffff);
+    }
+
+    a {
+      color: $color-text-login;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    // start from backend side
+    &__contactus {
+      a {
+        color: #e85e63;
+      }
+    }
+    // end from backend side
+  }
+}
+
+#modalResetPassword {
+  .modal__inner {
+    max-width: 919px;
+    min-width: 320px;
+  }
+
+  .modal__content {
+    padding: 60px 59px 86px 54.4%;
+    background-image: url('../images/bg-login-1.svg'), url('../images/bg-login-2.svg'), url('../images/bg-reset-password.svg');
+    background-position: -45px -10px, 100% calc(100% + 383px), 8% calc(100% - 77px);
+    background-repeat: no-repeat;
+    background-size: 110px auto, auto, auto;
+
+    @include media-query($tablet) {
+      padding: 38px 35px 38px 54.4%;
+      background-position: -45px -10px, 100% calc(100% + 383px), 15px calc(100% - 35px);
+      background-size: 110px auto, auto, calc(45% - 15px) auto;
+    }
+
+    @include media-query($tablet-sm) {
+      padding: 15px 15px 15px 40.4%;
+      background-position: -45px -10px, 100% calc(100% + 383px), 15px calc(100% - 15px);
+      background-size: 110px auto, auto, calc(36% - 15px) auto;
+    }
+
+    @include media-query($mobile) {
+      padding-left: 15px;
+      background-position: -45px -10px, 100% calc(100% + 383px), -999px calc(100% - 15px);
+    }
+  }
+
+  h5 {
+    margin: 0 0 45px;
+    color: $color-title;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 44px;
+
+    @include media-query($tablet-sm) {
+      margin-bottom: 15px;
+    }
+  }
+
+  .form__field {
+    margin: 0 0 42px;
+
+    @include media-query($tablet-sm) {
+      margin-bottom: 15px;
+    }
+  }
+
+  label {
+    margin: 0 0 26px;
+    line-height: 25px;
+    color: $color-title;
+    letter-spacing: -0.1px;
+
+    @include media-query($tablet-sm) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+ul.error-message{
+  margin: 10px 0;
+
+  li{
+    text-align:left;
+    color:red;
+  }
+}
+
+.block-resetpassword {
+  a {
+    color: #e85e63;
+  }
+}

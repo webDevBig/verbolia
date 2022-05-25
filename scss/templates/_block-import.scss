@@ -1,0 +1,216 @@
+.block-feed-import {
+  h2 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  &__tab-set {
+    a {
+      background: $color-white;
+      border-radius: 6px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 23px;
+      letter-spacing: 0.38px;
+      color: $color-text;
+      text-decoration: none;
+
+      &:hover, &.active {
+        box-shadow: 0 2px 4px 0 rgba(85, 90, 102, 0.26);
+        color: $color-orange;
+      }
+    }
+
+    &.group {
+      a {
+        border-radius: 0;
+
+        &:first-child {
+          border-top-left-radius: 7px;
+          border-bottom-left-radius: 7px;
+        }
+
+        &:last-child {
+          border-top-right-radius: 7px;
+          border-bottom-right-radius: 7px;
+        }
+
+        &:hover {
+          box-shadow: none;
+        }
+
+        &.active {
+          box-shadow: none;
+          background: $color-orange;
+          color: $color-white;
+        }
+      }
+    }
+  }
+
+  &__tab-content {
+    .tab {
+      background: $color-white;
+      border-radius: $btn-radius;
+    }
+
+    &.simple {
+      .tab {
+        background: none;
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+.form-product-import {
+  &.first-boot {
+    @extend %card;
+  }
+
+  & + .block-table__body {
+    min-height: calc(100vh - 339px);
+  }
+
+  .text-info {
+    position: relative;
+    padding: 3px 0 3px 30px;
+    background: url('../images/exclamation-triangle-solid.svg') 0 50% no-repeat;
+    background-size: 20px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.block-table {
+  .table-feed-import {
+    .form__field-inline {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    button.btn-green-light {
+      margin: -12px 0;
+      vertical-align: middle;
+
+      @include media-query (1200px) {
+        padding: 0 10px;
+      }
+    }
+
+    td {
+      &.field {
+        white-space: nowrap;
+
+        .refresh {
+          margin: -12px 0 -12px 3px;
+          vertical-align: middle;
+        }
+      }
+
+      .field-medium {
+        width: 200px;
+        min-width: 200px;
+      }
+    }
+
+    @include media-query($tablet-lg) {
+      thead {
+        display: none;
+      }
+
+      tbody {
+        display: block;
+        padding: 12px 0 0;
+        background: $color-white;
+        border-radius: 12px;
+
+        tr {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          justify-content: space-between;
+          padding-top: 12px;
+          border-top: 1px solid #ecf3fa;
+
+          &:first-child {
+            padding-top: 0;
+            border-top: none;
+          }
+
+          &:hover {
+            td {
+              box-shadow: none;
+            }
+          }
+        }
+
+        td {
+          position: relative;
+          display: block;
+          padding: 23px 11px 15px;
+          border-radius: 0;
+          border: none;
+          width: 100%;
+
+          &.field {
+            width: calc(50% - 59px);
+
+            .refresh {
+              margin: 0 0 0 3px;
+            }
+          }
+
+          &.field-button {
+            width: auto;
+          }
+
+          &.field-check {
+            padding-top: 0;
+            width: auto;
+            max-width: 33.3%;
+
+            .checked-single {
+              display: inline-block;
+              width: 24px;
+              vertical-align: middle;
+            }
+
+            &:before {
+              position: static;
+              padding-top: 0;
+              vertical-align: middle;
+            }
+          }
+
+          &:before {
+            position: absolute;
+            top: 0;
+            left: 11px;
+            right: 11px;
+            font-weight: bold;
+            color: rgba($color-text, 0.3);
+            font-size: 16px;
+            line-height: 18px;
+            content: attr(data-head);
+          }
+
+          .chosen-container,
+          .form__field-edit.small,
+          button.btn-green-light {
+            margin: 0;
+          }
+
+          .field-medium {
+            width: calc(100% - 30px);
+            min-width: calc(100% - 30px) !important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.so-tab {
+
+  &__nav {
+    display: flex;
+    
+  }
+
+  &__nav-link {
+    color: #a29fa1;
+    text-decoration: none;
+    padding: 10px 32px;
+    border-bottom: 2px solid #a29fa1;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 600;
+
+    &:hover {
+      color: $color-orange-dark;
+    }
+
+    &.so-tab-active {
+      color: $color-orange-dark;
+      border-color: $color-orange-dark;
+    }
+  }
+
+  &__item {
+
+    &:not(.so-tab-active) {
+      display: none;
+    }
+  }
+}

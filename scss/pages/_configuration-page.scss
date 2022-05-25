@@ -1,0 +1,186 @@
+#genBloc {
+    .form__field-inline {
+        label:first-of-type {
+            min-width: 100px;
+        }
+    }
+}
+
+#cgBloc {
+    .form__field-inline {
+        label:first-of-type {
+            min-width: 262px;
+        }
+
+        display: flex;
+        align-items: center;
+        .form__field-holder{
+            flex-grow: 1;
+        }
+    }
+}
+
+#gdfsBloc {
+    .form__field-inline {
+        label:first-of-type {
+            min-width: 100px;
+        }
+    }
+}
+
+#scrpBloc {
+    .form__field-inline {
+        label:first-of-type {
+            min-width: 135px;
+        }
+    }
+}
+
+#sortBloc {
+    .form__field-inline {
+        label:first-of-type {
+            min-width: 145px;
+        }
+    }
+
+    .form__field-holder {
+        width: 200px;
+        min-width: unset;
+    }
+}
+
+#intlBloc {
+    .form__field-inline {
+        label:first-of-type {
+            min-width: 330px;
+        }
+    }
+}
+
+#widgetBloc {
+    .form__field-inline {
+        label:first-of-type {
+            min-width: 290px;
+        }
+    }
+}
+
+#gsBloc {
+    .form__field-inline {
+        label:first-of-type {
+            min-width: 145px;
+        }
+    }
+}
+
+#matchBloc {
+    .form__field-inline {
+        label:first-of-type {
+            min-width: 285px;
+        }
+    }
+
+    .chkCont {
+        min-width: unset;
+        width: 13px;
+
+        input {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+#modalSynonyms {
+    .form__field-inline {
+        label:first-of-type {
+            min-width: 145px;
+        }
+    }
+}
+
+
+#gaBloc {
+    .form__field-inline {
+        label:first-of-type {
+            min-width: 250px;
+        }
+    }
+
+    .form__field-holder {
+        .chosen-container {
+            width: 80px !important;
+            min-width: unset;
+        }
+
+        .input-group-prepend {
+            width: 70px;
+        }
+    }
+}
+
+#maximum-number-generated-page{
+    width: 115px;
+}
+
+.no-grow{
+    flex-grow: unset !important;
+}
+
+#prioCont {
+    li {
+        display: flex;
+
+        label {
+            width: 10px !important;
+            min-width: unset !important;
+        }
+
+        span {
+            width: 170px;
+        }
+    }
+}
+
+.syn_text {
+    width: 583px;
+}
+
+.syno_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.syno_container {
+    padding-right: 10px;
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+.syno_container::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.syno_container::-webkit-scrollbar {
+    width: 8px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+.syno_container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #dedada;
+}
+
+#searchSynonymsButton{
+    width: 20px;
+}
+
+#add-synonyms{
+    width: 215px;
+}

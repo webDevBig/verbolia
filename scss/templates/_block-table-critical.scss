@@ -1,0 +1,288 @@
+.block-table {
+  margin: 0 0 20px;
+  padding: 3px 0 0;
+  font-size: 15px;
+
+  @include media-query($tablet-lg) {
+    margin-top: 0;
+  }
+
+  table {
+    margin: 0 0 18px;
+    width: 100%;
+  }
+
+  th,
+  td {
+    padding: 17px 11px;
+    font-size: 13.5px;
+    text-align: center;
+    vertical-align: top;
+
+    &:first-child {
+      padding-left: 17px;
+    }
+
+    &:last-child {
+      padding-right: 17px;
+    }
+  }
+
+  .txtleft {
+    text-align: left;
+  }
+
+  .txtright {
+    text-align: right;
+  }
+
+  th {
+    font-size: 14px;
+
+    &.column-action {
+      width: 16px;
+    }
+
+    &.cell-sm {
+      max-width: 90px;
+    }
+
+    &.cell-md {
+      width: 170px;
+      max-width: 170px;
+    }
+
+    &.cell-check {
+      width: 52px;
+    }
+
+    .checked-single label {
+      display: block;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 417px 20px 0;
+
+    &.hide {
+      display: none;
+    }
+
+    &.full-width {
+      padding-right: 0 !important;
+    }
+
+    &:not(.nowrap) {
+      @include media-query(1710px) {
+        padding-right: 317px;
+      }
+
+      @include media-query(1560px) {
+        padding-right: 0;
+      }
+
+      .block-table__search-filter {
+        @include media-query(1710px) {
+          margin-right: -317px;
+          width: 307px;
+        }
+
+        @include media-query(1560px) {
+          margin: 50px 0 0;
+          width: 100%;
+        }
+
+        @include media-query(0px) {
+          margin-top: 0;
+        }
+
+        &.full-width {
+          margin: 30px 0 0;
+          width: 100%;
+
+          .block-search {
+            width: calc(100% - 69px);
+          }
+        }
+      }
+
+      .block-table__actions {
+        @include media-query(0px) {
+          flex-wrap: wrap;
+          margin: 0 -12px;
+          width: calc(100% + 24px);
+
+          .btn {
+            flex: 1 0 calc(50% - 24px);
+            margin: 0 12px 20px;
+            max-width: calc(50% - 24px);
+          }
+        }
+
+        .area {
+          .btn {
+            margin-left: 12px;
+          }
+        }
+      }
+    }
+
+    &.nowrap {
+      @include media-query(0px) {
+        padding-right: 317px;
+      }
+
+      .block-table__search-filter {
+        @include media-query(0px) {
+          margin-right: -317px;
+          width: 307px;
+        }
+      }
+    }
+
+    .show {
+      display: flex;
+    }
+
+    .hide {
+      display: none !important;
+    }
+
+    .lg-width {
+      width: 372px !important;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    width: 100%;
+
+    &.no-toggle-actions {
+      justify-content: flex-start;
+
+      &.block-table__actions-opportunities {
+        justify-content: space-between;
+      }
+
+      .btn:not(:first-child) {
+        margin-left: 22px;
+      }
+    }
+
+    &.left {
+      width: auto;
+    }
+
+    .area-left {
+      .btn {
+        margin-right: 24px;
+      }
+    }
+  }
+
+  &__action-check {
+    .toggle-keyword {
+      padding-top: 14px;
+
+      label {
+        &::after {
+          background: $color-white;
+        }
+      }
+    }
+  }
+
+  &__bulk-action {
+    .btn {
+      margin: 0 0 0 12px;
+    }
+  }
+
+  &__search-filter {
+    margin: 0 -417px 0 0;
+    width: 407px;
+  }
+
+  &__search-select {
+    .block-search {
+      margin-left: 24px;
+      width: 338px;
+
+      @include media-query($tablet) {
+        margin-left: 12px;
+        width: 228px;
+      }
+    }
+
+    select,
+    .chosen-container {
+      width: 228px !important;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    p {
+      margin: 0;
+    }
+
+    .pagination {
+      margin-left: 9px;
+    }
+  }
+}
+
+.block-search {
+  display: inline-block;
+  width: 338px;
+  vertical-align: top;
+
+  @include media-query(1710px) {
+    width: 238px;
+  }
+
+  @include media-query(1560px) {
+    width: calc(100% - 69px);
+  }
+
+  .no-filter & {
+    width: 100% !important;
+  }
+}
+
+.block-filter {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.users-list {
+  margin: -12px 0;
+
+  &__image {
+    display: inline-block;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    vertical-align: middle;
+
+    &:not(:first-child) {
+      margin-left: -22px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
