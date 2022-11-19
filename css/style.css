@@ -270,9 +270,10 @@
 .icon-play3:before {
     content: "\ea1c"
 }
+
 .icon-catalog:before {
     content: "";
-    background-image: url(../images/catalog_hover.svg); 
+    background-image: url(../images/catalog_hover.svg);
     width: 20px;
     height: 20px;
     position: absolute;
@@ -281,9 +282,9 @@
     background-size: cover;
     filter: grayscale(1);
 }
-.navigation .item-link.active .icon-catalog:before
-{
-   filter: grayscale(0);
+
+.navigation .item-link.active .icon-catalog:before {
+    filter: grayscale(0);
 }
 
 .page-single .content,
@@ -3974,7 +3975,8 @@ span.CodeMirror-selectedtext {
     font-size: 18px;
     line-height: 23px;
     color: #9da6ab;
-    text-decoration: none
+    text-decoration: none;
+    text-transform: capitalize;
 }
 
 @media (max-width: 1650px) and (min-width: 1281px) {
@@ -12997,4 +12999,57 @@ td.edit {
     width: 85px;
     display: block;
     margin: 39px 0 0 auto
+}
+
+.item .num_title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 14px;
+    color: #E37D38;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2px 6px;
+    margin: 0 0 0 5px;
+    border-radius: 8px;
+}
+
+.navigation .item ul .item-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+
+button.btn-transparent,
+a.btn-transparent {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #E37D38;
+    height: 40px;
+    border: 1px solid #E37D38;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background-color: transparent;
+    transition: all 0.3s;
+    padding: 0 30px;
+    
+}
+
+button.btn-transparent:hover,
+a.btn-transparent:hover {
+    background-color: #E37D38;
+    border: 1px solid #E37D38;
+    color: white;
+}
+
+.btn-orange {
+    height: 40px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
 }

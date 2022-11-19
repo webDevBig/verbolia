@@ -1,0 +1,183 @@
+.main-content,
+.main-content .content {
+    height: 100%;
+}
+
+.block-table {
+    height: calc(100% - 78px);
+    background: #FFFFFF;
+    border-radius: 6px;
+    padding: 0;
+    text-align: left;
+}
+
+thead th {
+    background: rgba(234, 236, 240, 0.5);
+}
+
+thead th:first-of-type {
+    border-radius: 0 0 0 6px;
+}
+
+thead th:last-child {
+    border-radius: 0 0 6px 0;
+}
+
+.description {
+    width: 475px;
+}
+
+.block-table th {
+    text-align: left;
+    padding: 17px 24px;
+    word-break: break-word;
+}
+
+.block-table td {
+    text-align: left;
+    /*    padding: 24px;*/
+    padding: 0;
+    word-break: break-word;
+    border: none;
+    height: 100%;
+}
+
+.block-table th:first-child {
+    padding-left: 24px;
+}
+
+.block-table td:first-child {
+    padding: 0 0 0 16px;
+}
+
+.block-table td div.table_clm {
+    border-top: 1px solid #EAECF0;
+    padding: 24px;
+}
+
+.block-table tbody tr:first-child div.table_clm {
+    border: none;
+}
+
+.block-table td div.modules {
+    padding-left: 8px;
+}
+
+.block-table td div.permission {
+    padding-right: 8px;
+    padding-left: 37px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.switch {
+    margin: 0;
+}
+
+.switch span {
+    width: 48px;
+    height: 24px;
+}
+
+.switch span:after {
+    width: 20px;
+    height: 20px;
+    top: 2px;
+}
+
+.switch input:checked + span:after {
+    left: 26px;
+}
+
+.lock_icon {
+    opacity: 0.7;
+    margin: 0 0 0 7px;
+}
+
+.check .lock_icon {
+    opacity: 0;
+}
+
+.block-table .form__field-holder {
+    width: auto;
+    min-width: inherit !important;
+    float: left;
+}
+
+.item {
+    position: relative;
+}
+
+.item img {
+    opacity: 0;
+    position: absolute;
+    right: 15px;
+    top: 13px;
+}
+
+.item.show_key img {
+    opacity: 1
+}
+
+
+
+.tooltip {
+    border-radius: 4px;
+    border: 1px solid rgba(91, 81, 81, 0.1);
+    padding: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 125%;
+    position: absolute;
+    top: -100%;
+    z-index: 1;
+    padding: 0;
+    right: 50%;
+    opacity: 0;
+    box-shadow: none;
+}
+
+.lock_icon:hover .tooltip {
+    opacity: 1;
+}
+
+.tooltip-inner {
+    padding: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.tooltip::before {
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-color: transparent rgba(91, 81, 81, 0.1) rgba(91, 81, 81, 0.1) transparent;
+    border-width: 1px;
+    transform: rotate(45deg);
+    z-index: 0;
+    left: 91%;
+    bottom: -6px;
+}
+
+.tooltip .tooltip-inner {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 125%;
+    color: #5B5151;
+    opacity: 1;
+    cursor: default;
+}
+
+
+@media all and (max-width:1024px) {
+    .item img {
+        top: 17px;
+    }
+
+    .tooltip {
+        right: 42%;
+    }
+}

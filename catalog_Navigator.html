@@ -8,10 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Aurore</title>
 
-<!--
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
--->
+    <link rel="stylesheet" href="css/catalog_slider_style.css">
+    <link rel="stylesheet" href="css/splide.min.css">
+
     <link rel="preload" href="css/critical-style.css" as="style">
     <link rel="stylesheet" href="css/critical-style.css">
     <link rel="stylesheet" href="css/style.css">
@@ -121,6 +120,9 @@
                             <a href="feed-import-main.html" class="item-link"><i class="icon-feed-import"></i> Feed import</a>
                         </li>
                         <li class="item">
+                            <a href="recommendations.html" class="item-link"><i class="icon-overview"></i> Recommendations</a>
+                        </li>
+                        <li class="item">
                             <a href="#" class="item-link collapsible"><i class="icon-keyword"></i>
                                 Pages management</a>
                             <ul class="collapsible-content">
@@ -131,6 +133,12 @@
                                     <a href="keyword-management.html" class="item-link">Keyword Management <span class="num_title">342</span></a>
                                 </li>
                             </ul>
+                        </li>
+                          <li class="item">
+                            <a href="keyword_opportunities__main.html" class="item-link  ">
+                                <i class="icon-keyword-suggestions"></i> Keyword Opportunities
+
+                            </a>
                         </li>
                         <li class="item">
                             <a href="keyword-suggestions.html" class="item-link">
@@ -167,6 +175,7 @@
                         <p>152 products</p>
                     </div>
                 </header>
+
                 <!-- table.html -->
                 <div class="block-table">
                     <div class="block-table__header">
@@ -188,7 +197,7 @@
                     </div>
 
                     <div class="table">
-                        <table class="table-checked table-assets table-striped" id="myTable" role="grid">
+                        <table>
 
                             <thead>
                                 <tr>
@@ -205,7 +214,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="modal-open" data-modal="modalProduct_Overview">
+                                <tr data-toggle="modal" data-target="#modalProduct_Overview">
                                     <td>
                                         <div class="table_box">
                                             <div class="img_box">
@@ -259,7 +268,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr class="modal-open" data-modal="modalProduct_Overview">
+                                <tr data-toggle="modal" data-target="#modalProduct_Overview">
                                     <td>
                                         <div class="table_box">
                                             <div class="img_box">
@@ -313,7 +322,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr class="modal-open" data-modal="modalProduct_Overview">
+                                <tr data-toggle="modal" data-target="#modalProduct_Overview">
                                     <td>
                                         <div class="table_box">
                                             <div class="img_box">
@@ -367,7 +376,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr class="modal-open" data-modal="modalProduct_Overview">
+                                <tr data-toggle="modal" data-target="#modalProduct_Overview">
                                     <td>
                                         <div class="table_box">
                                             <div class="img_box">
@@ -421,7 +430,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr class="modal-open" data-modal="modalProduct_Overview">
+                                <tr data-toggle="modal" data-target="#modalProduct_Overview">
                                     <td>
                                         <div class="table_box">
                                             <div class="img_box">
@@ -475,7 +484,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr class="modal-open" data-modal="modalProduct_Overview">
+                                <tr data-toggle="modal" data-target="#modalProduct_Overview">
                                     <td>
                                         <div class="table_box">
                                             <div class="img_box">
@@ -529,7 +538,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr class="modal-open" data-modal="modalProduct_Overview">
+                                <tr data-toggle="modal" data-target="#modalProduct_Overview">
                                     <td>
                                         <div class="table_box">
                                             <div class="img_box">
@@ -583,7 +592,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr class="modal-open" data-modal="modalProduct_Overview">
+                                <tr data-toggle="modal" data-target="#modalProduct_Overview">
                                     <td>
                                         <div class="table_box">
                                             <div class="img_box">
@@ -637,7 +646,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr class="modal-open" data-modal="modalProduct_Overview">
+                                <tr data-toggle="modal" data-target="#modalProduct_Overview">
                                     <td>
                                         <div class="table_box">
                                             <div class="img_box">
@@ -691,7 +700,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr class="modal-open" data-modal="modalProduct_Overview">
+                                <tr data-toggle="modal" data-target="#modalProduct_Overview">
                                     <td>
                                         <div class="table_box">
                                             <div class="img_box">
@@ -745,7 +754,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr class="modal-open" data-modal="modalProduct_Overview">
+                                <tr data-toggle="modal" data-target="#modalProduct_Overview">
                                     <td>
                                         <div class="table_box">
                                             <div class="img_box">
@@ -799,7 +808,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr class="modal-open" data-modal="modalProduct_Overview">
+                                <tr data-toggle="modal" data-target="#modalProduct_Overview">
                                     <td>
                                         <div class="table_box">
                                             <div class="img_box">
@@ -853,7 +862,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr class="modal-open" data-modal="modalProduct_Overview">
+                                <tr data-toggle="modal" data-target="#modalProduct_Overview">
                                     <td>
                                         <div class="table_box">
                                             <div class="img_box">
@@ -911,6 +920,7 @@
                             </tbody>
                         </table>
                     </div>
+
                     <div class="block-table__pagination">
                         <p>1035 Keywords</p>
                         <nav class="pagination">
@@ -947,6 +957,7 @@
                             </button>
                         </nav>
                     </div>
+
                 </div>
 
             </main>
@@ -954,250 +965,550 @@
     </div>
 
 
-
-    <!-- modal Product Overview -->
-    <div id="modalProduct_Overview" class="modal">
-        <div class="modal__inner modal-reveal">
-            <div class="modal__header">
-                <h4>Product Overview</h4>
-                <button class="btn-icon modal__close modal-close"><i class="icon-close"></i></button>
-            </div>
-            <div class="modal__content">
-                <div class="arrow_box">
-                    <button class="arrow arrow_prev">Previous product</button>
-                    <button class="arrow arrow_next">Next product</button>
+    <!-- Modal -->
+    <div class="modal fade" id="modalProduct_Overview" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal__inner" role="document">
+            <div class="modal-content modal__content">
+                <div class="modal-header modal__header">
+                    <h4>Product Overview</h4>
+                    <button type="button" class="close btn-icon modal__close modal-close" data-dismiss="modal" aria-label="Close">
+                        <i class="icon-close"></i>
+                    </button>
                 </div>
-                <div class="info_box">
-                    <div class="slider">
-                    <div class="main_img"></div>
-                    <div class="thumbnail_box">
-                       <button class="arrow arrow_prev"></button>
-                       <div class="thumbnail_img"></div>
-                       <div class="thumbnail_img"></div>
-                       <div class="thumbnail_img"></div>
-                    <button class="arrow arrow_next"></button>
+                <div class="modal-body">
+                    <div class="arrow_box">
+                        <a class="arrow arrow_prev left carousel-control" href="#myCarousel" role="button" data-slide="prev">Previous product</a>
+                        <a class="arrow arrow_next right carousel-control" href="#myCarousel" role="button" data-slide="next">Next product</a>
+                    </div>
+                    <div class="container">
+                        <div id="myCarousel" class="carousel slide" data-interval="false">
+
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <div class="info_box ">
+                                        <div class="slider">
+                                            <div class="splide" aria-label="" id="main-carousel">
+                                                <div class="splide__track">
+                                                    <ul class="splide__list">
+                                                        <li class="splide__slide"> <img src="images/main_img_slider.png" alt=""></li>
+                                                        <li class="splide__slide"> <img src="images/main_img_slider.png" alt=""></li>
+                                                        <li class="splide__slide"> <img src="images/main_img_slider.png" alt=""></li>
+                                                        <li class="splide__slide"> <img src="images/main_img_slider.png" alt=""></li>
+                                                        <li class="splide__slide"> <img src="images/main_img_slider.png" alt=""></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div id="thumbnail-carousel" class="splide" aria-label="">
+                                                <div class="splide__track">
+                                                    <ul class="splide__list">
+                                                        <li class="splide__slide">
+                                                            <img src="images/main_img_slider.png" alt="">
+                                                        </li>
+                                                        <li class="splide__slide">
+                                                            <img src="images/main_img_slider.png" alt="">
+                                                        </li>
+                                                        <li class="splide__slide">
+                                                            <img src="images/main_img_slider.png" alt="">
+                                                        </li>
+                                                        <li class="splide__slide">
+                                                            <img src="images/main_img_slider.png" alt="">
+                                                        </li>
+                                                        <li class="splide__slide">
+                                                            <img src="images/main_img_slider.png" alt="">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                      
+                                          </div>
+
+                                        <div class="info">
+                                            <div class="line">
+                                                <div class="row">
+                                                    <p class="title">Title</p>
+                                                    <p class="devider">......................................</p>
+                                                    <p class="text">Nike Swim Bandor Volley 5”</p>
+                                                </div>
+                                                <div class="stars_box">
+                                                    <img alt="" src="images/star.svg" class="star">
+                                                    <img alt="" src="images/star.svg" class="star">
+                                                    <img alt="" src="images/star.svg" class="star">
+                                                    <img alt="" src="images/star.svg" class="star">
+                                                    <img alt="" src="images/star_transparent.svg" class="star">
+                                                    <p class="rating">(152)</p>
+                                                </div>
+                                            </div>
+                                            <div class="line">
+                                                <div class="row">
+                                                    <p class="title">Description</p>
+                                                    <p class="devider">........................</p>
+                                                    <p class="text">Este banador presenta una combinacion de color. Cintura eleastica y bolsillos interiors y exteriores. Grasias al tejido perfirado </p>
+                                                </div>
+                                            </div>
+                                            <div class="line">
+                                                <div class="row">
+                                                    <p class="title">Brand</p>
+                                                    <p class="devider">..................................</p>
+                                                    <p class="text">Nike</p>
+                                                </div>
+                                                <img alt="" src="images/brand.svg" class="brand_img">
+                                            </div>
+                                            <div class="line line_2row">
+                                                <div class="row">
+                                                    <p class="title">SalePrice</p>
+                                                    <p class="devider">.........................................................................................</p>
+                                                    <p class="text">45</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="title">OriginalPrice</p>
+                                                    <p class="devider">......................................................................</p>
+                                                    <p class="text">100</p>
+                                                </div>
+                                            </div>
+                                            <div class="line line_2row">
+                                                <div class="row">
+                                                    <p class="title">GroupID</p>
+                                                    <p class="devider">..............................................................................</p>
+                                                    <p class="text">45578</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="title">GroupTitle</p>
+                                                    <p class="devider">......................................................................................</p>
+                                                    <p class="text"> /</p>
+                                                </div>
+                                            </div>
+                                            <div class="line">
+                                                <div class="row">
+                                                    <p class="title">Category</p>
+                                                    <p class="devider">............................</p>
+                                                    <p class="text">Clothes</p>
+                                                </div>
+                                            </div>
+                                            <div class="line">
+                                                <div class="row">
+                                                    <p class="title">URL</p>
+                                                    <p class="devider">......................................</p>
+                                                    <p class="text">https://www.intersport.es/nike-swim-banador-volley-5%22-banadores-negro-iic.nikeswim.nessb522.001...</p>
+                                                </div>
+                                                <img alt="" src="images/fluent_open-16-regular.svg" class="open_icon">
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                    <div class="info_box info_keywords block-editor__row-collapse">
+
+                                        <div class="head">
+                                            <p class="title">Keywords</p>
+                                            <p>
+                                                <button class="btn-icon popup-open"><i class="icon-arrow-drop"></i></button>
+                                            </p>
+                                        </div>
+                                        <div class="keywords_box popup-content popup-active show-more-height">
+                                            <p class="keywords">Ropa deporvita</p>
+                                            <p class="keywords">Nike Gs</p>
+                                            <p class="keywords">Camiseta XL</p>
+                                            <p class="keywords">Ropa deporvita</p>
+                                            <p class="keywords">Ropa deporvita</p>
+                                            <p class="keywords">Nike Gs</p>
+                                            <p class="keywords">Camiseta XL</p>
+                                            <p class="keywords">Ropa deporvita</p>
+                                            <p class="keywords">Ropa deporvita</p>
+                                            <p class="keywords">Nike Gs</p>
+                                            <p class="keywords">Camiseta XL</p>
+                                            <p class="keywords">Ropa deporvita</p>
+                                            <p class="keywords">Ropa deporvita</p>
+                                            <p class="keywords">Nike Gs</p>
+                                            <p class="keywords">Camiseta XL</p>
+                                            <p class="keywords show-more-content">Ropa deporvita</p>
+                                            <p class="keywords show-more-content">Ropa deporvita</p>
+                                            <div id="show-more" class="show_more show-more"><a href="javascript:void(0)"><i class="icon-close"></i>Show more</a></div>
+                                            <div id="show-less" class="show_more show-less"><a href="javascript:void(0)">Show less</a></div>
+
+                                        </div>
+                                    </div>
+                                    <div class="info_box info_attributes block-editor__row-collapse">
+                                       
+                                        <div class="head">
+                                            <p class="title">Attributes</p>
+                                            <p>
+                                                <button class="btn-icon popup-open"><i class="icon-arrow-drop"></i></button>
+                                            </p>
+                                        </div>
+
+
+                                        <div class="attributes_box popup-content popup-active">
+                                            <div class="row">
+                                                <p class="title">Marcas</p>
+                                                <div class="icon_box">
+                                                    <div class="icon_attributes icon_filter active" title="Used in filters">
+                                                    </div>
+                                                    <div class="icon_attributes icon_search active" title="Used for product match">
+                                                    </div>
+                                                    <div class="icon_attributes icon_description" title="Used in product description">
+                                                    </div>
+                                                </div>
+                                                <p class="devider">.......................................................................</p>
+                                                <p class="text">Nike</p>
+                                            </div>
+                                            <div class="row">
+                                                <p class="title">Talla</p>
+                                                <div class="icon_box">
+                                                    <div class="icon_attributes icon_filter active" title="Used in filters">
+                                                    </div>
+                                                    <div class="icon_attributes icon_search" title="Used for product match">
+                                                    </div>
+                                                    <div class="icon_attributes icon_description" title="Used in product description">
+                                                    </div>
+                                                </div>
+                                                <p class="devider">.....................................</p>
+                                                <p class="text">39, 38, 37, 39, 38, 37</p>
+                                            </div>
+
+                                            <div class="row">
+                                                <p class="title">Color</p>
+                                                <div class="icon_box">
+                                                    <div class="icon_attributes icon_filter active" title="Used in filters">
+                                                    </div>
+                                                    <div class="icon_attributes icon_search" title="Used for product match">
+                                                    </div>
+                                                    <div class="icon_attributes icon_description" title="Used in product description">
+                                                    </div>
+                                                </div>
+                                                <p class="devider">.......................................................................</p>
+                                                <p class="text">Negro</p>
+                                            </div>
+                                            <div class="row">
+                                                <p class="title">Genero</p>
+                                                <div class="icon_box">
+                                                    <div class="icon_attributes icon_filter active" title="Used in filters">
+                                                    </div>
+                                                    <div class="icon_attributes icon_search" title="Used for product match">
+                                                    </div>
+                                                    <div class="icon_attributes icon_description active" title="Used in product description">
+                                                    </div>
+                                                </div>
+                                                <p class="devider">..............................................................................</p>
+                                                <p class="text">/</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                       
+                                       <div class="info_box info_SKUs block-editor__row-collapse">
+                                        <div class="head">
+                                            <p class="title">SKUs</p>
+                                            <p>
+                                                <button class="btn-icon popup-open"><i class="icon-arrow-drop"></i></button>
+                                            </p>
+                                        </div>
+
+                                        <div class="SKUs_box popup-content popup-active">
+                                            <div class="row">
+                                                <p class="title">1222788</p>
+                                                <div class="img_box">
+                                                    <img alt="" src="images/imageItem.png">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <p class="title">1222788</p>
+                                                <div class="img_box">
+                                                    <img alt="" src="images/imageItem.png">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <p class="title">1222788</p>
+                                                <div class="img_box">
+                                                    <img alt="" src="images/imageItem.png">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <p class="title">1222788</p>
+                                                <div class="img_box">
+                                                    <img alt="" src="images/imageItem.png">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <p class="title">1222788</p>
+                                                <div class="img_box">
+                                                    <img alt="" src="images/imageItem.png">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <p class="title">1222788</p>
+                                                <div class="img_box">
+                                                    <img alt="" src="images/imageItem.png">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item ">
+                                    <div class="info_box ">
+                                        <div class="slider">
+                                            <div class="splide" aria-label="" id="main-carousel2">
+                                                <div class="splide__track">
+                                                    <ul class="splide__list">
+                                                        <li class="splide__slide"> <img src="images/main_img_slider.png" alt=""></li>
+                                                        <li class="splide__slide"> <img src="images/main_img_slider.png" alt=""></li>
+                                                        <li class="splide__slide"> <img src="images/main_img_slider.png" alt=""></li>
+                                                        <li class="splide__slide"> <img src="images/main_img_slider.png" alt=""></li>
+                                                        <li class="splide__slide"> <img src="images/main_img_slider.png" alt=""></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div id="thumbnail-carousel2" class="splide" aria-label="">
+                                                <div class="splide__track">
+                                                    <ul class="splide__list">
+                                                        <li class="splide__slide">
+                                                            <img src="images/main_img_slider.png" alt="">
+                                                        </li>
+                                                        <li class="splide__slide">
+                                                            <img src="images/main_img_slider.png" alt="">
+                                                        </li>
+                                                        <li class="splide__slide">
+                                                            <img src="images/main_img_slider.png" alt="">
+                                                        </li>
+                                                        <li class="splide__slide">
+                                                            <img src="images/main_img_slider.png" alt="">
+                                                        </li>
+                                                        <li class="splide__slide">
+                                                            <img src="images/main_img_slider.png" alt="">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="info">
+                                            <div class="line">
+                                                <div class="row">
+                                                    <p class="title">Title</p>
+                                                    <p class="devider">......................................</p>
+                                                    <p class="text">Nike Swim Bandor Volley 5”</p>
+                                                </div>
+                                                <div class="stars_box">
+                                                    <img alt="" src="images/star.svg" class="star">
+                                                    <img alt="" src="images/star.svg" class="star">
+                                                    <img alt="" src="images/star.svg" class="star">
+                                                    <img alt="" src="images/star.svg" class="star">
+                                                    <img alt="" src="images/star_transparent.svg" class="star">
+                                                    <p class="rating">(152)</p>
+                                                </div>
+                                            </div>
+                                            <div class="line">
+                                                <div class="row">
+                                                    <p class="title">Description</p>
+                                                    <p class="devider">........................</p>
+                                                    <p class="text">Este banador presenta una combinacion de color. Cintura eleastica y bolsillos interiors y exteriores. Grasias al tejido perfirado </p>
+                                                </div>
+                                            </div>
+                                            <div class="line">
+                                                <div class="row">
+                                                    <p class="title">Brand</p>
+                                                    <p class="devider">..................................</p>
+                                                    <p class="text">Nike</p>
+                                                </div>
+                                                <img alt="" src="images/brand.svg" class="brand_img">
+                                            </div>
+                                            <div class="line line_2row">
+                                                <div class="row">
+                                                    <p class="title">SalePrice</p>
+                                                    <p class="devider">.........................................................................................</p>
+                                                    <p class="text">45</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="title">OriginalPrice</p>
+                                                    <p class="devider">......................................................................</p>
+                                                    <p class="text">100</p>
+                                                </div>
+                                            </div>
+                                            <div class="line line_2row">
+                                                <div class="row">
+                                                    <p class="title">GroupID</p>
+                                                    <p class="devider">..............................................................................</p>
+                                                    <p class="text">45578</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="title">GroupTitle</p>
+                                                    <p class="devider">......................................................................................</p>
+                                                    <p class="text"> /</p>
+                                                </div>
+                                            </div>
+                                            <div class="line">
+                                                <div class="row">
+                                                    <p class="title">Category</p>
+                                                    <p class="devider">............................</p>
+                                                    <p class="text">Clothes</p>
+                                                </div>
+                                            </div>
+                                            <div class="line">
+                                                <div class="row">
+                                                    <p class="title">URL</p>
+                                                    <p class="devider">......................................</p>
+                                                    <p class="text">https://www.intersport.es/nike-swim-banador-volley-5%22-banadores-negro-iic.nikeswim.nessb522.001...</p>
+                                                </div>
+                                                <img alt="" src="images/fluent_open-16-regular.svg" class="open_icon">
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                    <div class="info_box info_keywords block-editor__row-collapse">
+
+                                        <div class="head">
+                                            <p class="title">Keywords</p>
+                                            <p>
+                                                <button class="btn-icon popup-open"><i class="icon-arrow-drop"></i></button>
+                                            </p>
+                                        </div>
+                                         <div class="keywords_box popup-content popup-active show-more-height">
+                                            <p class="keywords">Ropa deporvita</p>
+                                            <p class="keywords">Nike Gs</p>
+                                            <p class="keywords">Camiseta XL</p>
+                                            <p class="keywords">Ropa deporvita</p>
+                                            <p class="keywords">Ropa deporvita</p>
+                                            <p class="keywords">Nike Gs</p>
+                                            <p class="keywords">Camiseta XL</p>
+                                            <p class="keywords">Ropa deporvita</p>
+                                            <p class="keywords">Ropa deporvita</p>
+                                            <p class="keywords">Nike Gs</p>
+                                            <p class="keywords">Camiseta XL</p>
+                                            <p class="keywords">Ropa deporvita</p>
+                                            <p class="keywords">Ropa deporvita</p>
+                                            <p class="keywords">Nike Gs</p>
+                                            <p class="keywords">Camiseta XL</p>
+                                            <p class="keywords show-more-content">Ropa deporvita</p>
+                                            <p class="keywords show-more-content">Ropa deporvita</p>
+                                            <div id="show-more" class="show_more show-more"><a href="javascript:void(0)"><i class="icon-close"></i>Show more</a></div>
+                                            <div id="show-less" class="show_more show-less"><a href="javascript:void(0)">Show less</a></div>
+
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="info_box info_attributes block-editor__row-collapse">
+                                       
+                                        <div class="head">
+                                            <p class="title">Attributes</p>
+                                            <p>
+                                                <button class="btn-icon popup-open"><i class="icon-arrow-drop"></i></button>
+                                            </p>
+                                        </div>
+
+
+                                        <div class="attributes_box popup-content popup-active">
+                                            <div class="row">
+                                                <p class="title">Marcas</p>
+                                                <div class="icon_box">
+                                                    <div class="icon_attributes icon_filter active" title="Used in filters">
+                                                    </div>
+                                                    <div class="icon_attributes icon_search active" title="Used for product match">
+                                                    </div>
+                                                    <div class="icon_attributes icon_description" title="Used in product description">
+                                                    </div>
+                                                </div>
+                                                <p class="devider">.......................................................................</p>
+                                                <p class="text">Nike</p>
+                                            </div>
+                                            <div class="row">
+                                                <p class="title">Talla</p>
+                                                <div class="icon_box">
+                                                    <div class="icon_attributes icon_filter" title="Used in filters">
+                                                    </div>
+                                                    <div class="icon_attributes icon_search" title="Used for product match">
+                                                    </div>
+                                                    <div class="icon_attributes icon_description" title="Used in product description">
+                                                    </div>
+                                                </div>
+                                                <p class="devider">.....................................</p>
+                                                <p class="text">39, 38, 37, 39, 38, 37</p>
+                                            </div>
+
+                                            <div class="row">
+                                                <p class="title">Color</p>
+                                                <div class="icon_box">
+                                                    <div class="icon_attributes icon_filter active" title="Used in filters">
+                                                    </div>
+                                                    <div class="icon_attributes icon_search active" title="Used for product match">
+                                                    </div>
+                                                    <div class="icon_attributes icon_description" title="Used in product description">
+                                                    </div>
+                                                </div>
+                                                <p class="devider">.......................................................................</p>
+                                                <p class="text">Negro</p>
+                                            </div>
+                                            <div class="row">
+                                                <p class="title">Genero</p>
+                                                <div class="icon_box">
+                                                    <div class="icon_attributes icon_filter" title="Used in filters">
+                                                    </div>
+                                                    <div class="icon_attributes icon_search active" title="Used for product match">
+                                                    </div>
+                                                    <div class="icon_attributes icon_description active" title="Used in product description">
+                                                    </div>
+                                                </div>
+                                                <p class="devider">..............................................................................</p>
+                                                <p class="text">/</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                       <div class="info_box info_SKUs block-editor__row-collapse">
+                                        <div class="head">
+                                            <p class="title">SKUs</p>
+                                            <p>
+                                                <button class="btn-icon popup-open"><i class="icon-arrow-drop"></i></button>
+                                            </p>
+                                        </div>
+
+                                        <div class="SKUs_box popup-content popup-active">
+                                            <div class="row">
+                                                <p class="title">1222788</p>
+                                                <div class="img_box">
+                                                    <img alt="" src="images/imageItem.png">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <p class="title">1222788</p>
+                                                <div class="img_box">
+                                                    <img alt="" src="images/imageItem.png">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <p class="title">1222788</p>
+                                                <div class="img_box">
+                                                    <img alt="" src="images/imageItem.png">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <p class="title">1222788</p>
+                                                <div class="img_box">
+                                                    <img alt="" src="images/imageItem.png">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <p class="title">1222788</p>
+                                                <div class="img_box">
+                                                    <img alt="" src="images/imageItem.png">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <p class="title">1222788</p>
+                                                <div class="img_box">
+                                                    <img alt="" src="images/imageItem.png">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    </div>
-                    <div class="info">
-                        <div class="line">
-                            <div class="row">
-                                <p class="title">Title</p>
-                                <p class="devider">......................................</p>
-                                <p class="text">Nike Swim Bandor Volley 5”</p>
-                            </div>
-                            <div class="stars_box">
-                                <img alt="" src="images/star.svg" class="star">
-                                <img alt="" src="images/star.svg" class="star">
-                                <img alt="" src="images/star.svg" class="star">
-                                <img alt="" src="images/star.svg" class="star">
-                                <img alt="" src="images/star_transparent.svg" class="star">
-                                <p class="rating">(152)</p>
-                            </div>
-                        </div>
-                        <div class="line">
-                            <div class="row">
-                                <p class="title">Description</p>
-                                <p class="devider">........................</p>
-                                <p class="text">Este banador presenta una combinacion de color. Cintura eleastica y bolsillos interiors y exteriores. Grasias al tejido perfirado </p>
-                            </div>
-                        </div>
-                        <div class="line">
-                            <div class="row">
-                                <p class="title">Brand</p>
-                                <p class="devider">..................................</p>
-                                <p class="text">Nike</p>
-                            </div>
-                            <img alt="" src="images/brand.svg" class="brand_img">
-                        </div>
-                        <div class="line line_2row">
-                            <div class="row">
-                                <p class="title">SalePrice</p>
-                                <p class="devider">.........................................................................................</p>
-                                <p class="text">45</p>
-                            </div>
-                            <div class="row">
-                                <p class="title">OriginalPrice</p>
-                                <p class="devider">......................................................................</p>
-                                <p class="text">100</p>
-                            </div>
-                        </div>
-                        <div class="line line_2row">
-                            <div class="row">
-                                <p class="title">GroupID</p>
-                                <p class="devider">..............................................................................</p>
-                                <p class="text">45578</p>
-                            </div>
-                            <div class="row">
-                                <p class="title">GroupTitle</p>
-                                <p class="devider">......................................................................................</p>
-                                <p class="text"> /</p>
-                            </div>
-                        </div>
-                        <div class="line">
-                            <div class="row">
-                                <p class="title">Category</p>
-                                <p class="devider">............................</p>
-                                <p class="text">Clothes</p>
-                            </div>
-                        </div>
-                        <div class="line">
-                            <div class="row">
-                                <p class="title">URL</p>
-                                <p class="devider">......................................</p>
-                                <p class="text">https://www.intersport.es/nike-swim-banador-volley-5%22-banadores-negro-iic.nikeswim.nessb522.001...</p>
-                            </div>
-                            <img alt="" src="images/fluent_open-16-regular.svg" class="open_icon">
-                        </div>
-
-
-
-                    </div>
-                </div>
-                <div class="info_box info_keywords block-editor__row-collapse">
-
-                    <div class="head">
-                        <p class="title">Keywords</p>
-                        <p>
-                            <button class="btn-icon popup-open"><i class="icon-arrow-drop"></i></button>
-                        </p>
-                    </div>
-                    <div class="keywords_box popup-content popup-active">
-                        <p class="keywords">Ropa deporvita</p>
-                        <p class="keywords">Nike Gs</p>
-                        <p class="keywords">Camiseta XL</p>
-                        <p class="keywords">Ropa deporvita</p>
-                        <p class="keywords">Ropa deporvita</p>
-                        <p class="keywords">Nike Gs</p>
-                        <p class="keywords">Camiseta XL</p>
-                        <p class="keywords">Ropa deporvita</p>
-                        <p class="keywords">Ropa deporvita</p>
-                        <p class="keywords">Nike Gs</p>
-                        <p class="keywords">Camiseta XL</p>
-                        <p class="keywords">Ropa deporvita</p>
-                        <p class="keywords">Ropa deporvita</p>
-                        <p class="keywords">Nike Gs</p>
-                        <p class="keywords">Camiseta XL</p>
-                        <p class="keywords">Ropa deporvita</p>
-                        <p class="keywords">Ropa deporvita</p>
-                        <p class="keywords">Nike Gs</p>
-                        <p class="keywords">Camiseta XL</p>
-                        <p class="keywords">Ropa deporvita</p>
-                        <p class="show_more"><i class="icon-close"></i> Show more</p>
-                    </div>
-                </div>
-                <div class="info_box info_attributes block-editor__row-collapse">
-                    <div class="head">
-                        <p class="title">Attributes</p>
-                        <p>
-                            <button class="btn-icon popup-open"><i class="icon-arrow-drop"></i></button>
-                        </p>
-                    </div>
-
-
-                    <div class="attributes_box popup-content popup-active">
-                        <div class="row">
-                            <p class="title">Marcas</p>
-                            <div class="icon_box">
-                                <div class="icon_attributes icon_filter">
-                                </div>
-                                <div class="icon_attributes icon_search">
-                                </div>
-                                <div class="icon_attributes icon_description">
-                                </div>
-                            </div>
-                            <p class="devider">.......................................................................</p>
-                            <p class="text">Nike</p>
-                        </div>
-                        <div class="row">
-                            <p class="title">Talla</p>
-                            <div class="icon_box">
-                                <div class="icon_attributes icon_filter">
-                                </div>
-                                <div class="icon_attributes icon_search">
-                                </div>
-                                <div class="icon_attributes icon_description">
-                                </div>
-                            </div>
-                            <p class="devider">.....................................</p>
-                            <p class="text">39, 38, 37, 39, 38, 37</p>
-                        </div>
-
-                        <div class="row">
-                            <p class="title">Color</p>
-                            <div class="icon_box">
-                                <div class="icon_attributes icon_filter">
-                                </div>
-                                <div class="icon_attributes icon_search">
-                                </div>
-                                <div class="icon_attributes icon_description">
-                                </div>
-                            </div>
-                            <p class="devider">.......................................................................</p>
-                            <p class="text">Negro</p>
-                        </div>
-                        <div class="row">
-                            <p class="title">Genero</p>
-                            <div class="icon_box">
-                                <div class="icon_attributes icon_filter">
-                                </div>
-                                <div class="icon_attributes icon_search">
-                                </div>
-                                <div class="icon_attributes icon_description">
-                                </div>
-                            </div>
-                            <p class="devider">..............................................................................</p>
-                            <p class="text">/</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="info_box info_SKUs block-editor__row-collapse">
-                    <div class="head">
-                        <p class="title">SKUs</p>
-                        <p>
-                            <button class="btn-icon popup-open"><i class="icon-arrow-drop"></i></button>
-                        </p>
-                    </div>
-
-                    <div class="SKUs_box popup-content popup-active">
-                        <div class="row">
-                            <p class="title">1222788</p>
-                            <div class="img_box">
-                                <img alt="" src="images/imageItem.png">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <p class="title">1222788</p>
-                            <div class="img_box">
-                                <img alt="" src="images/imageItem.png">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <p class="title">1222788</p>
-                            <div class="img_box">
-                                <img alt="" src="images/imageItem.png">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <p class="title">1222788</p>
-                            <div class="img_box">
-                                <img alt="" src="images/imageItem.png">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <p class="title">1222788</p>
-                            <div class="img_box">
-                                <img alt="" src="images/imageItem.png">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <p class="title">1222788</p>
-                            <div class="img_box">
-                                <img alt="" src="images/imageItem.png">
-                            </div>
-                        </div>
-
-                    </div>
                 </div>
 
             </div>
@@ -1225,7 +1536,6 @@
     <script src="scripts/components/multiselect/prism.js"></script>
     <script src="scripts/components/daterangepicker/moment.min.js"></script>
     <script src="scripts/components/daterangepicker/daterangepicker.min.js"></script>
-
     <script src="scripts/components/sortable.min.js"></script>
     <script src="scripts/components/chart.min.js"></script>
     <script src="scripts/components/chosenPopup.js"></script>
@@ -1246,22 +1556,88 @@
     <script src="scripts/components/tableCreateAssets.js"></script>
     <script src="scripts/codemirror/codemirror.js"></script>
     <script src="scripts/codemirror/javascript.js"></script>
-    <script src="scripts/jquery.tablesort3s.js"></script>
-
-<!--
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"></script>
--->
+    <script src="scripts/script_catalogNavigator.js"></script>
 
 
-    <script src="scripts/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="scripts/splide.min.js"></script>
     <script>
         var attributes = document.querySelectorAll('.icon_attributes');
         [].forEach.call(attributes, function(el) {
             el.onclick = function(e) {
                 el.classList.toggle('active');
             }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var thumbnails = new Splide('#thumbnail-carousel', {
+                fixedWidth: 34,
+                fixedHeight: 34,
+                gap: 12,
+                rewind: true,
+                pagination: false,
+                isNavigation: true,
+                focus: 'center',
+            });
+
+            var main = new Splide('#main-carousel', {
+                type: 'fade',
+                rewind: true,
+                pagination: false,
+                arrows: false,
+            });
+
+            main.sync(thumbnails);
+            main.mount();
+            thumbnails.mount();
+
+
+
+            var thumbnails2 = new Splide('#thumbnail-carousel2', {
+                fixedWidth: 34,
+                fixedHeight: 34,
+                gap: 12,
+                rewind: true,
+                pagination: false,
+                isNavigation: true,
+                focus: 'center',
+            });
+
+            var main2 = new Splide('#main-carousel2', {
+                type: 'fade',
+                rewind: true,
+                pagination: false,
+                arrows: false,
+            });
+
+            main2.sync(thumbnails2);
+            main2.mount();
+            thumbnails2.mount();
+        });
+
+        $('.show-more-content').hide();
+
+        $('.show-more').click(function() {
+            $('.show-more-content').show(300);
+            $('.show-less').show();
+            $('.show-less').css({
+                visibility: 'visible'
+            })
+            $('.show-more').hide();
+        });
+
+        $('.show-less').click(function() {
+            $('.show-more-content').hide(150);
+            $('.show-more').show();
+            $(this).hide();
+             $('.show-less').css({
+                visibility: 'hidden'
+            })
         });
 
     </script>

@@ -327,7 +327,7 @@ button {
     top: 87px;
     bottom: 26px;
     margin-left: -17.1%;
-    width: 17.1%
+    width: 18.1%
 }
 
 @media (max-width: 1280px) {
@@ -385,7 +385,7 @@ button {
 
 .navigation .item-link {
     display: block;
-    padding: 15px 25px 14px 47px
+    padding: 15px 20px 14px 47px;
 }
 
 .navigation .item-link.collapsible {
@@ -966,9 +966,9 @@ button {
 }
 
 .block-dashboard__info .item {
-/*    flex: 1 0 calc(25% - 10px);*/
+    /*    flex: 1 0 calc(25% - 10px);*/
     margin: 0 5px 10px;
-/*    max-width: calc(25% - 10px)*/
+    /*    max-width: calc(25% - 10px)*/
 }
 
 @media (max-width: 700px) {
@@ -1194,14 +1194,14 @@ button {
 
 @media (max-width: 1400px) and (min-width: 1281px) {
     .block-dashboard__date {
-/*        flex: 1 0 100%;*/
+        /*        flex: 1 0 100%;*/
         margin-left: 0
     }
 }
 
 @media (max-width: 1130px) {
     .block-dashboard__date {
-/*        flex: 1 0 100%;*/
+        /*        flex: 1 0 100%;*/
         margin-left: 0
     }
 }
@@ -1318,7 +1318,7 @@ button {
 .block-theme__item {
     display: flex;
     flex-direction: column;
-/*    flex: 1 0 calc(33.3% - 26px);*/
+    /*    flex: 1 0 calc(33.3% - 26px);*/
     margin: 0 13px 26px;
     width: calc(33.3% - 26px);
     max-width: calc(33.3% - 26px)
@@ -1326,7 +1326,7 @@ button {
 
 @media screen and (max-width: 1160px) {
     .block-theme__item {
-/*
+        /*
         flex: 1 0 calc(50% - 26px);
         width: calc(50% - 26px);
         max-width: calc(50% - 26px);

@@ -56,13 +56,15 @@ $('.add_link').click(function () {
     newNamediv.setAttribute("class", "form__clm");
     jQuery(newNamediv).append('<label>Link ' + link_number + '</label><select name="" class="linking_select"><option value="1">https://demo.qa.verbolia.com/v/basilik-gaming-mouse</option><option value="2">https://demo.qa.verbolia.com/v/basilik-gaming-mouse</option><option value="3">https://demo.qa.verbolia.com/v/basilik-gaming-mouse</option><option value="4">https://demo.qa.verbolia.com/v/basilik-gaming-mouse</option></select>  <div class="dropdown-select wide linking_select" tabindex="0"><span class="current"></span><div class="list"><div class="dd-search"><input id="txtSearchValue" autocomplete="off" onkeyup="filter()" class="dd-searchbox" type="text"></div><ul><li class="option selected" data-value="1" data-display-text="" tabindex="0">https://demo.qa.verbolia.com/v/basilik-gaming-mouse</li><li class="option " data-value="2" data-display-text="" tabindex="0">https://demo.qa.verbolia.com/v/basilik-gaming-mouse</li><li class="option " data-value="3" data-display-text="" tabindex="0">https://demo.qa.verbolia.com/v/basilik-gaming-mouse</li><li class="option " data-value="4" data-display-text="" tabindex="0">https://demo.qa.verbolia.com/v/basilik-gaming-mouse</li></ul></div></div></div>')
 
-
+    var newTextdiv = document.createElement('div');
+    newTextdiv.setAttribute("class", "form__clm");
+    jQuery(newTextdiv).append('<label>Link text</label><div class="form__field-holder full-width refresh_icon"> <input value = "Basilik gaming mouse" type = "text" ></div>')
 
     //add delete btn input
     var newDeletebtn = document.createElement('a');
     newDeletebtn.setAttribute("class", "delete");
 
-    newSortLdiv.append(newNamediv, newDeletebtn);
+    newSortLdiv.append(newNamediv, newTextdiv, newDeletebtn);
 
     $("#addLinkdiv").append(newSortLdiv);
     //    create_custom_dropdowns();
@@ -87,10 +89,6 @@ $(document).on('click', '#btn-delete-url', function () {
 $(document).on('click', '.delete', function () {
     n--;
     $(this).parents('.row').remove();
-    //    if (n == 0) {
-    //
-    //        $('#noUrl').removeClass('remove')
-    //    }
 
 });
 
@@ -98,7 +96,6 @@ $(document).on('click', '.delete', function () {
 
 
 $('.add_sorting').click(function () {
-    console.log('h')
 
     //create div for url info
     var newSortLdiv = document.createElement('div');
@@ -182,13 +179,13 @@ $(document).on('click', function (event) {
     event.stopPropagation();
 });
 
-function filter() {
-    var valThis = $('#txtSearchValue').val();
-    $('.dropdown-select ul > li').each(function () {
-        var text = $(this).text();
-        (text.toLowerCase().indexOf(valThis.toLowerCase()) > -1) ? $(this).show(): $(this).hide();
-    });
-};
+//function filter() {
+//    var valThis = $('#txtSearchValue').val();
+//    $('.dropdown-select ul > li').each(function () {
+//        var text = $(this).text();
+//        (text.toLowerCase().indexOf(valThis.toLowerCase()) > -1) ? $(this).show(): $(this).hide();
+//    });
+//};
 // Search
 
 // Option click
@@ -286,12 +283,12 @@ $(window).scroll(function (e) {
 });
 
 
-//let addbutton = document.getElementById("addbutton");
-//addbutton.addEventListener("click", function() {
-//  let boxes = document.getElementById("boxes");
-//  let clone = boxes.firstElementChild.cloneNode(true);
-//  boxes.appendChild(clone);
-//});
+let addbutton = document.getElementById("addbutton");
+addbutton.addEventListener("click", function () {
+    let boxes = document.getElementById("boxes");
+    let clone = boxes.firstElementChild.cloneNode(true);
+    boxes.appendChild(clone);
+});
 
 $(document).on('click', '.change_btn_cont', function () {
 
@@ -302,94 +299,92 @@ $(document).on('click', '.change_btn_cont', function () {
 
 
 
-$('.addbutton').click(function () {
-
-    //create main div
-    var newMainDiv = document.createElement('div');
-    newMainDiv.setAttribute("class", "block-options__popup block-slide-popup");
-
-
-    //create field-row
-    var newFieldRow = document.createElement('div');
-    newFieldRow.setAttribute("class", "field-row");
-
-    //create product-matching-rules__holder
-    var newProductMatching = document.createElement('div');
-    newProductMatching.setAttribute("class", "product-matching-rules__holder");
-
-    //add p.Head
-    var newP = document.createElement('p');
-    newP.setAttribute("class", "head");
-    jQuery(newP).append('Search filters')
-
-    //create div
-    var newDivBox = document.createElement('div');
-    newDivBox.setAttribute("class", "bg_box");
-
-    //create div
-    var newPopUpCont = document.createElement('div');
-    newPopUpCont.setAttribute("class", "popup-content popup-content-search_filters");
-
-
-    //add show/hide
-    var newShowHide = document.createElement('a');
-    newShowHide.setAttribute("class", "popup-open change_btn_cont");
-    //    newShowHide.setAttribute("href", "#");
-    jQuery(newShowHide).append('<i class="icon-arrow-drop"></i>')
-
-    //add Field input
-    var newField = document.createElement('div');
-    newField.setAttribute("class", "form__field");
-    jQuery(newField).append('<label>Field</label><div class="form__field-holder full-width"><div class = "dropdown-select wide linking_select chosen-select select-light chosen-container-single chosen-container-single-nosearch" > <span class = "current" ></span><div class = "list"><ul><li class = "option selected"> Product Title</li> <li class = "option "> Product Title </li></ul></div></div></div>')
-
-
-    //add Operator input
-    var newOperator = document.createElement('div');
-    newOperator.setAttribute("class", "form__field");
-    jQuery(newOperator).append('<label>Operator</label><div class="form__field-holder full-width"><div class = "dropdown-select wide linking_select chosen-select select-light" > <span class = "current" ></span><div class = "list"><ul><li class = "option selected"> Contains</li> <li class = "option "> Contains </li></ul></div></div></div>')
-
-    //add Value input
-    var newValue = document.createElement('div');
-    newValue.setAttribute("class", "form__field");
-    jQuery(newValue).append('<label>Value</label><div class="form__field-holder full-width"><div class = "dropdown-select wide linking_select chosen-select select-light" > <span class = "current" ></span><div class = "list"><ul><li class = "option selected"> Blue</li> <li class = "option "> Blue </li></ul></div></div></div>')
-
-
-
-    //add and btn input
-    var newAndbtn = document.createElement('button');
-    newAndbtn.setAttribute("class", "btn btn-black-light small-icon btn-add");
-    jQuery(newAndbtn).append('<i class="icon-add"></i>AND')
-
-    //add or btn input
-    var newOrbtn = document.createElement('button');
-    newOrbtn.setAttribute("class", "btn btn-orange-light small-icon btn-or");
-    jQuery(newOrbtn).append('<i class="icon-add"></i> OR')
-
-
-    //add delete btn input
-    var newDeletebtn = document.createElement('button');
-    newDeletebtn.setAttribute("class", "btn-icon btn-delete");
-
-
-    newFieldRow.append(newField, newOperator, newValue, newAndbtn, newOrbtn, newDeletebtn);
-    newProductMatching.append(newFieldRow);
-    newDivBox.append(newP, newProductMatching);
-    newPopUpCont.append(newDivBox);
-    newMainDiv.append(newShowHide, newPopUpCont);
-
-
-    $(this).parents('.popup-active').find('#boxes').append(newMainDiv);
-    //    $("#boxes").append(newMainDiv);
-    n++;
-
-})
-
+//$('.addbutton').click(function () {
+//
+//    //create main div
+//    var newMainDiv = document.createElement('div');
+//    newMainDiv.setAttribute("class", "block-options__popup block-slide-popup");
+//
+//
+//    //create field-row
+//    var newFieldRow = document.createElement('div');
+//    newFieldRow.setAttribute("class", "field-row");
+//
+//    //create product-matching-rules__holder
+//    var newProductMatching = document.createElement('div');
+//    newProductMatching.setAttribute("class", "product-matching-rules__holder");
+//
+//    //add p.Head
+//    var newP = document.createElement('p');
+//    newP.setAttribute("class", "head");
+//    jQuery(newP).append('Search filters')
+//
+//    //create div
+//    var newDivBox = document.createElement('div');
+//    newDivBox.setAttribute("class", "bg_box");
+//
+//    //create div
+//    var newPopUpCont = document.createElement('div');
+//    newPopUpCont.setAttribute("class", "popup-content popup-content-search_filters");
+//
+//
+//    //add show/hide
+//    var newShowHide = document.createElement('a');
+//    newShowHide.setAttribute("class", "popup-open change_btn_cont");
+//    //    newShowHide.setAttribute("href", "#");
+//    jQuery(newShowHide).append('<i class="icon-arrow-drop"></i>')
+//
+//    //add Field input
+//    var newField = document.createElement('div');
+//    newField.setAttribute("class", "form__field");
+//    jQuery(newField).append('<label>Field</label><div class="form__field-holder full-width"><div class = "dropdown-select wide linking_select chosen-select select-light chosen-container-single chosen-container-single-nosearch" > <span class = "current" ></span><div class = "list"><ul><li class = "option selected"> Product Title</li> <li class = "option "> Product Title </li></ul></div></div></div>')
+//
+//
+//    //add Operator input
+//    var newOperator = document.createElement('div');
+//    newOperator.setAttribute("class", "form__field");
+//    jQuery(newOperator).append('<label>Operator</label><div class="form__field-holder full-width"><div class = "dropdown-select wide linking_select chosen-select select-light" > <span class = "current" ></span><div class = "list"><ul><li class = "option selected"> Contains</li> <li class = "option "> Contains </li></ul></div></div></div>')
+//
+//    //add Value input
+//    var newValue = document.createElement('div');
+//    newValue.setAttribute("class", "form__field");
+//    jQuery(newValue).append(' <label>Value</label><div class="form__field-holder full-width"><input type="text" placeholder="Value"></div>')
+//
+//
+//
+//    //add and btn input
+//    var newAndbtn = document.createElement('button');
+//    newAndbtn.setAttribute("class", "btn btn-black small-icon btn-add");
+//    jQuery(newAndbtn).append('<i class="icon-add"></i>AND')
+//
+//    //add or btn input
+//    var newOrbtn = document.createElement('button');
+//    newOrbtn.setAttribute("class", "btn btn-orange-light small-icon btn-or");
+//    jQuery(newOrbtn).append('<i class="icon-add"></i> OR')
+//
+//
+//    //add delete btn input
+//    var newDeletebtn = document.createElement('button');
+//    newDeletebtn.setAttribute("class", "btn-icon btn-delete");
+//
+//
+//    newFieldRow.append(newField, newOperator, newValue, newAndbtn, newOrbtn, newDeletebtn);
+//    newProductMatching.append(newFieldRow);
+//    newDivBox.append(newP, newProductMatching);
+//    newPopUpCont.append(newDivBox);
+//    newMainDiv.append(newShowHide, newPopUpCont);
+//
+//
+//    $(this).parents('.popup-active').find('#boxes').append(newMainDiv);
+//    //    $("#boxes").append(newMainDiv);
+//    n++;
+//
+//})
+//
 
 // caching the elements
-var inputText = document.getElementById("addH1Text"),
-    h2 = document.getElementById("h2"),
-    span = document.getElementsByClassName('.block-editor__row_h1 .chosen-choices'),
-    div = document.getElementById('textDiv'),
+
+var div = document.getElementById('textDiv'),
     value = document.getElementById('value')
 
 
@@ -415,8 +410,8 @@ for (let option of browsers.options) {
         let p = document.createElement("span");
         let deleteItem = document.createElement("a");
         deleteItem.setAttribute("class", "deleteItem");
-        
-        
+
+
         input_text = document.createElement("span");
         input_text.setAttribute("role", "textbox");
         input_text.setAttribute("id", "textEditSpan");
@@ -491,5 +486,212 @@ $(document).on('click', '.edit_h1_close', function () {
 $(document).on('click', '.deleteItem', function () {
 
     $(this).parents('.optionText').remove();
-   
+
 });
+
+
+
+
+// Meta description
+var divDescription = document.getElementById('textDivDescription'),
+    valueDescription = document.getElementById('valueDescription')
+
+
+
+var textEditSpanDescription = document.getElementById('textEditSpanDescription')
+textEditSpanDescription.textContent = document.getElementById('Description_generated_text').innerHTML;
+
+var textDescription = textEditSpanDescription.textContent + ' ';
+
+
+let input_textDescription
+
+inputDescription.onfocus = function () {
+    browsersDescription.style.display = 'block';
+};
+
+for (let option of browsersDescription.options) {
+    option.onclick = function () {
+        let option_item = document.createElement("div");
+        option_item.setAttribute("class", "optionText");
+
+
+        let p = document.createElement("span");
+        let deleteItem = document.createElement("a");
+        deleteItem.setAttribute("class", "deleteItem");
+        
+        
+        input_textDescription = document.createElement("span");
+        input_textDescription.setAttribute("role", "textbox");
+        input_textDescription.setAttribute("id", "textEditSpan");
+        input_textDescription.setAttribute("class", "textEdit");
+        input_textDescription.setAttribute("contenteditable", "");
+
+
+        inputDescription.value = option.value;
+
+        p.append(inputDescription.value);
+        option_item.append(p, deleteItem)
+        divDescription.append(option_item);
+        divDescription.append(input_textDescription);
+
+        browsersDescription.style.display = 'none';
+        inputDescription.value = '';
+    }
+};
+
+
+inputDescription.oninput = function () {
+    currentFocus = -1;
+    var text = inputDescription.value.toUpperCase();
+    for (let option of browsersDescription.options) {
+        if (option.value.toUpperCase().indexOf(text) > -1) {
+            option.style.display = "block";
+        } else {
+            option.style.display = "none";
+        }
+    };
+}
+var currentFocus = -1;
+inputDescription.onkeydown = function (e) {
+    if (e.keyCode == 40) {
+        currentFocus++
+        addActive(browsersDescription.options);
+    } else if (e.keyCode == 38) {
+        currentFocus--
+        addActive(browsersDescription.options);
+    } else if (e.keyCode == 13) {
+        e.preventDefault();
+        if (currentFocus > -1) {
+            /*and simulate a click on the "active" item:*/
+            if (browsersDescription.options) browsersDescription.options[currentFocus].click();
+        }
+    }
+}
+
+function addActive(x) {
+    if (!x) return false;
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    x[currentFocus].classList.add("active");
+}
+
+function removeActive(x) {
+    for (var i = 0; i < x.length; i++) {
+        x[i].classList.remove("active");
+    }
+}
+
+
+$(document).on('click', '.edit_Description_close', function () {
+    text = divDescription.innerHTML;
+    console.log(divDescription.textContent)
+    document.getElementById("Description_generated_text").innerHTML = text
+
+});
+
+
+
+
+
+
+// Meta Title
+var divTitle = document.getElementById('textDivTitle'),
+    valueTitle = document.getElementById('valueTitle')
+
+
+
+var textEditSpanTitle = document.getElementById('textEditSpanTitle')
+textEditSpanTitle.textContent = document.getElementById('Title_generated_text').innerHTML;
+
+var textTitle = textEditSpanTitle.textContent + ' ';
+
+
+let input_textTitle
+
+inputTitle.onfocus = function () {
+    browsersTitle.style.display = 'block';
+};
+
+for (let option of browsersTitle.options) {
+    option.onclick = function () {
+        let option_item = document.createElement("div");
+        option_item.setAttribute("class", "optionText");
+
+
+        let p = document.createElement("span");
+        let deleteItem = document.createElement("a");
+        deleteItem.setAttribute("class", "deleteItem");
+        
+        
+        input_textTitle = document.createElement("span");
+        input_textTitle.setAttribute("role", "textbox");
+        input_textTitle.setAttribute("id", "textEditSpan");
+        input_textTitle.setAttribute("class", "textEdit");
+        input_textTitle.setAttribute("contenteditable", "");
+
+
+        inputTitle.value = option.value;
+
+        p.append(inputTitle.value);
+        option_item.append(p, deleteItem)
+        divTitle.append(option_item);
+        divTitle.append(input_textTitle);
+
+        browsersTitle.style.display = 'none';
+        inputTitle.value = '';
+    }
+};
+
+
+inputTitle.oninput = function () {
+    currentFocus = -1;
+    var text = inputTitle.value.toUpperCase();
+    for (let option of browsersTitle.options) {
+        if (option.value.toUpperCase().indexOf(text) > -1) {
+            option.style.display = "block";
+        } else {
+            option.style.display = "none";
+        }
+    };
+}
+var currentFocus = -1;
+inputTitle.onkeydown = function (e) {
+    if (e.keyCode == 40) {
+        currentFocus++
+        addActive(browsersTitle.options);
+    } else if (e.keyCode == 38) {
+        currentFocus--
+        addActive(browsersTitle.options);
+    } else if (e.keyCode == 13) {
+        e.preventDefault();
+        if (currentFocus > -1) {
+            /*and simulate a click on the "active" item:*/
+            if (browsersTitle.options) browsersTitle.options[currentFocus].click();
+        }
+    }
+}
+
+function addActive(x) {
+    if (!x) return false;
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    x[currentFocus].classList.add("active");
+}
+
+function removeActive(x) {
+    for (var i = 0; i < x.length; i++) {
+        x[i].classList.remove("active");
+    }
+}
+
+
+$(document).on('click', '.edit_Title_close', function () {
+    text = divTitle.innerHTML;
+    console.log(divTitle.textContent)
+    document.getElementById("Title_generated_text").innerHTML = text
+
+});
+

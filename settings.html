@@ -1,0 +1,1308 @@
+<!doctype html>
+<html lang="en">
+<!--head.html-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aurore</title>
+    <link href='css/editor_style.css' rel='stylesheet' type='text/css' />
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@4.0.10/js/froala_editor.pkgd.min.js'></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/plugins/emoticons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/plugins/emoticons.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/plugins/paragraph_format.min.js"></script>
+
+
+    <link rel="preload" href="css/critical-style.css" as="style">
+    <link rel="stylesheet" href="css/critical-style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/keyword-edition_style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <!-- header-panel-top.html -->
+            <div class="header__panel-top">
+                <a href="" class="logo"><img src="images/logo.png" alt="Aurore"></a>
+                <div class="header__holder">
+                    <div class="notification-block">
+                        <span class="popup-open">
+                            <span class="notification-block__icon">
+                                <i class="icon-bell"></i>
+                                <span class="count">1</span>
+                            </span>
+                        </span>
+                        <div class="popup-content">
+                            <div class="notification-block__head">
+                                <span class="title">Notifications</span>
+                                <span class="count">1</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <p><strong>Duplicate content</strong> - We have detected keywords with a high level of duplication</p>
+                                    <p class="panel">
+                                        <span>Today at 15:13</span>
+                                        <a href="#">Mark as unread</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p><strong>Keyword opportunities</strong> - New keywords opportunities have been found</p>
+                                    <p class="panel">
+                                        <span>Today at 15:13</span>
+                                        <a href="#">Mark as unread</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p><strong>Duplicate content</strong> - We have detected keywords with a high level of duplication</p>
+                                    <p class="panel">
+                                        <span>Today at 15:13</span>
+                                        <a href="#">Mark as read</a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="user-block">
+                        <span class="popup-open">
+                            <span class="user-block__image">
+                                <img src="images/user-image.jpg" alt="user name">
+                            </span>
+                            <span class="user-block__name">Harry Potter</span>
+                        </span>
+                        <div class="popup-content">
+                            <ul>
+                                <li><a href="user-account.html">My account</a></li>
+                                <li><a href="#">Log out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-toggle-sidebar"><i class="icon-menu"></i></button>
+            </div>
+        </header>
+        <div class="main-content">
+            <!-- sidebar.html -->
+            <div class="sidebar">
+                <div class="form__field-holder">
+                    <select data-placeholder="Select web site" class="chosen-select select-dark">
+                        <option></option>
+                        <option>Kazidomi</option>
+                        <option>Waio</option>
+                    </select>
+                </div>
+                <nav class="navigation">
+                    <ul>
+                        <li class="item">
+                            <a href="dashboard.html" class="item-link"><i class="icon-overview"></i> Dashboard</a>
+                        </li>
+                        <li class="item">
+                            <a href="catalog_Navigator.html" class="item-link"><i class="icon-catalog"></i> Catalog Navigator</a>
+                        </li>
+                        <li class="item">
+                            <a href="configuration.html" class="item-link"><i class="icon-configuration"></i> Configuration</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="item-link collapsible"><i class="icon-theme"></i> Theme</a>
+                            <ul class="collapsible-content">
+                                <li class="item">
+                                    <a href="theme.html" class="item-link">Theme Editor</a>
+                                </li>
+                                <li class="item">
+                                    <a href="theme-ressources.html" class="item-link">Ressources</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--
+                        <li class="item">
+                            <a href="ressources.html" class="item-link"><i class="icon-keyword"></i> Ressources</a>
+                        </li>
+-->
+                        <li class="item">
+                            <a href="feed-import-main.html" class="item-link"><i class="icon-feed-import"></i> Feed import</a>
+                        </li>
+                        <li class="item">
+                            <a href="recommendations.html" class="item-link"><i class="icon-overview"></i> Recommendations</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="item-link collapsible collapsible-active"><i class="icon-keyword"></i>
+                                Pages management</a>
+                            <ul class="collapsible-content">
+                                <li class="item">
+                                    <a href="keyword-edition.html" class="item-link active">Tag Management </a>
+                                </li>
+                                <li class="item">
+                                    <a href="keyword-management.html" class="item-link">Keyword Management</a>
+                                </li>
+                            </ul>
+                        </li>
+                         <li class="item">
+                            <a href="keyword_opportunities__main.html" class="item-link  ">
+                                <i class="icon-keyword-suggestions"></i> Keyword Opportunities
+
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="keyword-suggestions.html" class="item-link">
+                                <i class="icon-keyword-suggestions"></i> Keyword suggestions
+                                <i class="icon-notification tooltip-sidebar tooltip-bottom" data-tooltip="You have new keyword suggestions"></i>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="item-link"><i class="icon-features-management"></i> Features Management</a>
+                        </li>
+                        <li class="item">
+                            <a href="users.html" class="item-link"><i class="icon-users"></i> Users</a>
+                        </li>
+                        <li class="item">
+                            <a href="website.html" class="item-link"><i class="icon-website"></i> Website</a>
+                        </li>
+                        <li class="item">
+                            <a href="distribution.html" class="item-link"><i class="icon-distribution"></i>Distribution page</a>
+                        </li>
+                        <li class="item">
+                            <a href="documentation.html" class="item-link"><i class="icon-content-mamagement"></i>Documentation</a>
+                        </li>
+                        <li class="item">
+                            <a href="product-list.html" class="item-link"><i class="icon-product-list"></i>Product list</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <main id="totalChartConfig" class="content">
+                <!-- content-header.html -->
+                <header class="content__header">
+                    <div class="block-editor__row block-editor__head">
+                        <h1>Keyword Editor</h1>
+                        <h2>Hogwarts castle lego</h2>
+                    </div>
+                </header>
+                <!-- block-editor -->
+                <section class="block-editor">
+                    <div class="block-dashboard__info center fixedElement">
+                        <div class="item"><span class="title">Keyword</span><strong>Hogwarts castle lego</strong></div>
+                        <div class="item"><span class="title">URL</span><strong class="link"><a href="#">www.yourwebsite.com/verbolia.verbolia</a></strong></div>
+                        <div class="item"><span class="title">Number of products</span><strong>20</strong></div>
+                        <div class="item"><span class="title">AMS</span><strong>20</strong></div>
+                        <div class="item"><span class="title">Indexed</span><strong class="index"><span class="indexed green"></span></strong></div>
+                    </div>
+                    <div class="block-dashboard__panel">
+                        <div class="block-dashboard__info large">
+                            <div class="item"><span class="title tooltops_box">Revenue <button class="btn-icon btn-tooltip" data-tooltip="<span>How is this revenue calculated?</span><p>When a user lands on your website via<br> a Verbolia page, and this user makes a<br> transaction within 3 days, then we're<br> taking the revenue of this transaction<br> into consideration.</p>"><i class="icon-info"></i></button></span><strong>$100</strong>
+                                <span class="serp-info up">50%</span>
+                            </div>
+                            <div class="item"><span class="title">SEO visits</span><strong>20</strong>
+                                <span class="serp-info up">50%</span>
+                            </div>
+                            <div class="item"><span class="title">SEA visits</span><strong>20</strong><span class="serp-info down">50%</span></div>
+                            <div class="item "><span class="title">Other visits</span><strong>20</strong><span class="serp-info up">50%</span></div>
+                            <div class="item"><span class="title">Last visit by Google</span><strong>20.09.20</strong></div>
+                            <!--                        </div>-->
+                            <div class="block-dashboard__date">
+                                <div class="calendar">
+                                    <span class="calendar__field">
+                                        <i class="icon-calendar"></i>
+                                        <input class="calendar__data" type="text" readonly="readonly">
+                                    </span>
+                                </div>
+                                <div class="chart-change-data">
+                                    Last
+                                    <a href="#" data-period="7days" class="active">7d</a>
+                                    <a href="#" data-period="1month">1m</a>
+                                    <a href="#" data-period="3month">3m</a>
+                                    <a href="#" data-period="6month">6m</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="chartPositionHistory" class="block-dashboard__chart" data-type="line" data-min-size="5000" data-max-size="20000" data-step-size="5000">
+                        <div class="chart-change-config">
+                            <a href="#" data-config="position-history" class="active">Position history</a>
+                        </div>
+                        <canvas class="chart" height="100"></canvas>
+                    </div>
+                    <div id="chartCrawlRate" class="block-dashboard__chart" data-type="lineStep" data-min-size="5000" data-max-size="21000" data-step-size="5000">
+                        <div class="chart-change-config">
+                            <a href="#" data-config="crawl-rate" class="active">Crawl rate</a>
+                        </div>
+                        <canvas class="chart" height="100"></canvas>
+                    </div>
+                    <div id="chartInformationVisits" class="block-dashboard__chart" data-type="line" data-min-size="5000" data-max-size="21000" data-step-size="5000">
+                        <div class="chart-change-config">
+                            <a href="#" data-config="information-all-visits" class="active">All visits</a>
+                            <a href="#" data-config="information-seo-visits">SEO visits</a>
+                            <a href="#" data-config="information-sea-visits">SEA visits</a>
+                        </div>
+                        <canvas class="chart" height="100"></canvas>
+                    </div>
+
+                    <div class="block-editor__row block-editor__row-collapse parent-popup-active block-editor__content fallback_search">
+                        <div class="head">
+                            <p>Fallback search</p>
+                            <p>
+                                <button class="btn-icon popup-open"><i class="icon-arrow-drop"></i></button>
+                            </p>
+                        </div>
+                        <div class="block-editor__holder popup-content popup-active">
+                            <div class="holder">
+                                <div class="row_box">
+                                    <div class="form-group">
+                                        <input type="checkbox" id="use_search" checked>
+                                        <label for="links">Use fallback search if the page contains</label>
+                                    </div>
+                                    <div class="number">
+                                        <input type="text" value="1" id="id_form-0-quantity">
+                                        <div class="arrow_box">
+                                            <span class="plus"></span>
+                                            <span class="minus"></span>
+                                        </div>
+                                    </div>
+                                    <p>product(s) or less</p>
+                                </div>
+                                <form class="form fallback_search_form" id="add_rule">
+                                    <div class="row">
+                                        <div class="form__field">
+                                            <label for="searchword">Select all products matching searchword</label>
+                                            <div class="form__field-holder full-width">
+                                                <input id="searchword" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form__field">
+                                            <label for="searchword-in-field">Fields</label>
+                                            <div class="form__field-holder full-width">
+                                                <select id="searchword-in-field" data-placeholder="" class="chosen-select select-light" multiple="multiple">
+                                                    <option>Maje</option>
+                                                    <option>Chanel</option>
+                                                    <option>Sandro</option>
+                                                    <option>Maje</option>
+                                                    <option>Chanel</option>
+                                                    <option>Armani</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="boxes" class="boxes">
+                                        <div class="block-options__popup">
+                                            <a class="change_btn_cont"><i class="icon-arrow-drop"></i></a>
+                                            <div class="popup-content popup-content-search_filters">
+                                                <div class="bg_box">
+                                                    <p class="head">Search filters</p>
+                                                    <div class="product-matching-rules__holder">
+                                                        <div class="field-row">
+                                                            <div class="form__field">
+                                                                <label>Field</label>
+                                                                <div class="form__field-holder full-width">
+                                                                    <select data-placeholder="Product Title" class="chosen-select-nosearch">
+                                                                        <option></option>
+                                                                        <option>Product title</option>
+                                                                        <option>Product title</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form__field">
+                                                                <label>Operator</label>
+                                                                <div class="form__field-holder full-width">
+                                                                    <select data-placeholder="Contains" class="chosen-select-nosearch">
+                                                                        <option></option>
+                                                                        <option>Contains</option>
+                                                                        <option>Contains</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form__field">
+                                                                <label>Value</label>
+                                                                <div class="form__field-holder full-width">
+                                                                    <select data-placeholder="Blue" class="chosen-select-nosearch">
+                                                                        <option></option>
+                                                                        <option>Blue</option>
+                                                                        <option>Blue</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <button class="btn btn-black-light small-icon btn-add"><i class="icon-add"></i> AND</button>
+                                                            <button class="btn btn-orange-light small-icon btn-or"><i class="icon-add"></i> OR</button>
+                                                            <button class="btn-icon btn-delete">
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--                                            <p class="head">Also add products matching</p>-->
+
+                                                <div class="product-matching-rules__holder second hide">
+                                                    <div class="field-row">
+                                                        <div class="form__field">
+                                                            <label>Field</label>
+                                                            <div class="form__field-holder full-width">
+                                                                <select data-placeholder="Field" class="chosen-select-nosearch">
+                                                                    <option></option>
+                                                                    <option>Product title</option>
+                                                                    <option>Product title</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form__field">
+                                                            <label>Operator</label>
+                                                            <div class="form__field-holder full-width">
+                                                                <select data-placeholder="Operator" class="chosen-select-nosearch">
+                                                                    <option></option>
+                                                                    <option>Contains</option>
+                                                                    <option>Contains</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form__field">
+                                                            <label>Value</label>
+                                                            <div class="form__field-holder full-width">
+                                                                <select data-placeholder="Blue" class="chosen-select-nosearch">
+                                                                    <option></option>
+                                                                    <option>Blue</option>
+                                                                    <option>Blue</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="actions">
+                                                            <button class="btn btn-black small-icon btn-add"><i class="icon-add"></i> ADD</button>
+                                                            <button class="btn btn-orange-light small-icon btn-or"><i class="icon-add"></i> OR</button>
+                                                            <button class="btn-icon btn-delete"></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row-cloning">
+                                                    <div class="form__field">
+                                                        <label>Field</label>
+                                                        <div class="form__field-holder full-width">
+                                                            <select data-placeholder="Field">
+                                                                <option></option>
+                                                                <option>Product title</option>
+                                                                <option>Product title</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__field">
+                                                        <label>Operator</label>
+                                                        <div class="form__field-holder full-width">
+                                                            <select data-placeholder="Operator">
+                                                                <option></option>
+                                                                <option>Contains</option>
+                                                                <option>Contains</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__field">
+                                                        <label>Value</label>
+                                                        <div class="form__field-holder full-width">
+                                                            <select data-placeholder="Blue" class="chosen-select-nosearch">
+                                                                <option></option>
+                                                                <option>Blue</option>
+                                                                <option>Blue</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="actions">
+                                                        <button class="btn btn-black small-icon btn-add"><i class="icon-add"></i> ADD</button>
+                                                        <button class="btn btn-orange small-icon btn-or"><i class="icon-add"></i> OR</button>
+                                                        <button class="btn-icon btn-delete">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form__action">
+                                        <div class="form_action_top">
+                                            <a class="btn btn-orange addbutton" id="addbutton"><i class="icon-add"></i> Add rule</a>
+                                            <div class="check_box">
+                                                
+
+                                                <p><span class="count">15</span> products selected</p>
+                                                <button class="btn btn-transparent changed_btn"></button>
+
+                                            </div>
+                                        </div>
+                                        <div class="btn_box">
+
+                                            <button class="btn btn-transparent cancel">Cancel</button>
+                                            <button class="btn btn-orange btn_ok">OK</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+                    <div class="block-editor__row block-editor__row-collapse parent-popup-active block-editor__content linking">
+                        <div class="head">
+                            <p class="tooltops_box">Linking<button class="btn-icon btn-tooltip" data-tooltip="<span>Do you want to change template <br> for all keywords?</span><br>
+                                <p>Go to configuration to edit the template</p>"><i class="icon-info"></i></button></p>
+                            <button class="btn-icon popup-open"><i class="icon-arrow-drop"></i></button>
+                        </div>
+                        <div class="block-editor__holder popup-content popup-active">
+                            <div class="holder">
+                                <form class="form Linking_form">
+                                    <div class="form-group">
+                                        <input type="checkbox" id="links" checked onchange="valueChanged()">
+                                        <label for="links">Select manually the links to display on the page</label>
+                                    </div>
+                                    <div class="form_box" id="show_links">
+                                        <div id="addLinkdiv">
+                                            <div class="row">
+                                                <div class="form__clm">
+                                                    <label>Link 1</label>
+                                                    <select name="" class="linking_select">
+                                                        <option value="1">https://demo.qa.verbolia.com/v/basilik-gaming-mouse</option>
+                                                        <option value="2">https://demo.qa.verbolia.com/v/basilik-gaming-mouse</option>
+                                                        <option value="3">https://demo.qa.verbolia.com/v/basilik-gaming-mouse</option>
+                                                        <option value="4">https://demo.qa.verbolia.com/v/basilik-gaming-mouse</option>
+                                                    </select>
+
+                                                    <div class="dropdown-select wide linking_select" tabindex="0"><span class="current"></span>
+                                                        <div class="list">
+                                                            <div class="dd-search"><input id="txtSearchValue" autocomplete="off" onkeyup="filter()" class="dd-searchbox" type="text"></div>
+                                                            <ul>
+                                                                <li class="option selected" data-value="1" data-display-text="" tabindex="0">https://demo.qa.verbolia.com/v/basilik-gaming-mouse</li>
+                                                                <li class="option " data-value="2" data-display-text="" tabindex="0">https://demo.qa.verbolia.com/v/basilik-gaming-mouse</li>
+                                                                <li class="option " data-value="3" data-display-text="" tabindex="0">https://demo.qa.verbolia.com/v/basilik-gaming-mouse</li>
+                                                                <li class="option " data-value="4" data-display-text="" tabindex="0">https://demo.qa.verbolia.com/v/basilik-gaming-mouse</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="form__clm">
+                                                    <label>Link text</label>
+                                                    <div class="form__field-holder full-width">
+                                                        <input value="Basilik gaming mouse" type="text">
+                                                    </div>
+                                                </div>
+                                                <a class="delete"></a>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="form__clm">
+                                                    <label>Link 2</label>
+                                                    <div class="dropdown-select wide linking_select" tabindex="0"><span class="current"></span>
+                                                        <div class="list">
+                                                            <div class="dd-search"><input id="txtSearchValue" autocomplete="off" onkeyup="filter()" class="dd-searchbox" type="text"></div>
+                                                            <ul>
+                                                                <li class="option selected" data-value="1" data-display-text="" tabindex="0">https://demo.qa.verbolia.com/v/basilik-gaming-mouse</li>
+                                                                <li class="option " data-value="2" data-display-text="" tabindex="0">https://demo.qa.verbolia.com/v/basilik-gaming-mouse</li>
+                                                                <li class="option " data-value="3" data-display-text="" tabindex="0">https://demo.qa.verbolia.com/v/basilik-gaming-mouse</li>
+                                                                <li class="option " data-value="4" data-display-text="" tabindex="0">https://demo.qa.verbolia.com/v/basilik-gaming-mouse</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="form__clm">
+                                                    <label>Link text</label>
+                                                    <div class="form__field-holder full-width refresh_icon">
+                                                        <input value="Basilik gaming mouse" type="text">
+                                                    </div>
+                                                </div>
+                                                <a class="delete"></a>
+
+                                            </div>
+                                        </div>
+                                        <a class="btn btn-orange small-icon add_link"><i class="icon-add"></i>Add new link</a>
+                                        <div class="form-group">
+                                            <input type="checkbox" id="auto" checked>
+                                            <label for="auto">Allow to fill automatically the linking section with other URLs</label>
+                                        </div>
+                                    </div>
+                                    <div class="form__action">
+
+                                        <div class="btn_box">
+
+                                            <button class="btn btn-transparent cancel">Cancel</button>
+                                            <button class="btn btn-orange btn_ok">OK</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-editor__row block-editor__row-collapse parent-popup-active product-matching-rules-block  block-editor__content ">
+                        <div class="head">
+                            <p>Product matching rules</p>
+                            <p>
+                                <button class="btn-icon popup-open"><i class="icon-arrow-drop"></i></button>
+                            </p>
+                        </div>
+                        <div class="block-editor__holder popup-content popup-active">
+                            <div class="holder">
+                                <form class="form product-matching-rules">
+                                    <div class="row">
+                                        <div class="form__field">
+                                            <label for="searchword">Select all products matching searchword</label>
+                                            <div class="form__field-holder full-width">
+                                                <input id="searchword" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form__field">
+                                            <label for="searchword-in-field">In field</label>
+                                            <div class="form__field-holder full-width">
+                                                <select id="searchword-in-field" data-placeholder="" class="chosen-select select-light" multiple="multiple">
+                                                    <option>Maje</option>
+                                                    <option>Chanel</option>
+                                                    <option>Sandro</option>
+                                                    <option>Maje</option>
+                                                    <option>Chanel</option>
+                                                    <option>Armani</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div id="boxes">
+                                    <div class="block-options__popup">
+                                        <a href="#" class="popup-open "><i class="icon-arrow-drop"></i></a>
+                                        <div class="popup-content popup-content-search_filters">
+                                           <div class="bg_box">
+                                            <p class="head">Search filters</p>
+                                            <div class="product-matching-rules__holder">
+                                                <div class="field-row">
+                                                    <div class="form__field">
+                                                        <label>Field</label>
+                                                        <div class="form__field-holder full-width">
+                                                            <select data-placeholder="Field" class="chosen-select-nosearch">
+                                                                <option></option>
+                                                                <option>Product title</option>
+                                                                <option>Product title</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__field">
+                                                        <label>Operator</label>
+                                                        <div class="form__field-holder full-width">
+                                                            <select data-placeholder="Operator" class="chosen-select-nosearch">
+                                                                <option></option>
+                                                                <option>Contains</option>
+                                                                <option>Contains</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__field">
+                                                        <label>Value</label>
+                                                        <div class="form__field-holder full-width">
+                                                            <input type="text" placeholder="Value">
+                                                        </div>
+                                                    </div>
+                                                    <div class="actions">
+                                                        <button class="btn btn-black small-icon btn-add"><i class="icon-add"></i> ADD</button>
+                                                        <button class="btn btn-orange-light small-icon btn-or"><i class="icon-add"></i> OR</button>
+                                                        <button class="btn-icon btn-delete"></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                           
+                                           
+                                            <div class="product-matching-rules__holder second hide">
+                                                <div class="field-row">
+                                                    <div class="form__field">
+                                                        <label>Field</label>
+                                                        <div class="form__field-holder full-width">
+                                                            <select data-placeholder="Field" class="chosen-select-nosearch">
+                                                                <option></option>
+                                                                <option>Product title</option>
+                                                                <option>Product title</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__field">
+                                                        <label>Operator</label>
+                                                        <div class="form__field-holder full-width">
+                                                            <select data-placeholder="Operator" class="chosen-select-nosearch">
+                                                                <option></option>
+                                                                <option>Contains</option>
+                                                                <option>Contains</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__field">
+                                                        <label>Value</label>
+                                                        <div class="form__field-holder full-width">
+                                                            <input type="text" placeholder="Value">
+                                                        </div>
+                                                    </div>
+                                                    <div class="actions">
+                                                        <button class="btn btn-black small-icon btn-add"><i class="icon-add"></i> ADD</button>
+                                                        <button class="btn btn-orange-light small-icon btn-or"><i class="icon-add"></i> OR</button>
+                                                        <button class="btn-icon btn-delete"></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row-cloning">
+                                                <div class="form__field">
+                                                    <label>Field</label>
+                                                    <div class="form__field-holder full-width">
+                                                        <select data-placeholder="Field">
+                                                            <option></option>
+                                                            <option>Product title</option>
+                                                            <option>Product title</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form__field">
+                                                    <label>Operator</label>
+                                                    <div class="form__field-holder full-width">
+                                                        <select data-placeholder="Operator">
+                                                            <option></option>
+                                                            <option>Contains</option>
+                                                            <option>Contains</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form__field">
+                                                    <label>Value</label>
+                                                    <div class="form__field-holder full-width">
+                                                        <input type="text" placeholder="Value">
+                                                    </div>
+                                                </div>
+                                                <div class="actions">
+                                                   <button class="btn btn-black small-icon btn-add"><i class="icon-add"></i> ADD</button>
+                                                        <button class="btn btn-orange-light small-icon btn-or"><i class="icon-add"></i> OR</button>
+                                                        <button class="btn-icon btn-delete"></button>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                       
+                                    </div>
+                                    
+                                     <div class="block-options__popup_clonning">
+                                        <a href="#" class="popup-open "><i class="icon-arrow-drop"></i></a>
+                                        <div class="popup-content popup-content-search_filters">
+                                           <div class="bg_box">
+                                            <p class="head">Search filters</p>
+                                            <div class="product-matching-rules__holder">
+                                                <div class="field-row">
+                                                    <div class="form__field">
+                                                        <label>Field</label>
+                                                        <div class="form__field-holder full-width">
+                                                            <select data-placeholder="Field" class="chosen-select-nosearch">
+                                                                <option></option>
+                                                                <option>Product title</option>
+                                                                <option>Product title</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__field">
+                                                        <label>Operator</label>
+                                                        <div class="form__field-holder full-width">
+                                                            <select data-placeholder="Operator" class="chosen-select-nosearch">
+                                                                <option></option>
+                                                                <option>Contains</option>
+                                                                <option>Contains</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__field">
+                                                        <label>Value</label>
+                                                        <div class="form__field-holder full-width">
+                                                            <input type="text" placeholder="Value">
+                                                        </div>
+                                                    </div>
+                                                    <div class="actions">
+                                                        <button class="btn btn-black small-icon btn-add"><i class="icon-add"></i> ADD</button>
+                                                        <button class="btn btn-orange-light small-icon btn-or"><i class="icon-add"></i> OR</button>
+                                                        <button class="btn-icon btn-delete"></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                           
+                                           
+                                            <div class="product-matching-rules__holder second hide">
+                                                <div class="field-row">
+                                                    <div class="form__field">
+                                                        <label>Field</label>
+                                                        <div class="form__field-holder full-width">
+                                                            <select data-placeholder="Field" class="chosen-select-nosearch">
+                                                                <option></option>
+                                                                <option>Product title</option>
+                                                                <option>Product title</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__field">
+                                                        <label>Operator</label>
+                                                        <div class="form__field-holder full-width">
+                                                            <select data-placeholder="Operator" class="chosen-select-nosearch">
+                                                                <option></option>
+                                                                <option>Contains</option>
+                                                                <option>Contains</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__field">
+                                                        <label>Value</label>
+                                                        <div class="form__field-holder full-width">
+                                                            <input type="text" placeholder="Value">
+                                                        </div>
+                                                    </div>
+                                                    <div class="actions">
+                                                        <button class="btn btn-black small-icon btn-add"><i class="icon-add"></i> ADD</button>
+                                                        <button class="btn btn-orange-light small-icon btn-or"><i class="icon-add"></i> OR</button>
+                                                        <button class="btn-icon btn-delete"></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row-cloning">
+                                                <div class="form__field">
+                                                    <label>Field</label>
+                                                    <div class="form__field-holder full-width">
+                                                        <select data-placeholder="Field">
+                                                            <option></option>
+                                                            <option>Product title</option>
+                                                            <option>Product title</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form__field">
+                                                    <label>Operator</label>
+                                                    <div class="form__field-holder full-width">
+                                                        <select data-placeholder="Operator">
+                                                            <option></option>
+                                                            <option>Contains</option>
+                                                            <option>Contains</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form__field">
+                                                    <label>Value</label>
+                                                    <div class="form__field-holder full-width">
+                                                        <input type="text" placeholder="Value">
+                                                    </div>
+                                                </div>
+                                                <div class="actions">
+                                                   <button class="btn btn-black small-icon btn-add"><i class="icon-add"></i> ADD</button>
+                                                        <button class="btn btn-orange-light small-icon btn-or"><i class="icon-add"></i> OR</button>
+                                                        <button class="btn-icon btn-delete"></button>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                       
+                                    </div>
+                                    </div>
+
+
+                                    <div class="form__action">
+                                        <div class="form_action_top">
+<!--                                          <button class="btn btn-green-light small-icon btn-add-rule"><i class="icon-add"></i> Add rule</button>-->
+                                          <a class="btn btn-orange addbutton"><i class="icon-add"></i> Add more products</a>
+                                         <div class="check_box">
+                                               
+
+                                                <p><span class="count">15</span> products selected</p>
+                                                 <a class="btn btn-transparent  modal-open" data-modal="modalBlacklist">Preview products</a>
+
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="btn_box">
+
+                                            <button class="btn btn-transparent cancel">Cancel</button>
+                                            <button class="btn btn-orange btn_ok">OK</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="block-editor__row block-editor__row-collapse parent-popup-active block-editor__content block-editor__row_h1">
+                        <div class="head">
+                            <p>H1 <span class="status">by default</span></p>
+                            <p>
+                                <button class="btn-icon popup-open"><i class="icon-arrow-drop"></i></button>
+                            </p>
+                        </div>
+                        <div class="block-editor__holder popup-content popup-active">
+                            <div class="holder block-edit-template">
+                                <div class="row-text">
+                                    <p class="text clm_text">
+                                        <small>H1 generated by default <button class="btn-icon btn-tooltip" data-tooltip="<span>Do you want to change template <br> for all keywords?</span><br>
+                                <p>Go to configuration to edit the template</p>"><i class="icon-info"></i></button></small>
+                                        <span class="text-js h1_generated_text" id="h1_generated_text">Boucles doreilles upcycle a partir fr</span>
+                                    </p>
+                                    <button class="btn btn-transparent popup-open edit_h1_open">Edit H1</button>
+                                </div>
+                                <div class="popup-content">
+                                    <div class="row-action">
+                                        <div class="form__field-holder form__field-holder_with-select">
+                                            <div id="textDiv">
+                                                <input type="text" value="" class="edit_input" id="value" style="display: none">
+                                                <span class="textEdit" role="textbox" contenteditable id='textEditSpan'></span>
+                                            </div>
+
+
+                                            <input autocomplete="off" role="combobox" list="" id="input" name="browsers" placeholder="">
+                                            <datalist id="browsers" role="listbox">
+                                                <option value="“keyword”">“keyword”</option>
+                                                <option value="“marque-min”">“marque-min”</option>
+                                                <option value="“marque-max”">“marque-max”</option>
+                                                <option value="“marque-enum”">“marque-enum”</option>
+                                                <option value="“marque-most”">“marque-most”</option>
+                                            </datalist>
+
+                                        </div>
+                                        <button class="btn btn-transparent popup-close cancel edit_h1_close">Cancel</button>
+                                        <button class="btn btn-orange popup-close edit_h1_close">OK</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="block-editor__row block-editor__row-collapse parent-popup-active block-editor__content block-editor__row-meta">
+                        <div class="head">
+                            <p>Meta description <span class="status">by default</span></p>
+                            <p>
+                                <button class="btn-icon popup-open"><i class="icon-arrow-drop"></i></button>
+                            </p>
+                        </div>
+                        <div class="block-editor__holder popup-content popup-active">
+                            <div class="holder block-edit-template">
+                                <div class="row-text">
+                                    <p class="text clm_text">
+                                        <small>Meta description generated by default <button class="btn-icon btn-tooltip" data-tooltip="<span>Do you want to change template <br> for all keywords?</span><br>
+                                <p>Go to configuration to edit the template</p>"><i class="icon-info"></i></button></small>
+                                        <span class="text-js Description_generated_text" id="Description_generated_text">Boucles doreilles upcycle a partir fr</span>
+                                    </p>
+                                    <button class="btn btn-transparent popup-open">Edit Meta description</button>
+                                </div>
+                                <div class="popup-content">
+                                    <div class="row-action">
+                                        <div class="form__field-holder form__field-holder_with-select">
+                                            <div id="textDivDescription">
+                                                <input type="text" value="" class="edit_input" id="valueDescription" style="display: none">
+                                                <span class="textEdit" role="textbox" contenteditable id='textEditSpanDescription'></span>
+                                            </div>
+
+
+                                            <input autocomplete="off" role="combobox" list="" id="inputDescription" name="browsers" placeholder="">
+                                            <datalist id="browsersDescription" role="listbox">
+                                                <option value="“keyword”">“keyword”</option>
+                                                <option value="“marque-min”">“marque-min”</option>
+                                                <option value="“marque-max”">“marque-max”</option>
+                                                <option value="“marque-enum”">“marque-enum”</option>
+                                                <option value="“marque-most”">“marque-most”</option>
+                                            </datalist>
+
+                                        </div>
+                                        <button class="btn btn-transparent popup-close cancel edit_Description_close">Cancel</button>
+                                        <button class="btn btn-orange popup-close edit_Description_close">OK</button>
+
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="block-editor__row block-editor__row-collapse parent-popup-active block-editor__content block-editor__row-meta-title">
+                        <div class="head">
+                            <p>Meta title <span class="status">custom</span></p>
+                            <p>
+                                <button class="btn-icon popup-open"><i class="icon-arrow-drop"></i></button>
+                            </p>
+                        </div>
+                        <div class="block-editor__holder popup-content popup-active">
+                            <div class="holder block-edit-template">
+                                <div class="row-text">
+                                    <p class="text clm_text">
+                                        <small>Meta title generated by custom template<button class="btn-icon btn-tooltip" data-tooltip="<span>Do you want to change template <br> for all keywords?</span><br>
+                                <p>Go to configuration to edit the template</p>"><i class="icon-info"></i></button></small>
+                                        <span class="text-js Title_generated_text" id="Title_generated_text">Boucles doreilles upcycle a partir fr</span>
+                                    </p>
+                                    <p class="btn_p">
+                                        <button class="btn btn-orange popup-open open_edit_Meta">Edit Meta title</button>
+                                        <button class="btn btn-transparent default_btn">Use default template</button>
+                                    </p>
+                                </div>
+                                <div class="popup-content">
+                                    <div class="row-action">
+                                        <div class="form__field-holder form__field-holder_with-select">
+                                            <div id="textDivTitle">
+                                                <input type="text" value="" class="edit_input" id="valueTitle" style="display: none">
+                                                <span class="textEdit" role="textbox" contenteditable id='textEditSpanTitle'></span>
+                                            </div>
+
+
+                                            <input autocomplete="off" role="combobox" list="" id="inputTitle" name="browsers" placeholder="">
+                                            <datalist id="browsersTitle" role="listbox">
+                                                <option value="“keyword”">“keyword”</option>
+                                                <option value="“marque-min”">“marque-min”</option>
+                                                <option value="“marque-max”">“marque-max”</option>
+                                                <option value="“marque-enum”">“marque-enum”</option>
+                                                <option value="“marque-most”">“marque-most”</option>
+                                            </datalist>
+
+                                        </div>
+                                        <button class="btn btn-transparent popup-close cancel edit_Title_close">Cancel</button>
+                                        <button class="btn btn-orange popup-close edit_Title_close">OK</button>
+
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                     <div class="block-editor__row block-editor__content block-editor__row-cold">
+                        <div class="head">
+                            <p>Cold content</p>
+                        </div>
+                       
+                        <div class="block-editor__holder  block-editor__cold-content">
+
+                            <div class="holder block-edit-template block-slide-popup">
+                                <div class="row-text">
+                                    <p class="text clm_text">
+                                        <small>Top of the page</small>
+                                        <span class="text-js no-content" id="noContent">No content</span>
+                                        <span id="preview" class="text-js no-content"></span>
+                                    </p>
+                                    <button class="btn small-icon btn-orange popup-open "><i class="icon-add"></i>Add content</button>
+                                </div>
+                                <div class="popup-content">
+                                    <div class="row-action">
+                                        <div id="editor1" class="edit_input">
+                                        </div>
+                                        <div class="btn_box">
+                                            <button class="btn btn-transparent popup-close close_cold_cont apply_editor_text">Apply editions</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="holder block-edit-template block-slide-popup">
+                                <div class="row-text">
+                                    <p class="text clm_text">
+                                        <small>bottom of the page</small>
+                                        <span class="text-js " id="bottom_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </span>
+                                    </p>
+
+                                    <button class="btn btn-transparent popup-open">Edit content</button>
+
+                                </div>
+                                <div class="popup-content">
+                                    <div class="row-action">
+                                        <div id="editor2" class="edit_input">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                        </div>
+
+                                        <div class="btn_box">
+                                            <button class="btn btn-light btn-transparent popup-close cancel close_cold_cont">Cancel</button>
+                                            <button class="btn btn-orange popup-close close_cold_cont apply_editorBottom_text">OK</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="block-editor__row block-editor__row-collapse parent-popup-active block-editor__content">
+                        <div class="head">
+                            <p>Hreflang Tag</p>
+                            <p>
+                                <button class="btn-icon popup-open"><i class="icon-arrow-drop"></i></button>
+                            </p>
+                        </div>
+                        <div class="block-editor__holder popup-content popup-active">
+                            <div class="holder block-edit-template form-add-new-tag">
+                                <div class="panel" id="noUrl">
+                                    <p>This keywords doesn’t have any tag</p>
+                                </div>
+                                <div id="addURLdiv"></div>
+                                <button class="btn btn-orange add_url"><i class="icon-add"></i>Add another URL</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                     <div class="block-editor__row block-editor__row-collapse parent-popup-active block-editor__content block-editor__redirection">
+                        <div class="head">
+                            <p class="tooltops_box">Redirection <button class="btn-icon btn-tooltip" data-tooltip="<span>Do you want to change template <br> for all keywords?</span><br>
+                                <p>Go to configuration to edit the template</p>"><i class="icon-info"></i></button></p>
+                            <p>
+                                <button class="btn-icon popup-open"><i class="icon-arrow-drop"></i></button>
+                            </p>
+                        </div>
+                        <div class="block-editor__holder popup-content popup-active">
+                            <div class="holder">
+                                <div class="form__field">
+                                    <div class="form__field-holder full-width">
+                                        <select data-placeholder="Blue" class="chosen-select-nosearch">
+                                            <option>No result page</option>
+                                            <option>301 permanent redirection</option>
+                                            <option>302 permanent redirection</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="redirection-form">
+                                    <div class="form__field-group inline">
+                                        <div class="field-radio">
+                                            <input type="radio" id="redirection-02" name="redirection" checked="checked">
+                                            <label for="redirection-02">Most similar keyword</label>
+                                        </div>
+                                        <div class="field-radio">
+                                            <input type="radio" id="redirection-01" name="redirection">
+                                            <label for="redirection-01">Custom URL</label>
+
+                                        </div>
+                                        <div class="field-radio">
+                                            <div class="form__field-inline form__field-copytext">
+                                                <div class="form__field-holder">
+                                                    <input type="text" placeholder="www.yourwebsite.com/v/hogwarts-castle-lego">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-orange" type="reset">Remove redirection</button>
+
+                            </div>
+                        </div>
+                    </div>
+                     <div class="block-editor__row block-editor__row-collapse parent-popup-active block-editor__content block-editor__row-sorting">
+                        <div class="head">
+                            <p>Default product sorting</p>
+                            <p>
+                                <button class="btn-icon popup-open"><i class="icon-arrow-drop"></i></button>
+                            </p>
+                        </div>
+                        <div class="block-editor__holder popup-content popup-active">
+                            <div class="holder block-edit-template form-add-new-sorting">
+
+                                <div id="addSortingdiv">
+                                    <div class="row-action">
+
+                                        <div class="form__field"><label>Field name sorting</label>
+                                            <div class="form__field-holder full-width">
+
+                                                <div class="dropdown-select wide linking_select chosen-select select-light" id="select-sorting"><span class="current"></span>
+                                                    <div class="list">
+                                                        <ul>
+                                                            <li class="option selected">None</li>
+                                                            <li class="option">None</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="form__field"><label>Sorting order</label>
+                                            <div class="form__field-holder full-width">
+                                                <div class="dropdown-select wide linking_select chosen-select select-light" id="sorting_order"><span class="current"></span>
+                                                    <div class="list">
+                                                        <ul>
+                                                            <li class="option selected">Ascending</li>
+                                                            <li class="option ">Ascending</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <button class="btn-icon btn-delete" id="btn-delete-url"></button>
+                                    </div>
+                                </div>
+                                <button class="btn btn-orange add_sorting"><i class="icon-add"></i>Add new sorting rule</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </main>
+        </div>
+    </div>
+
+     <!-- modal-blacklist.html -->
+    <div id="modalBlacklist" class="modal blacklist">
+        <div class="modal__inner">
+            <div class="modal__header">
+                <h4>Preview products</h4>
+                <button class="btn-icon modal__close modal-close"><i class="icon-close"></i></button>
+            </div>
+            <div class="modal__content">
+                <table>
+                    <tr>
+                        <th>Picture</th>
+                        <th>Product title</th>
+                        <th>Show</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/img-01.png" alt="">
+                        </td>
+                        <td>Noukie’s Pyjama Velours Gaby & Sam Beige</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/img-01.png" alt="">
+                        </td>
+                        <td>Noukie’s Pyjama Velours Gaby & Sam Beige</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox" checked="checked">
+                                <span></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/img-01.png" alt="">
+                        </td>
+                        <td>Noukie’s Pyjama Velours Gaby & Sam Beige</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/img-01.png" alt="">
+                        </td>
+                        <td>Noukie’s Pyjama Velours Gaby & Sam Beige</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span></span>
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- scripts.html -->
+    <script type="application/json" src="data/pages-crawled.json"></script>
+    <script type="application/json" src="data/pages-indexed.json"></script>
+    <script type="application/json" src="data/visits.json"></script>
+    <script type="application/json" src="data/position-history.json"></script>
+    <script type="application/json" src="data/average-position.json"></script>
+    <script type="application/json" src="data/top-10.json"></script>
+    <script type="application/json" src="data/top-30.json"></script>
+    <script type="application/json" src="data/average-position-keyword.json"></script>
+    <script type="application/json" src="data/information-all-visits.json"></script>
+    <script type="application/json" src="data/information-sea-visits.json"></script>
+    <script type="application/json" src="data/information-seo-visits.json"></script>
+    <script type="application/json" src="data/crawl-rate.json"></script>
+
+    <script src="scripts/jquery-3.5.1.min.js"></script>
+    <script src="scripts/components/multiselect/chosen.jquery.min.js"></script>
+    <script src="scripts/components/multiselect/prism.js"></script>
+    <script src="scripts/components/daterangepicker/moment.min.js"></script>
+    <script src="scripts/components/daterangepicker/daterangepicker.min.js"></script>
+    <script src="scripts/components/sortable.min.js"></script>
+    <script src="scripts/components/chart.min.js"></script>
+    <script src="scripts/components/chosenPopup.js"></script>
+    <script src="scripts/components/accordion.js"></script>
+    <script src="scripts/components/popup.js"></script>
+    <script src="scripts/components/sidebar.js"></script>
+    <script src="scripts/components/form.js"></script>
+    <script src="scripts/components/tooltip.js"></script>
+    <script src="scripts/components/modal.js"></script>
+    <script src="scripts/components/alert.js"></script>
+    <script src="scripts/components/checkAll.js"></script>
+    <script src="scripts/components/chartCustomBar.js"></script>
+    <script src="scripts/components/tab.js"></script>
+    <script src="scripts/components/dropUploadFile.js"></script>
+    <script src="scripts/components/panel-option.js"></script>
+    <script src="scripts/components/productMatchingRules.js"></script>
+    <script src="scripts/components/crawlerSchedule.js"></script>
+    <script src="scripts/components/tableCreateAssets.js"></script>
+    <script src="scripts/codemirror/codemirror.js"></script>
+    <script src="scripts/codemirror/javascript.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/keyword-edition.js"></script>
+
+
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js'></script>
+    <script>
+        var text;
+
+        var callback = function() {
+            var editor = this
+
+            $('#preview').html(this.html.get());
+            $('#preview').removeClass('prettyprinted');
+        }
+        new FroalaEditor('div#editor1', {
+            documentReady: true,
+            fullPage: true,
+            toolbarButtons: ['paragraphFormat', 'bold', 'italic', 'underline', 'fontFamily', 'textColor', 'clearFormatting', '|', '|', 'alignLeft', 'alignCenter', 'alignRight', 'formatOL', 'formatUL', '|', '|', 'insertLink', 'insertImage', 'emoticons', '|', 'undo', 'redo'],
+            events: {
+                initialized: callback,
+                contentChanged: callback
+            }
+        })
+        $('.apply_editor_text').click(function() {
+            text = $('#preview').text();
+            $('#noContent').css({
+                display: 'none'
+            })
+            $('#preview').toggleClass('show')
+        })
+
+
+        var callbackEditor2 = function() {
+            var editor = this
+
+            $('#bottom_text').html(this.html.get());
+            $('#bottom_text').removeClass('prettyprinted');
+        }
+
+
+        new FroalaEditor('div#editor2', {
+            documentReady: true,
+            fullPage: true,
+            toolbarButtons: ['paragraphFormat', 'bold', 'italic', 'underline', 'fontFamily', 'textColor', 'clearFormatting', '|', '|', 'alignLeft', 'alignCenter', 'alignRight', 'formatOL', 'formatUL', '|', '|', 'insertLink', 'insertImage', 'emoticons', '|', 'undo', 'redo'],
+            events: {
+                initialized: callbackEditor2,
+                contentChanged: callbackEditor2
+            }
+        })
+        $('.apply_editorBottom_text').click(function() {
+            text = $('#bottom_text').text();
+            $('#bottom_text').toggleClass('show')
+        })
+
+    </script>
+
+</body>
+
+</html>
