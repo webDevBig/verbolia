@@ -21,16 +21,32 @@
   const inputs = document.querySelectorAll(".checkbox");
   const bulkAction = document.querySelector(".block-table__bulk-action");
 
+  var n = $('.checkbox:checkbox').length
 
+  $(document).ready(function () {
+      $("table").on("change", "input#checkAll", function () {
+          checked = $("input.checkbox[type='checkbox']:checked").length;
+          $("#numberSelected").html(checked > 0 ? checked : "");
+      });
+
+  });
+  $(document).on('click', '.yes_btn', function () {
+      $("#numberSelected").html('All 30,400 ');
+      $(this).addClass('hide')
+  });
 
   $('#checkAll').on('click', function () {
+
+
       if ($(this).is(':checked')) {
+
           console.log('true');
           $('.default_box').addClass('hide')
           $('.create').removeClass('hide')
           $('.footer').addClass('hide')
           document.querySelector('.create').disabled = false;
           $('.message_tooltip2').removeClass('hide');
+          $('.yes_btn').removeClass('hide')
 
       } else {
           console.log('false');
@@ -45,60 +61,48 @@
 
   inputs.forEach(el => {
       el.addEventListener("click", () => {
-          if ($('.checkbox:checkbox').filter(':checked').length > 0) {
 
-              bulkAction.classList.remove('hide')
-              seedList.classList.add('hide')
-              return false;
+          console.log(n)
+
+          if ($('.checkbox:checkbox').filter(':checked').length > 0) {
+              $('.default_box').addClass('hide')
+              $('.create').removeClass('hide')
+              $('.footer').addClass('hide')
+              document.querySelector('.create').disabled = false;
+              $('.message_tooltip2').addClass('hide');
+              $("#numberSelected").html(n);
+              $('.yes_btn').removeClass('hide')
+
+
+              if ($('.checkbox:checkbox').filter(':checked').length == n) {
+                  console.log(n + 'rr')
+                  $('.message_tooltip2').removeClass('hide');
+                  $('.default_box').addClass('hide')
+                  $('.create').removeClass('hide')
+                  $('.footer').addClass('hide')
+                  document.querySelector('.create').disabled = false;
+
+                  document.getElementById("checkAll").checked = true;
+              }
 
           } else {
-              bulkAction.classList.add('hide')
-              seedList.classList.remove('hide')
+              $('.default_box').removeClass('hide')
+              $('.create').addClass('hide')
+              $('.footer').removeClass('hide')
+              document.querySelector('.create').disabled = true;
+              document.getElementById("checkAll").checked = false;
           }
       });
   })
 
-  $(document).on('click', '.no_btn', function () {
-      //      $('.default_box').removeClass('hide')
-      //      $('.create').addClass('hide')
-      //      $('.footer').removeClass('hide')
-      //      document.querySelector('.create').disabled = true;
-      $('.message_tooltip2').addClass('hide');
+
+  $(document).on('click', '.popup-close', function () {
+      $(this).parents('.chosen-drop').removeClass('show');
   });
 
-  $(document).on('click', '.yes_btn', function () {
-      $('.message_tooltip2').addClass('hide');
-  });
-  $(document).on('click', '.close_pop_up', function () {
-      $(this).parents('.pop_up_window').toggleClass('hide');
-  });
-
-  var tooltip_icon = document.querySelector(".icon-info");
-
-  tooltip_icon.addEventListener("mouseover", mOver, false);
-  tooltip_icon.addEventListener("mouseout", mOut, false);
-
-  function mOver() {
-      document.querySelector(".tooltip").style.opacity = 1;
-  }
-
-  function mOut() {
-      document.querySelector(".tooltip").style.opacity = 0;
-  }
 
   $(document).on('click', '#openpredirect', function () {
       $(this).parents('.info_item').toggleClass('open');
-  });
-
-
-  $(document).on('click', '.howWork', function () {
-      $(this).parents('.info_item').toggleClass('open');
-      document.querySelector('.check_header').classList.toggle('show')
-
-  });
-  $(document).on('click', '.close-message_tooltip', function () {
-      document.querySelector('.check_header').classList.toggle('show')
-
   });
 
   var howWork = document.querySelector(".howWork");
@@ -113,6 +117,17 @@
       howWork.querySelector('img').setAttribute("src", "images/lamp.svg");
   }
 
+  $(document).on('click', '.howWork', function () {
+      document.querySelector('#howTooltip').classList.toggle('show')
+  });
+
+  var hide_opportunities_btn = document.querySelector(".hide_opportunities_btn");
+
+  $(document).on('click', '.hide_opportunities_btn', function () {
+      document.querySelector('.opportunities_box').classList.toggle('show')
+
+  });
+
 
   var bars = document.querySelectorAll('.meter > span');
   console.clear();
@@ -126,3 +141,62 @@
           }
       });
   }, 500);
+
+
+
+  $(window).scroll(function (e) {
+      var $el = $('.fixedElement');
+      var isPositionFixed = ($el.css('position') == 'fixed');
+      if ($(this).scrollTop() > 350 && !isPositionFixed) {
+          $el.css({
+              'position': 'sticky',
+              'top': '0px',
+          });
+          $el.addClass('collapsing')
+          $('.thead').addClass('stiky');
+          var height = $el.innerHeight() + 'px'
+          $('.thead').css({
+              top: height
+          })
+      }
+      if ($(this).scrollTop() < 350 && !isPositionFixed) {
+          $el.css({
+              'position': 'static',
+              'top': '0px',
+          });
+          $('.thead').removeClass('stiky');
+          $el.removeClass('collapsing')
+      }
+  });
+
+  var filter_show = document.getElementsByClassName("cell-sm")
+  $(document).on('click', '.openFilter', function () {
+
+      for (var i = 0; i < filter_show.length; i++) {
+          filter_show[i].classList.remove('show');
+      }
+
+      $(this).parents('.cell-sm').toggleClass('show')
+  });
+
+  $(document).on('click', '.close_filter', function () {
+
+      $(this).parents('.cell-sm').toggleClass('show')
+  });
+
+  var infoBlock = $('#info_block')
+  var showChart = $('#show_charts')
+
+  $(document).on('click', '#hide_grafs', function () {
+
+      $(this).parents('.fixedElement').addClass('collapsed')
+
+
+      infoBlock.addClass('hide')
+  });
+  $(document).on('click', '#show_charts', function () {
+
+      $('.fixedElement').removeClass('collapsed')
+
+      infoBlock.removeClass('hide')
+  });

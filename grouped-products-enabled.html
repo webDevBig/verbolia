@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
-  <!--head.html-->
-  <head>
+<!--head.html-->
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,268 +10,263 @@
     <link rel="preload" href="css/critical-style.css" as="style">
     <link rel="stylesheet" href="css/critical-style.css">
     <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="wrapper">
-      <header class="header">
-        <!-- header-panel-top.html -->
-        <div class="header__panel-top">
-          <a href="" class="logo"><img src="images/logo.png" alt="Aurore"></a>
-          <div class="header__holder">
-            <div class="notification-block">
-              <span class="popup-open">
-                <span class="notification-block__icon">
-                  <i class="icon-bell"></i>
-                  <span class="count">1</span>
-                </span>
-              </span>
-              <div class="popup-content">
-                <div class="notification-block__head">
-                  <span class="title">Notifications</span>
-                  <span class="count">1</span>
+        <header class="header">
+            <!-- header-panel-top.html -->
+            <div class="header__panel-top">
+                <a href="" class="logo"><img src="images/logo.png" alt="Aurore"></a>
+                <div class="header__holder">
+                    <div class="notification-block">
+                        <span class="popup-open">
+                            <span class="notification-block__icon">
+                                <i class="icon-bell"></i>
+                                <span class="count">1</span>
+                            </span>
+                        </span>
+                        <div class="popup-content">
+                            <div class="notification-block__head">
+                                <span class="title">Notifications</span>
+                                <span class="count">1</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <p>
+                                        <strong>Duplicate content</strong> - We have detected keywords with a high level of duplication
+                                    </p>
+                                    <p class="panel">
+                                        <span>Today at 15:13</span>
+                                        <a href="#">Mark as unread</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Keyword opportunities</strong> - New keywords opportunities have been found
+                                    </p>
+                                    <p class="panel">
+                                        <span>Today at 15:13</span>
+                                        <a href="#">Mark as unread</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Duplicate content</strong> - We have detected keywords with a high level of duplication
+                                    </p>
+                                    <p class="panel">
+                                        <span>Today at 15:13</span>
+                                        <a href="#">Mark as read</a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="user-block">
+                        <span class="popup-open">
+                            <span class="user-block__image">
+                                <img src="images/user-image.jpg" alt="user name">
+                            </span>
+                            <span class="user-block__name">Harry Potter</span>
+                        </span>
+                        <div class="popup-content">
+                            <ul>
+                                <li>
+                                    <a href="user-account.html">My account</a>
+                                </li>
+                                <li>
+                                    <a href="#">Log out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <ul>
-                  <li>
-                    <p>
-                      <strong>Duplicate content</strong> - We have detected keywords with a high level of duplication
-                  </p>
-                    <p class="panel">
-                      <span>Today at 15:13</span>
-                      <a href="#">Mark as unread</a>
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      <strong>Keyword opportunities</strong> - New keywords opportunities have been found
-                  </p>
-                    <p class="panel">
-                      <span>Today at 15:13</span>
-                      <a href="#">Mark as unread</a>
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      <strong>Duplicate content</strong> - We have detected keywords with a high level of duplication
-                  </p>
-                    <p class="panel">
-                      <span>Today at 15:13</span>
-                      <a href="#">Mark as read</a>
-                    </p>
-                  </li>
-                </ul>
-              </div>
+                <button class="btn-toggle-sidebar">
+                    <i class="icon-menu"></i>
+                </button>
             </div>
-            <div class="user-block">
-              <span class="popup-open">
-                <span class="user-block__image">
-                  <img src="images/user-image.jpg" alt="user name">
-                </span>
-                <span class="user-block__name">Harry Potter</span>
-              </span>
-              <div class="popup-content">
-                <ul>
-                  <li>
-                    <a href="user-account.html">My account</a>
-                  </li>
-                  <li>
-                    <a href="#">Log out</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <button class="btn-toggle-sidebar">
-            <i class="icon-menu"></i>
-          </button>
-        </div>
-      </header>
-      <div class="main-content">
-        <!-- sidebar.html -->
-        <div class="sidebar">
-          <div class="form__field-holder">
-            <select data-placeholder="Select web site" class="chosen-select select-dark">
-              <option></option>
-              <option>Kazidomi</option>
-              <option>Waio</option>
-            </select>
-          </div>
-          <nav class="navigation">
-            <ul>
-              <li class="item">
-                <a href="dashboard.html" class="item-link">
-                  <i class="icon-overview"></i> Dashboard</a>
-              </li>
-              <li class="item">
+        </header>
+        <div class="main-content">
+            <!-- sidebar.html -->
+            <div class="sidebar">
+                <div class="form__field-holder">
+                    <select data-placeholder="Select web site" class="chosen-select select-dark">
+                        <option></option>
+                        <option>Kazidomi</option>
+                        <option>Waio</option>
+                    </select>
+                </div>
+                <nav class="navigation">
+                    <ul>
+                        <li class="item">
+                            <a href="dashboard.html" class="item-link">
+                                <i class="icon-overview"></i> Dashboard</a>
+                        </li>
+                        <li class="item">
                             <a href="catalog_Navigator.html" class="item-link"><i class="icon-catalog"></i> Catalog Navigator</a>
                         </li>
-              <li class="item">
-                <a href="configuration.html" class="item-link collapsible collapsible-active">
-                  <i class="icon-configuration"></i> Configuration
-              </a>
-                <ul class="collapsible-content">
-                  <li class="item">
-                    <a href="#" class="item-link">Settings</a>
-                  </li>
-                  <li class="item">
-                    <a href="#" class="item-link">Product Attributes Management</a>
-                  </li>
-                  <li class="item">
-                    <a href="#" class="item-link">Product Feed Configuration</a>
-                    <ul class="navigation-timeline-list">
-                      <li>
-                        <a href="#" class="navigation-timeline-list__item done">Feed Access</a>
-                      </li>
-                      <li>
-                        <a href="#" class="navigation-timeline-list__item done">Feed mapping</a>
-                      </li>
-                      <li>
-                        <a href="#" class="navigation-timeline-list__item done">Feed Configuration Rules</a>
-                      </li>
-                      <li>
-                        <a href="#" class="navigation-timeline-list__item active">Feed Access</a>
-                      </li>
-
-                    </ul>
-                  </li>
-                  <li class="item">
-                            <a href="#" class="item-link collapsible"><i class="icon-theme"></i> Theme</a>
+                        <li class="item">
+                            <a href="configuration.html" class="item-link collapsible collapsible-active">
+                                <i class="icon-configuration"></i> Configuration
+                            </a>
                             <ul class="collapsible-content">
                                 <li class="item">
-                                    <a href="theme.html" class="item-link">Theme Editor</a>
+                                    <a href="#" class="item-link">Settings</a>
                                 </li>
                                 <li class="item">
-                                    <a href="theme-ressources.html" class="item-link">Ressources</a>
+                                    <a href="#" class="item-link">Product Attributes Management</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#" class="item-link">Product Feed Configuration</a>
+                                    <ul class="navigation-timeline-list">
+                                        <li>
+                                            <a href="#" class="navigation-timeline-list__item done">Feed Access</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="navigation-timeline-list__item done">Feed mapping</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="navigation-timeline-list__item done">Feed Configuration Rules</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="navigation-timeline-list__item active">Feed Access</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="item">
+                                    <a href="#" class="item-link collapsible"><i class="icon-theme"></i> Theme</a>
+                                    <ul class="collapsible-content">
+                                        <li class="item">
+                                            <a href="theme.html" class="item-link">Theme Editor</a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="theme-ressources.html" class="item-link">Ressources</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </li>
-                </ul>
-              </li>
-             
-<!--
+
+                        <!--
               <li class="item">
                 <a href="ressources.html" class="item-link">
                   <i class="icon-keyword"></i> Ressources</a>
               </li>
 -->
-              <li class="item">
-                <a href="feed-import-main.html" class="item-link">
-                  <i class="icon-feed-import"></i> Feed import</a>
-              </li>
-              <li class="item">
+                        <li class="item">
+                            <a href="feed-import-main.html" class="item-link">
+                                <i class="icon-feed-import"></i> Feed import</a>
+                        </li>
+                        <li class="item">
                             <a href="recommendations.html" class="item-link"><i class="icon-overview"></i> Recommendations</a>
                         </li>
-              <li class="item">
-                <a href="#" class="item-link collapsible">
-                  <i class="icon-keyword"></i>
-                Pages management</a>
-                <ul class="collapsible-content">
-                  <li class="item">
-                    <a href="keyword-edition.html" class="item-link">Tag Management </a>
-                  </li>
-                  <li class="item">
-                    <a href="keyword-management.html" class="item-link">Keyword Management</a>
-                  </li>
-                </ul>
-              </li>
-                <li class="item">
-                            <a href="keyword_opportunities.html" class="item-link  ">
-                                <i class="icon-keyword-suggestions"></i> Keyword Opportunities
-
+                        <li class="item">
+                            <a href="#" class="item-link collapsible">
+                                <i class="icon-keyword"></i>
+                                Pages management</a>
+                            <ul class="collapsible-content">
+                                <li class="item">
+                                    <a href="keyword-edition.html" class="item-link">Tag Management </a>
+                                </li>
+                                <li class="item">
+                                    <a href="keyword-management.html" class="item-link">Keyword Management</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <a href="traffic_opportunities_main.html" class="item-link">
+                                <i class="icon-keyword-suggestions"></i>Traffic opportunities
                             </a>
                         </li>
-              <li class="item">
-                <a href="keyword-suggestions.html" class="item-link">
-                  <i class="icon-keyword-suggestions"></i> Keyword suggestions
-                <i class="icon-notification tooltip-sidebar tooltip-bottom"
-                  data-tooltip="You have new keyword suggestions"></i>
-                </a>
-              </li>
-              <li class="item">
-                <a href="#" class="item-link">
-                  <i class="icon-features-management"></i> Features Management</a>
-              </li>
-              <li class="item">
-                <a href="users.html" class="item-link">
-                  <i class="icon-users"></i> Users</a>
-              </li>
-              <li class="item">
-                <a href="website.html" class="item-link">
-                  <i class="icon-website"></i> Website</a>
-              </li>
-              <li class="item">
-                <a href="distribution.html" class="item-link">
-                  <i class="icon-distribution"></i>Distribution page</a>
-              </li>
-              <li class="item">
-                <a href="documentation.html" class="item-link">
-                  <i class="icon-content-mamagement"></i>Documentation</a>
-              </li>
-              <li class="item">
-                <a href="product-list.html" class="item-link">
-                  <i class="icon-product-list"></i>Product list</a>
-              </li>
-            </ul>
-          </nav>
+                        <li class="item">
+                            <a href="keyword-suggestions.html" class="item-link">
+                                <i class="icon-keyword-suggestions"></i> Keyword suggestions
+                                <i class="icon-notification tooltip-sidebar tooltip-bottom" data-tooltip="You have new keyword suggestions"></i>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="item-link">
+                                <i class="icon-features-management"></i> Features Management</a>
+                        </li>
+                        <li class="item">
+                            <a href="users.html" class="item-link">
+                                <i class="icon-users"></i> Users</a>
+                        </li>
+                        <li class="item">
+                            <a href="website.html" class="item-link">
+                                <i class="icon-website"></i> Website</a>
+                        </li>
+                        <li class="item">
+                            <a href="distribution.html" class="item-link">
+                                <i class="icon-distribution"></i>Distribution page</a>
+                        </li>
+                        <li class="item">
+                            <a href="documentation.html" class="item-link">
+                                <i class="icon-content-mamagement"></i>Documentation</a>
+                        </li>
+                        <li class="item">
+                            <a href="product-list.html" class="item-link">
+                                <i class="icon-product-list"></i>Product list</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <main class="content">
+                <!-- content-header.html -->
+                <header class="content__header">
+                    <div>
+                        <h1>Grouped Products</h1>
+                    </div>
+                </header>
+
+                <div class="block-editor__row block-editor__row-collapse">
+                    <div class="block-editor__holder">
+                        <div class="holder">
+
+                            <div class="form__field-inline">
+                                <label>Enable grouped products</label>
+                                <div class="form__field-holder">
+                                    <div class="form__field-group inline">
+                                        <div class="field-checkbox">
+                                            <input id="product-categories" type="checkbox" checked name="fields-products">
+                                            <label for="product-categories"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form__field-inline">
+                                <label for="language">Show default product</label>
+                                <div class="form__field-holder">
+                                    <select id="language" data-placeholder="UTF-8" value="With highest price" class="chosen-select-nosearch">
+                                        <option>With highest price</option>
+                                        <option>With lowest price</option>
+                                        <option>With highest inventory stock</option>
+                                    </select>
+                                </div>
+
+                                <button class="btn-icon gray">
+                                    <i class="icon-info-letter icon-round icon-big icon-big--important" data-so-tooltip="#so-grouped-product-info"></i>
+                                </button>
+                                <div id="so-grouped-product-info" role="tooltip" class="so-tooltip-content grouped-product-info-tooltip">
+                                    <div data-popper-arrow></div>
+                                    <div class="grouped-product-info-tooltip__content">
+                                        <div class="grouped-product-info-tooltip__content-text">If you enable grouped products, select which
+                                            product will be displayed by default on the landing page. We will use the picture price, title,
+                                            description adn URL of the default product. User will be able to see other options on your
+                                            detailed pages.</div>
+                                        <img src="https://previews.123rf.com/images/rglinsky/rglinsky1201/rglinsky120100188/12336990-vertical-oriented-image-of-famous-eiffel-tower-in-paris-france-.jpg" />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </main>
         </div>
-        <main class="content">
-          <!-- content-header.html -->
-          <header class="content__header">
-            <div>
-              <h1>Grouped Products</h1>
-            </div>
-          </header>
-
-          <div class="block-editor__row block-editor__row-collapse">
-            <div class="block-editor__holder">
-              <div class="holder">
-
-                <div class="form__field-inline">
-                  <label>Enable grouped products</label>
-                  <div class="form__field-holder">
-                    <div class="form__field-group inline">
-                      <div class="field-checkbox">
-                        <input id="product-categories" type="checkbox" checked name="fields-products">
-                        <label for="product-categories"></label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form__field-inline">
-                  <label for="language">Show default product</label>
-                  <div class="form__field-holder">
-                    <select id="language" data-placeholder="UTF-8" value="With highest price"
-                    class="chosen-select-nosearch">
-                      <option>With highest price</option>
-                      <option>With lowest price</option>
-                      <option>With highest inventory stock</option>
-                    </select>
-                  </div>
-
-                  <button class="btn-icon gray">
-                    <i class="icon-info-letter icon-round icon-big icon-big--important"
-                    data-so-tooltip="#so-grouped-product-info"></i>
-                  </button>
-                  <div id="so-grouped-product-info" role="tooltip"
-                  class="so-tooltip-content grouped-product-info-tooltip">
-                    <div data-popper-arrow></div>
-                    <div class="grouped-product-info-tooltip__content">
-                      <div class="grouped-product-info-tooltip__content-text">If you enable grouped products, select which
-                      product will be displayed by default on the landing page. We will use the picture price, title,
-                      description adn URL of the default product. User will be able to see other options on your
-                      detailed pages.</div>
-                      <img
-                      src="https://previews.123rf.com/images/rglinsky/rglinsky1201/rglinsky120100188/12336990-vertical-oriented-image-of-famous-eiffel-tower-in-paris-france-.jpg"/>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-        </main>
-      </div>
     </div>
 
 
@@ -316,6 +312,6 @@
     <script src="scripts/codemirror/codemirror.js"></script>
     <script src="scripts/codemirror/javascript.js"></script>
     <script src="scripts/script.js"></script>
-  </body>
+</body>
 
 </html>

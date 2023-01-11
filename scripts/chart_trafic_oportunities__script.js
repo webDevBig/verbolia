@@ -29,8 +29,9 @@
               categoryField: "category",
               endAngle: 270,
               alignLabels: false,
+              labels: false,
               fillField: "color",
-              radius: 70
+              radius: 80
           })
       );
 
@@ -42,55 +43,57 @@
       });
 
       seriesCurrent.labels.template.setAll({
-          text: "{category}",
-          radius: 15
+          text: ''
       });
-      seriesCurrent.slices.template.set("tooltipText", "");
+    
+
+      //      seriesCurrent.slices.template.set("tooltipText", "");
       // Set data
       // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
-      seriesCurrent.data.setAll([{
+      seriesCurrent.data.setAll([
+          {
               category: "Competitor 1",
-              value: 20,
+              value: 3,
               color: '#EEAB34'
                 }, {
               category: "Competitor 2",
-              value: 15,
+              value: 3,
               color: "#CED0FF"
                 }, {
               category: "Competitor 3",
-              value: 15,
+              value: 3,
               color: "#6CADA7"
                 }, {
               category: "Competitor 4",
-              value: 25,
+              value: 6,
               color: "#E6E7E8"
                 }, {
               category: "Your website",
-              value: 30,
+              value: 6,
               color: "#E37D38"
                 }, {
               category: "Competitor 6",
-              value: 40,
+              value: 11,
               color: "#D65359"
                 }, {
               category: "Competitor 7",
-              value: 45,
+              value: 14,
               color: "#F0AD00"
                 }, {
               category: "Competitor 8",
-              value: 45,
+              value: 14,
               color: "#32BA7C"
                 }, {
               category: "Competitor 9",
-              value: 30,
+              value: 11,
               color: "#5B5151"
                 }, {
               category: "Competitor 10",
-              value: 45,
+              value: 11,
               color: "#B1B1B1"
                 }, {
               category: "Others",
-              value: 45,
+              value: 18,
               color: "#F4A28C"
                 }
             ]);
@@ -131,7 +134,7 @@
               endAngle: 270,
               alignLabels: false,
               fillField: "color",
-              radius: 70
+              radius: 80
           })
       );
 
@@ -143,57 +146,56 @@
       });
 
       seriesPredicted.labels.template.setAll({
-          text: "{category}",
-          radius: 15
+          text: ""
       });
-      seriesPredicted.slices.template.set("tooltipText", "");
+     
       // Set data
       // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
       seriesPredicted.data.setAll([{
               category: "Competitor 1",
-              value: 20,
+              value: 3,
               color: '#EEAB34'
                 }, {
               category: "Competitor 2",
-              value: 15,
+              value: 3,
               color: "#CED0FF"
                 }, {
               category: "Competitor 3",
-              value: 15,
+              value: 3,
               color: "#6CADA7"
                 }, {
               category: "Competitor 4",
-              value: 25,
+              value: 6,
               color: "#E6E7E8"
                 }, {
               category: "Your website",
-              value: 30,
+              value: 6,
               color: "#E37D38"
                 }, {
               category: "Competitor 6",
-              value: 40,
+              value: 11,
               color: "#D65359"
                 }, {
               category: "Competitor 7",
-              value: 45,
+              value: 14,
               color: "#F0AD00"
                 }, {
               category: "Competitor 8",
-              value: 45,
+              value: 14,
               color: "#32BA7C"
                 }, {
               category: "Competitor 9",
-              value: 30,
+              value: 11,
               color: "#5B5151"
                 }, {
               category: "Competitor 10",
-              value: 45,
+              value: 11,
               color: "#B1B1B1"
                 }, {
               category: "Others",
-              value: 45,
+              value: 18,
               color: "#F4A28C"
-                }
+                },
             ]);
 
       seriesPredicted.appear(1000, 100);
@@ -273,7 +275,7 @@
       series1.dataFields.valueY = "italy";
       series1.dataFields.categoryX = "year";
       series1.tooltipText = "{valueY}";
-//      series1.tooltip.label.padding = 4;
+      //      series1.tooltip.label.padding = 4;
       series1.tooltip.label.padding(3, 3, 3, 3);
       series1.tooltip.label.wrap = true;
       series1.tooltip.getFillFromObject = false;
@@ -283,7 +285,7 @@
       series1.tooltip.label.fill = am4core.color("#E37D38");
       series1.tooltip.label.fontSize = 10;
       series1.tooltip.background.filters.clear();
-//      shadow.color = am4core.color("transparent");
+      //      shadow.color = am4core.color("transparent");
       series1.tooltip.background.pointerLength = 0;
       series1.stroke = am4core.color("#E37D38");
 

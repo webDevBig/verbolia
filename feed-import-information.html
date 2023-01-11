@@ -1,111 +1,115 @@
 <!doctype html>
 <html lang="en">
-  <!--head.html-->
-  <head>
+<!--head.html-->
+
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Aurore</title>
     <link rel="preload" href="css/critical-style.css" as="style">
     <link rel="stylesheet" href="css/critical-style.css">
     <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="wrapper">
-      <header class="header">
-        <!-- header-panel-top.html -->
-        <div class="header__panel-top">
-          <a href="" class="logo"><img src="images/logo.png" alt="Aurore"></a>
-          <div class="header__holder">
-            <div class="notification-block">
-              <span class="popup-open">
-                <span class="notification-block__icon">
-                  <i class="icon-bell"></i>
-                  <span class="count">1</span>
-                </span>
-              </span>
-              <div class="popup-content">
-                <div class="notification-block__head">
-                  <span class="title">Notifications</span>
-                  <span class="count">1</span>
+        <header class="header">
+            <!-- header-panel-top.html -->
+            <div class="header__panel-top">
+                <a href="" class="logo"><img src="images/logo.png" alt="Aurore"></a>
+                <div class="header__holder">
+                    <div class="notification-block">
+                        <span class="popup-open">
+                            <span class="notification-block__icon">
+                                <i class="icon-bell"></i>
+                                <span class="count">1</span>
+                            </span>
+                        </span>
+                        <div class="popup-content">
+                            <div class="notification-block__head">
+                                <span class="title">Notifications</span>
+                                <span class="count">1</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <p>
+                                        <strong>Duplicate content</strong> - We have detected keywords with a high level of duplication
+                                    </p>
+                                    <p class="panel">
+                                        <span>Today at 15:13</span>
+                                        <a href="#">Mark as unread</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Keyword opportunities</strong> - New keywords opportunities have been found
+                                    </p>
+                                    <p class="panel">
+                                        <span>Today at 15:13</span>
+                                        <a href="#">Mark as unread</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Duplicate content</strong> - We have detected keywords with a high level of duplication
+                                    </p>
+                                    <p class="panel">
+                                        <span>Today at 15:13</span>
+                                        <a href="#">Mark as read</a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="user-block">
+                        <span class="popup-open">
+                            <span class="user-block__image">
+                                <img src="images/user-image.jpg" alt="user name">
+                            </span>
+                            <span class="user-block__name">Harry Potter</span>
+                        </span>
+                        <div class="popup-content">
+                            <ul>
+                                <li>
+                                    <a href="user-account.html">My account</a>
+                                </li>
+                                <li>
+                                    <a href="#">Log out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <ul>
-                  <li>
-                    <p>
-                      <strong>Duplicate content</strong> - We have detected keywords with a high level of duplication</p>
-                    <p class="panel">
-                      <span>Today at 15:13</span>
-                      <a href="#">Mark as unread</a>
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      <strong>Keyword opportunities</strong> - New keywords opportunities have been found</p>
-                    <p class="panel">
-                      <span>Today at 15:13</span>
-                      <a href="#">Mark as unread</a>
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      <strong>Duplicate content</strong> - We have detected keywords with a high level of duplication</p>
-                    <p class="panel">
-                      <span>Today at 15:13</span>
-                      <a href="#">Mark as read</a>
-                    </p>
-                  </li>
-                </ul>
-              </div>
+                <button class="btn-toggle-sidebar">
+                    <i class="icon-menu"></i>
+                </button>
             </div>
-            <div class="user-block">
-              <span class="popup-open">
-                <span class="user-block__image">
-                  <img src="images/user-image.jpg" alt="user name">
-                </span>
-                <span class="user-block__name">Harry Potter</span>
-              </span>
-              <div class="popup-content">
-                <ul>
-                  <li>
-                    <a href="user-account.html">My account</a>
-                  </li>
-                  <li>
-                    <a href="#">Log out</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <button class="btn-toggle-sidebar">
-            <i class="icon-menu"></i>
-          </button>
-        </div>
-      </header>
-      <div class="main-content">
-        <!-- sidebar.html -->
-        <div class="sidebar">
-          <div class="form__field-holder">
-            <select data-placeholder="Select web site" class="chosen-select select-dark">
-              <option></option>
-              <option>Kazidomi</option>
-              <option>Waio</option>
-            </select>
-          </div>
-          <nav class="navigation">
-            <ul>
-              <li class="item">
-                <a href="dashboard.html" class="item-link">
-                  <i class="icon-overview"></i> Dashboard</a>
-              </li>
-              <li class="item">
+        </header>
+        <div class="main-content">
+            <!-- sidebar.html -->
+            <div class="sidebar">
+                <div class="form__field-holder">
+                    <select data-placeholder="Select web site" class="chosen-select select-dark">
+                        <option></option>
+                        <option>Kazidomi</option>
+                        <option>Waio</option>
+                    </select>
+                </div>
+                <nav class="navigation">
+                    <ul>
+                        <li class="item">
+                            <a href="dashboard.html" class="item-link">
+                                <i class="icon-overview"></i> Dashboard</a>
+                        </li>
+                        <li class="item">
                             <a href="catalog_Navigator.html" class="item-link"><i class="icon-catalog"></i> Catalog Navigator</a>
                         </li>
-              <li class="item">
-                <a href="configuration.html" class="item-link">
-                  <i class="icon-configuration"></i> Configuration</a>
-              </li>
-             <li class="item">
+                        <li class="item">
+                            <a href="configuration.html" class="item-link">
+                                <i class="icon-configuration"></i> Configuration</a>
+                        </li>
+                        <li class="item">
                             <a href="#" class="item-link collapsible"><i class="icon-theme"></i> Theme</a>
                             <ul class="collapsible-content">
                                 <li class="item">
@@ -116,1495 +120,1494 @@
                                 </li>
                             </ul>
                         </li>
-<!--
+                        <!--
               <li class="item">
                 <a href="ressources.html" class="item-link">
                   <i class="icon-keyword"></i> Ressources</a>
               </li>
 -->
-              <li class="item">
-                <a href="feed-import-main.html" class="item-link active">
-                  <i class="icon-feed-import"></i> Feed import</a>
-              </li>
-              <li class="item">
+                        <li class="item">
+                            <a href="feed-import-main.html" class="item-link active">
+                                <i class="icon-feed-import"></i> Feed import</a>
+                        </li>
+                        <li class="item">
                             <a href="recommendations.html" class="item-link"><i class="icon-overview"></i> Recommendations</a>
                         </li>
-              <li class="item">
-                <a href="#" class="item-link collapsible">
-                  <i class="icon-keyword"></i>
-                            Pages management</a>
-                <ul class="collapsible-content">
-                  <li class="item">
-                    <a href="keyword-edition.html" class="item-link">Tag Management </a>
-                  </li>
-                  <li class="item">
-                    <a href="keyword-management.html" class="item-link">Keyword Management</a>
-                  </li>
-                </ul>
-              </li>
-               <li class="item">
-                            <a href="keyword_opportunities__main.html" class="item-link  ">
-                                <i class="icon-keyword-suggestions"></i> Keyword Opportunities
-
+                        <li class="item">
+                            <a href="#" class="item-link collapsible">
+                                <i class="icon-keyword"></i>
+                                Pages management</a>
+                            <ul class="collapsible-content">
+                                <li class="item">
+                                    <a href="keyword-edition.html" class="item-link">Tag Management </a>
+                                </li>
+                                <li class="item">
+                                    <a href="keyword-management.html" class="item-link">Keyword Management</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <a href="traffic_opportunities_main.html" class="item-link">
+                                <i class="icon-keyword-suggestions"></i>Traffic opportunities
                             </a>
                         </li>
-              <li class="item">
-                <a href="keyword-suggestions.html" class="item-link">
-                  <i class="icon-keyword-suggestions"></i> Keyword suggestions
-                            <i class="icon-notification tooltip-sidebar tooltip-bottom" data-tooltip="You have new keyword suggestions"></i>
-                </a>
-              </li>
-              <li class="item">
-                <a href="#" class="item-link">
-                  <i class="icon-features-management"></i> Features Management</a>
-              </li>
-              <li class="item">
-                <a href="users.html" class="item-link">
-                  <i class="icon-users"></i> Users</a>
-              </li>
-              <li class="item">
-                <a href="website.html" class="item-link">
-                  <i class="icon-website"></i> Website</a>
-              </li>
-              <li class="item">
-                <a href="distribution.html" class="item-link">
-                  <i class="icon-distribution"></i>Distribution page</a>
-              </li>
-              <li class="item">
-                <a href="documentation.html" class="item-link">
-                  <i class="icon-content-mamagement"></i>Documentation</a>
-              </li>
-              <li class="item">
-                <a href="product-list.html" class="item-link">
-                  <i class="icon-product-list"></i>Product list</a>
-              </li>
-            </ul>
-          </nav>
+                        <li class="item">
+                            <a href="keyword-suggestions.html" class="item-link">
+                                <i class="icon-keyword-suggestions"></i> Keyword suggestions
+                                <i class="icon-notification tooltip-sidebar tooltip-bottom" data-tooltip="You have new keyword suggestions"></i>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="item-link">
+                                <i class="icon-features-management"></i> Features Management</a>
+                        </li>
+                        <li class="item">
+                            <a href="users.html" class="item-link">
+                                <i class="icon-users"></i> Users</a>
+                        </li>
+                        <li class="item">
+                            <a href="website.html" class="item-link">
+                                <i class="icon-website"></i> Website</a>
+                        </li>
+                        <li class="item">
+                            <a href="distribution.html" class="item-link">
+                                <i class="icon-distribution"></i>Distribution page</a>
+                        </li>
+                        <li class="item">
+                            <a href="documentation.html" class="item-link">
+                                <i class="icon-content-mamagement"></i>Documentation</a>
+                        </li>
+                        <li class="item">
+                            <a href="product-list.html" class="item-link">
+                                <i class="icon-product-list"></i>Product list</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <main class="content">
+                <!-- content-header.html -->
+                <header class="content__header">
+                    <div>
+                        <h1>Feed import</h1>
+                    </div>
+                </header>
+                <!-- table.html -->
+                <div class="block-table block-table-ressources">
+                    <div class="block-table__header nowrap full-width">
+                        <div class="block-table__actions">
+                            <div class="area-left">
+                                <button class="btn btn-white">Export all features</button>
+                                <button class="btn btn-white modal-open" data-modal="modalFeedImport">Import all features</button>
+                                <button class="btn btn-white modal-open" data-modal="modalFeedImportLoading">Import Loading</button>
+                            </div>
+                            <div>
+                                <button class="btn btn-white modal-open" data-modal="modalConfigureExclusionRules">Configure exclusion rules</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-feed-import__tab-set tab-set group">
+                        <a href="#" data-tab="tab1" class="tab-set__link">Review feed</a>
+                        <a href="#" data-tab="tab2" class="tab-set__link active">Product feed</a>
+                        <a href="#" data-tab="tab3" class="tab-set__link">Product feed</a>
+                    </div>
+                    <div class="block-feed-import__tab-content simple">
+                        <div id="tab1" class="tab">
+                            <table class="table-feed-import">
+                                <thead>
+                                    <tr>
+                                        <th>Imported fields</th>
+                                        <th>Theme fields</th>
+                                        <th>Custom name</th>
+                                        <th></th>
+                                        <th>Use in description</th>
+                                        <th>Use in search keyword</th>
+                                        <th>Use in search keyword</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-head="Imported field:">Material</td>
+                                        <td data-head="Theme fields:" class="field">
+                                            <div class="form__field-holder field-medium">
+                                                <select data-placeholder="Select a field" class="chosen-select select-light">
+                                                    <option></option>
+                                                    <option>Standard fields</option>
+                                                    <option>Product Category</option>
+                                                    <option>Product URL</option>
+                                                    <option>Image URL</option>
+                                                    <option>Description</option>
+                                                    <option>Review</option>
+                                                    <option selected="selected">Custom field</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td data-head="Custom name:" class="field">
+                                            <div class="form__field-inline form__field-edit small field-medium">
+                                                <div class="form__field-holder">
+                                                    <input type="text" value="Material" disabled="disabled">
+                                                </div>
+                                                <button class="btn-icon edit">
+                                                    <i class="icon-edit-small"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td class="field-button">
+                                            <button class="btn btn-medium btn-green-light text-nowrap modal-open" data-modal="modalEditValues">Edit values</button>
+                                        </td>
+                                        <td data-head="Use in description:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-101" name="check">
+                                                <label for="check-101"></label>
+                                            </div>
+                                        </td>
+                                        <td data-head="Use in search keyword:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-102" name="check">
+                                                <label for="check-102"></label>
+                                            </div>
+                                        </td>
+                                        <td data-head="Use in search keyword:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-103" name="check">
+                                                <label for="check-103"></label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="tab2" class="tab">
+                            <table class="table-feed-import">
+                                <thead>
+                                    <tr>
+                                        <th>Imported fields</th>
+                                        <th>Theme fields</th>
+                                        <th>Custom name</th>
+                                        <th></th>
+                                        <th>Use in description</th>
+                                        <th>Use in search keyword</th>
+                                        <th>Use in search keyword</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-head="Imported field:">Image Link</td>
+                                        <td data-head="Theme fields:" class="field">
+                                            <div class="form__field-holder field-medium">
+                                                <select data-placeholder="Select a field" class="chosen-select select-light">
+                                                    <option></option>
+                                                    <option>Standard fields</option>
+                                                    <option>Product Category</option>
+                                                    <option>Product URL</option>
+                                                    <option selected="selected">Image URL</option>
+                                                    <option>Description</option>
+                                                    <option>Review</option>
+                                                    <option>Custom field</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td data-head="Custom name:" class="field">
+                                            <div class="form__field-inline form__field-edit small field-medium">
+                                                <div class="form__field-holder">
+                                                    <input type="text" value="Image URL" disabled="disabled">
+                                                </div>
+                                                <button class="btn-icon edit">
+                                                    <i class="icon-edit-small"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td class="field-button">
+                                            <button class="btn btn-medium btn-green-light text-nowrap modal-open" data-modal="modalEditValues">Edit values</button>
+                                        </td>
+                                        <td data-head="Use in description:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-01" name="check">
+                                                <label for="check-01"></label>
+                                            </div>
+                                        </td>
+                                        <td data-head="Use in search keyword:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-02" name="check">
+                                                <label for="check-02"></label>
+                                            </div>
+                                        </td>
+                                        <td data-head="Use in search keyword:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-03" name="check">
+                                                <label for="check-03"></label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-head="Imported field:">Discount Price</td>
+                                        <td data-head="Theme fields:" class="field">
+                                            <div class="form__field-holder field-medium">
+                                                <select data-placeholder="Select a field" class="chosen-select select-light">
+                                                    <option></option>
+                                                    <option>Standard fields</option>
+                                                    <option>Product Category</option>
+                                                    <option>Product URL</option>
+                                                    <option>Image URL</option>
+                                                    <option>Description</option>
+                                                    <option>Review</option>
+                                                    <option>Custom field</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td data-head="Custom name:" class="field">
+                                            <div class="form__field-inline form__field-edit small field-medium">
+                                                <div class="form__field-holder">
+                                                    <input type="text" value="Image URL" disabled="disabled">
+                                                </div>
+                                                <button class="btn-icon edit">
+                                                    <i class="icon-edit-small"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td class="field-button">
+                                            <button class="btn btn-medium btn-green-light text-nowrap modal-open" data-modal="modalEditValues">Edit values</button>
+                                        </td>
+                                        <td data-head="Use in description:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" checked="checked" id="check-11" name="check">
+                                                <label for="check-11"></label>
+                                            </div>
+                                        </td>
+                                        <td data-head="Use in search keyword:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" checked="checked" id="check-12" name="check">
+                                                <label for="check-12"></label>
+                                            </div>
+                                        </td>
+                                        <td data-head="Use in search keyword:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" checked="checked" id="check-13" name="check">
+                                                <label for="check-13"></label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-head="Imported field:">Price</td>
+                                        <td data-head="Theme fields:" class="field">
+                                            <div class="form__field-holder field-medium">
+                                                <select data-placeholder="Select a field" class="chosen-select select-light">
+                                                    <option></option>
+                                                    <option>Standard fields</option>
+                                                    <option>Product Category</option>
+                                                    <option>Product URL</option>
+                                                    <option selected="selected">Image URL</option>
+                                                    <option>Description</option>
+                                                    <option>Review</option>
+                                                    <option>Custom field</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td data-head="Custom name:" class="field">
+                                            <div class="form__field-inline form__field-edit small field-medium">
+                                                <div class="form__field-holder">
+                                                    <input type="text" value="Image URL" disabled="disabled">
+                                                </div>
+                                                <button class="btn-icon edit">
+                                                    <i class="icon-edit-small"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td class="field-button">
+                                            <button class="btn btn-medium btn-green-light text-nowrap modal-open" data-modal="modalEditValues">Edit values</button>
+                                        </td>
+                                        <td data-head="Use in description:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-21" name="check">
+                                                <label for="check-21"></label>
+                                            </div>
+                                        </td>
+                                        <td data-head="Use in search keyword:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-22" name="check">
+                                                <label for="check-22"></label>
+                                            </div>
+                                        </td>
+                                        <td data-head="Use in search keyword:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-23" name="check">
+                                                <label for="check-23"></label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-head="Imported field:">Material</td>
+                                        <td data-head="Theme fields:" class="field">
+                                            <div class="form__field-holder field-medium">
+                                                <select data-placeholder="Select a field" class="chosen-select select-light">
+                                                    <option></option>
+                                                    <option>Standard fields</option>
+                                                    <option>Product Category</option>
+                                                    <option>Product URL</option>
+                                                    <option>Image URL</option>
+                                                    <option>Description</option>
+                                                    <option>Review</option>
+                                                    <option selected="selected">Custom field</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td data-head="Custom name:" class="field">
+                                            <div class="form__field-inline form__field-edit small field-medium">
+                                                <div class="form__field-holder">
+                                                    <input type="text" value="Material" disabled="disabled">
+                                                </div>
+                                                <button class="btn-icon edit">
+                                                    <i class="icon-edit-small"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td class="field-button">
+                                            <button class="btn btn-medium btn-green-light text-nowrap modal-open" data-modal="modalEditValues">Edit values</button>
+                                        </td>
+                                        <td data-head="Use in description:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-31" name="check">
+                                                <label for="check-31"></label>
+                                            </div>
+                                        </td>
+                                        <td data-head="Use in search keyword:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-32" name="check">
+                                                <label for="check-32"></label>
+                                            </div>
+                                        </td>
+                                        <td data-head="Use in search keyword:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-33" name="check">
+                                                <label for="check-33"></label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-head="Imported field:">Image Link</td>
+                                        <td data-head="Theme fields:" class="field">
+                                            <div class="form__field-holder field-medium">
+                                                <select data-placeholder="Select a field" class="chosen-select select-light">
+                                                    <option></option>
+                                                    <option>Standard fields</option>
+                                                    <option>Product Category</option>
+                                                    <option>Product URL</option>
+                                                    <option selected="selected">Image URL</option>
+                                                    <option>Description</option>
+                                                    <option>Review</option>
+                                                    <option>Custom field</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td data-head="Custom name:" class="field">
+                                            <div class="form__field-inline form__field-edit small field-medium">
+                                                <div class="form__field-holder">
+                                                    <input type="text" value="Image URL" disabled="disabled">
+                                                </div>
+                                                <button class="btn-icon edit">
+                                                    <i class="icon-edit-small"></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn-icon btn-icon-small refresh">
+                                                <i class="icon-refresh"></i>
+                                            </button>
+                                        </td>
+                                        <td class="field-button">
+                                            <button class="btn btn-medium btn-green-light text-nowrap modal-open" data-modal="modalEditValues">Edit values</button>
+                                        </td>
+                                        <td data-head="Use in description:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-41" name="check">
+                                                <label for="check-41"></label>
+                                            </div>
+                                        </td>
+                                        <td data-head="Use in search keyword:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-42" name="check">
+                                                <label for="check-42"></label>
+                                            </div>
+                                        </td>
+                                        <td data-head="Use in search keyword:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-43" name="check">
+                                                <label for="check-43"></label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-head="Imported field:">Product Link</td>
+                                        <td data-head="Theme fields:" class="field">
+                                            <div class="form__field-holder field-medium">
+                                                <select data-placeholder="Select a field" class="chosen-select select-light">
+                                                    <option></option>
+                                                    <option>Standard fields</option>
+                                                    <option>Product Category</option>
+                                                    <option>Product URL</option>
+                                                    <option>Image URL</option>
+                                                    <option>Description</option>
+                                                    <option>Review</option>
+                                                    <option>Custom field</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td data-head="Custom name:" class="field">
+                                            <div class="form__field-inline form__field-edit small field-medium">
+                                                <div class="form__field-holder">
+                                                    <input type="text" value="Image URL" disabled="disabled">
+                                                </div>
+                                                <button class="btn-icon edit">
+                                                    <i class="icon-edit-small"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td class="field-button">
+                                            <button class="btn btn-medium btn-green-light text-nowrap modal-open" data-modal="modalEditValues">Edit values</button>
+                                        </td>
+                                        <td data-head="Use in description:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-51" name="check">
+                                                <label for="check-51"></label>
+                                            </div>
+                                        </td>
+                                        <td data-head="Use in search keyword:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-52" name="check">
+                                                <label for="check-52"></label>
+                                            </div>
+                                        </td>
+                                        <td data-head="Use in search keyword:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-53" name="check">
+                                                <label for="check-53"></label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-head="Imported field:">Price</td>
+                                        <td data-head="Theme fields:" class="field">
+                                            <div class="form__field-holder field-medium">
+                                                <select data-placeholder="Select a field" class="chosen-select select-light">
+                                                    <option></option>
+                                                    <option>Standard fields</option>
+                                                    <option>Product Category</option>
+                                                    <option>Product URL</option>
+                                                    <option selected="selected">Image URL</option>
+                                                    <option>Description</option>
+                                                    <option>Review</option>
+                                                    <option>Custom field</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td data-head="Custom name:" class="field">
+                                            <div class="form__field-inline form__field-edit small field-medium">
+                                                <div class="form__field-holder">
+                                                    <input type="text" value="Image URL" disabled="disabled">
+                                                </div>
+                                                <button class="btn-icon edit">
+                                                    <i class="icon-edit-small"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td class="field-button">
+                                            <button class="btn btn-medium btn-green-light text-nowrap modal-open" data-modal="modalEditValues">Edit values</button>
+                                        </td>
+                                        <td data-head="Use in description:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-61" name="check">
+                                                <label for="check-61"></label>
+                                            </div>
+                                        </td>
+                                        <td data-head="Use in search keyword:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-62" name="check">
+                                                <label for="check-62"></label>
+                                            </div>
+                                        </td>
+                                        <td data-head="Use in search keyword:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-63" name="check">
+                                                <label for="check-63"></label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-head="Imported field:">Material</td>
+                                        <td data-head="Theme fields:" class="field">
+                                            <div class="form__field-holder field-medium">
+                                                <select data-placeholder="Select a field" class="chosen-select select-light">
+                                                    <option></option>
+                                                    <option>Standard fields</option>
+                                                    <option>Product Category</option>
+                                                    <option>Product URL</option>
+                                                    <option>Image URL</option>
+                                                    <option>Description</option>
+                                                    <option>Review</option>
+                                                    <option selected="selected">Custom field</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td data-head="Custom name:" class="field">
+                                            <div class="form__field-inline form__field-edit small field-medium">
+                                                <div class="form__field-holder">
+                                                    <input type="text" value="Material" disabled="disabled">
+                                                </div>
+                                                <button class="btn-icon edit">
+                                                    <i class="icon-edit-small"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td class="field-button">
+                                            <button class="btn btn-medium btn-green-light text-nowrap modal-open" data-modal="modalEditValues">Edit values</button>
+                                        </td>
+                                        <td data-head="Use in description:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-71" name="check">
+                                                <label for="check-71"></label>
+                                            </div>
+                                        </td>
+                                        <td data-head="Use in search keyword:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-72" name="check">
+                                                <label for="check-72"></label>
+                                            </div>
+                                        </td>
+                                        <td data-head="Use in search keyword:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-73" name="check">
+                                                <label for="check-73"></label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-head="Imported field:">Price</td>
+                                        <td data-head="Theme fields:" class="field">
+                                            <div class="form__field-holder field-medium">
+                                                <select data-placeholder="Select a field" class="chosen-select select-light">
+                                                    <option></option>
+                                                    <option>Standard fields</option>
+                                                    <option>Product Category</option>
+                                                    <option>Product URL</option>
+                                                    <option selected="selected">Image URL</option>
+                                                    <option>Description</option>
+                                                    <option>Review</option>
+                                                    <option>Custom field</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td data-head="Custom name:" class="field">
+                                            <div class="form__field-inline form__field-edit small field-medium">
+                                                <div class="form__field-holder">
+                                                    <input type="text" value="Image URL" disabled="disabled">
+                                                </div>
+                                                <button class="btn-icon edit">
+                                                    <i class="icon-edit-small"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td class="field-button">
+                                            <button class="btn btn-medium btn-green-light text-nowrap modal-open" data-modal="modalEditValues">Edit values</button>
+                                        </td>
+                                        <td data-head="Use in description:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-81" name="check">
+                                                <label for="check-81"></label>
+                                            </div>
+                                        </td>
+                                        <td data-head="Use in search keyword:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" checked="checked" id="check-82" name="check">
+                                                <label for="check-82"></label>
+                                            </div>
+                                        </td>
+                                        <td data-head="Use in search keyword:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" checked="checked" id="check-83" name="check">
+                                                <label for="check-83"></label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-head="Imported field:">Material</td>
+                                        <td data-head="Theme fields:" class="field">
+                                            <div class="form__field-holder field-medium">
+                                                <select data-placeholder="Select a field" class="chosen-select select-light">
+                                                    <option></option>
+                                                    <option>Standard fields</option>
+                                                    <option>Product Category</option>
+                                                    <option>Product URL</option>
+                                                    <option>Image URL</option>
+                                                    <option>Description</option>
+                                                    <option>Review</option>
+                                                    <option selected="selected">Custom field</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td data-head="Custom name:" class="field">
+                                            <div class="form__field-inline form__field-edit small field-medium">
+                                                <div class="form__field-holder">
+                                                    <input type="text" value="Material" disabled="disabled">
+                                                </div>
+                                                <button class="btn-icon edit">
+                                                    <i class="icon-edit-small"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td class="field-button">
+                                            <button class="btn btn-medium btn-green-light text-nowrap modal-open" data-modal="modalEditValues">Edit values</button>
+                                        </td>
+                                        <td data-head="Use in description:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-91" name="check">
+                                                <label for="check-91"></label>
+                                            </div>
+                                        </td>
+                                        <td data-head="Use in search keyword:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-92" name="check">
+                                                <label for="check-92"></label>
+                                            </div>
+                                        </td>
+                                        <td data-head="Use in search keyword:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-93" name="check">
+                                                <label for="check-93"></label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="tab3" class="tab">
+                            <table class="table-feed-import">
+                                <thead>
+                                    <tr>
+                                        <th>Imported fields</th>
+                                        <th>Theme fields</th>
+                                        <th>Custom name</th>
+                                        <th></th>
+                                        <th>Use in description</th>
+                                        <th>Use in search keyword</th>
+                                        <th>Use in search keyword</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-head="Imported field:">Material</td>
+                                        <td data-head="Theme fields:" class="field">
+                                            <div class="form__field-holder field-medium">
+                                                <select data-placeholder="Select a field" class="chosen-select select-light">
+                                                    <option></option>
+                                                    <option>Standard fields</option>
+                                                    <option>Product Category</option>
+                                                    <option>Product URL</option>
+                                                    <option>Image URL</option>
+                                                    <option>Description</option>
+                                                    <option>Review</option>
+                                                    <option selected="selected">Custom field</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td data-head="Custom name:" class="field">
+                                            <div class="form__field-inline form__field-edit small field-medium">
+                                                <div class="form__field-holder">
+                                                    <input type="text" value="Material" disabled="disabled">
+                                                </div>
+                                                <button class="btn-icon edit">
+                                                    <i class="icon-edit-small"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td class="field-button">
+                                            <button class="btn btn-medium btn-green-light text-nowrap modal-open" data-modal="modalEditValues">Edit values</button>
+                                        </td>
+                                        <td data-head="Use in description:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-111" name="check">
+                                                <label for="check-111"></label>
+                                            </div>
+                                        </td>
+                                        <td data-head="Use in search keyword:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-112" name="check">
+                                                <label for="check-112"></label>
+                                            </div>
+                                        </td>
+                                        <td data-head="Use in search keyword:" class="field-check">
+                                            <div class="field-checkbox checked-single">
+                                                <input type="checkbox" id="check-113" name="check">
+                                                <label for="check-113"></label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="block-table__pagination">
+                        <p>1035 Keywords</p>
+                        <nav class="pagination">
+                            <button class="btn-icon btn-first" disabled="disabled">
+                                <i class="icon-arrow-double"></i>
+                            </button>
+                            <button class="btn-icon btn-prev" disabled="disabled">
+                                <i class="icon-arrow"></i>
+                            </button>
+                            <span class="page-item active" aria-current="page">
+                                <span class="page-link">1</span>
+                            </span>
+                            <span class="page-item">
+                                <a class="page-link" href="#">2</a>
+                            </span>
+                            <span class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </span>
+                            <span class="page-item">
+                                <a class="page-link" href="#">4</a>
+                            </span>
+                            <span class="page-item">
+                                <a class="page-link" href="#">5</a>
+                            </span>
+                            <span class="page-item">...</span>
+                            <span class="page-item">
+                                <a class="page-link" href="#">25</a>
+                            </span>
+                            <button class="btn-icon btn-next">
+                                <i class="icon-arrow"></i>
+                            </button>
+                            <button class="btn-icon btn-last">
+                                <i class="icon-arrow-double"></i>
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+            </main>
         </div>
-        <main class="content">
-          <!-- content-header.html -->
-          <header class="content__header">
-            <div>
-              <h1>Feed import</h1>
-            </div>
-          </header>
-          <!-- table.html -->
-          <div class="block-table block-table-ressources">
-            <div class="block-table__header nowrap full-width">
-              <div class="block-table__actions">
-                <div class="area-left">
-                  <button class="btn btn-white">Export all features</button>
-                  <button class="btn btn-white modal-open" data-modal="modalFeedImport">Import all features</button>
-                  <button class="btn btn-white modal-open" data-modal="modalFeedImportLoading">Import Loading</button>
-                </div>
-                <div>
-                  <button class="btn btn-white modal-open" data-modal="modalConfigureExclusionRules">Configure exclusion rules</button>
-                </div>
-              </div>
-            </div>
-            <div class="block-feed-import__tab-set tab-set group">
-              <a href="#" data-tab="tab1" class="tab-set__link">Review feed</a>
-              <a href="#" data-tab="tab2" class="tab-set__link active">Product feed</a>
-              <a href="#" data-tab="tab3" class="tab-set__link">Product feed</a>
-            </div>
-            <div class="block-feed-import__tab-content simple">
-              <div id="tab1" class="tab">
-                <table class="table-feed-import">
-                  <thead>
-                    <tr>
-                      <th>Imported fields</th>
-                      <th>Theme fields</th>
-                      <th>Custom name</th>
-                      <th></th>
-                      <th>Use in description</th>
-                      <th>Use in search keyword</th>
-                      <th>Use in search keyword</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td data-head="Imported field:">Material</td>
-                      <td data-head="Theme fields:" class="field">
-                        <div class="form__field-holder field-medium">
-                          <select data-placeholder="Select a field" class="chosen-select select-light">
-                            <option></option>
-                            <option>Standard fields</option>
-                            <option>Product Category</option>
-                            <option>Product URL</option>
-                            <option>Image URL</option>
-                            <option>Description</option>
-                            <option>Review</option>
-                            <option selected="selected">Custom field</option>
-                          </select>
-                        </div>
-                      </td>
-                      <td data-head="Custom name:" class="field">
-                        <div class="form__field-inline form__field-edit small field-medium">
-                          <div class="form__field-holder">
-                            <input  type="text" value="Material" disabled="disabled">
-                          </div>
-                          <button class="btn-icon edit">
-                            <i class="icon-edit-small"></i>
-                          </button>
-                        </div>
-                      </td>
-                      <td class="field-button">
-                        <button class="btn btn-medium btn-green-light text-nowrap modal-open" data-modal="modalEditValues">Edit values</button>
-                      </td>
-                      <td data-head="Use in description:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-101" name="check">
-                          <label for="check-101"></label>
-                        </div>
-                      </td>
-                      <td data-head="Use in search keyword:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-102" name="check">
-                          <label for="check-102"></label>
-                        </div>
-                      </td>
-                      <td data-head="Use in search keyword:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-103" name="check">
-                          <label for="check-103"></label>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div id="tab2" class="tab">
-                <table class="table-feed-import">
-                  <thead>
-                    <tr>
-                      <th>Imported fields</th>
-                      <th>Theme fields</th>
-                      <th>Custom name</th>
-                      <th></th>
-                      <th>Use in description</th>
-                      <th>Use in search keyword</th>
-                      <th>Use in search keyword</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td data-head="Imported field:">Image Link</td>
-                      <td data-head="Theme fields:" class="field">
-                        <div class="form__field-holder field-medium">
-                          <select data-placeholder="Select a field" class="chosen-select select-light">
-                            <option></option>
-                            <option>Standard fields</option>
-                            <option>Product Category</option>
-                            <option>Product URL</option>
-                            <option selected="selected">Image URL</option>
-                            <option>Description</option>
-                            <option>Review</option>
-                            <option>Custom field</option>
-                          </select>
-                        </div>
-                      </td>
-                      <td data-head="Custom name:" class="field">
-                        <div class="form__field-inline form__field-edit small field-medium">
-                          <div class="form__field-holder">
-                            <input  type="text" value="Image URL" disabled="disabled">
-                          </div>
-                          <button class="btn-icon edit">
-                            <i class="icon-edit-small"></i>
-                          </button>
-                        </div>
-                      </td>
-                      <td class="field-button">
-                        <button class="btn btn-medium btn-green-light text-nowrap modal-open" data-modal="modalEditValues">Edit values</button>
-                      </td>
-                      <td data-head="Use in description:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-01" name="check">
-                          <label for="check-01"></label>
-                        </div>
-                      </td>
-                      <td data-head="Use in search keyword:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-02" name="check">
-                          <label for="check-02"></label>
-                        </div>
-                      </td>
-                      <td data-head="Use in search keyword:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-03" name="check">
-                          <label for="check-03"></label>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td data-head="Imported field:">Discount Price</td>
-                      <td data-head="Theme fields:" class="field">
-                        <div class="form__field-holder field-medium">
-                          <select data-placeholder="Select a field" class="chosen-select select-light">
-                            <option></option>
-                            <option>Standard fields</option>
-                            <option>Product Category</option>
-                            <option>Product URL</option>
-                            <option>Image URL</option>
-                            <option>Description</option>
-                            <option>Review</option>
-                            <option>Custom field</option>
-                          </select>
-                        </div>
-                      </td>
-                      <td data-head="Custom name:" class="field">
-                        <div class="form__field-inline form__field-edit small field-medium">
-                          <div class="form__field-holder">
-                            <input  type="text" value="Image URL" disabled="disabled">
-                          </div>
-                          <button class="btn-icon edit">
-                            <i class="icon-edit-small"></i>
-                          </button>
-                        </div>
-                      </td>
-                      <td class="field-button">
-                        <button class="btn btn-medium btn-green-light text-nowrap modal-open" data-modal="modalEditValues">Edit values</button>
-                      </td>
-                      <td data-head="Use in description:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" checked="checked" id="check-11" name="check">
-                          <label for="check-11"></label>
-                        </div>
-                      </td>
-                      <td data-head="Use in search keyword:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" checked="checked" id="check-12" name="check">
-                          <label for="check-12"></label>
-                        </div>
-                      </td>
-                      <td data-head="Use in search keyword:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" checked="checked" id="check-13" name="check">
-                          <label for="check-13"></label>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td data-head="Imported field:">Price</td>
-                      <td data-head="Theme fields:" class="field">
-                        <div class="form__field-holder field-medium">
-                          <select data-placeholder="Select a field" class="chosen-select select-light">
-                            <option></option>
-                            <option>Standard fields</option>
-                            <option>Product Category</option>
-                            <option>Product URL</option>
-                            <option selected="selected">Image URL</option>
-                            <option>Description</option>
-                            <option>Review</option>
-                            <option>Custom field</option>
-                          </select>
-                        </div>
-                      </td>
-                      <td data-head="Custom name:" class="field">
-                        <div class="form__field-inline form__field-edit small field-medium">
-                          <div class="form__field-holder">
-                            <input  type="text" value="Image URL" disabled="disabled">
-                          </div>
-                          <button class="btn-icon edit">
-                            <i class="icon-edit-small"></i>
-                          </button>
-                        </div>
-                      </td>
-                      <td class="field-button">
-                        <button class="btn btn-medium btn-green-light text-nowrap modal-open" data-modal="modalEditValues">Edit values</button>
-                      </td>
-                      <td data-head="Use in description:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-21" name="check">
-                          <label for="check-21"></label>
-                        </div>
-                      </td>
-                      <td data-head="Use in search keyword:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-22" name="check">
-                          <label for="check-22"></label>
-                        </div>
-                      </td>
-                      <td data-head="Use in search keyword:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-23" name="check">
-                          <label for="check-23"></label>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td data-head="Imported field:">Material</td>
-                      <td data-head="Theme fields:" class="field">
-                        <div class="form__field-holder field-medium">
-                          <select data-placeholder="Select a field" class="chosen-select select-light">
-                            <option></option>
-                            <option>Standard fields</option>
-                            <option>Product Category</option>
-                            <option>Product URL</option>
-                            <option>Image URL</option>
-                            <option>Description</option>
-                            <option>Review</option>
-                            <option selected="selected">Custom field</option>
-                          </select>
-                        </div>
-                      </td>
-                      <td data-head="Custom name:" class="field">
-                        <div class="form__field-inline form__field-edit small field-medium">
-                          <div class="form__field-holder">
-                            <input  type="text" value="Material" disabled="disabled">
-                          </div>
-                          <button class="btn-icon edit">
-                            <i class="icon-edit-small"></i>
-                          </button>
-                        </div>
-                      </td>
-                      <td class="field-button">
-                        <button class="btn btn-medium btn-green-light text-nowrap modal-open" data-modal="modalEditValues">Edit values</button>
-                      </td>
-                      <td data-head="Use in description:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-31" name="check">
-                          <label for="check-31"></label>
-                        </div>
-                      </td>
-                      <td data-head="Use in search keyword:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-32" name="check">
-                          <label for="check-32"></label>
-                        </div>
-                      </td>
-                      <td data-head="Use in search keyword:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-33" name="check">
-                          <label for="check-33"></label>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td data-head="Imported field:">Image Link</td>
-                      <td data-head="Theme fields:" class="field">
-                        <div class="form__field-holder field-medium">
-                          <select data-placeholder="Select a field" class="chosen-select select-light">
-                            <option></option>
-                            <option>Standard fields</option>
-                            <option>Product Category</option>
-                            <option>Product URL</option>
-                            <option selected="selected">Image URL</option>
-                            <option>Description</option>
-                            <option>Review</option>
-                            <option>Custom field</option>
-                          </select>
-                        </div>
-                      </td>
-                      <td data-head="Custom name:" class="field">
-                        <div class="form__field-inline form__field-edit small field-medium">
-                          <div class="form__field-holder">
-                            <input  type="text" value="Image URL" disabled="disabled">
-                          </div>
-                          <button class="btn-icon edit">
-                            <i class="icon-edit-small"></i>
-                          </button>
-                        </div>
-                        <button class="btn-icon btn-icon-small refresh">
-                          <i class="icon-refresh"></i>
-                        </button>
-                      </td>
-                      <td class="field-button">
-                        <button class="btn btn-medium btn-green-light text-nowrap modal-open" data-modal="modalEditValues">Edit values</button>
-                      </td>
-                      <td data-head="Use in description:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-41" name="check">
-                          <label for="check-41"></label>
-                        </div>
-                      </td>
-                      <td data-head="Use in search keyword:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-42" name="check">
-                          <label for="check-42"></label>
-                        </div>
-                      </td>
-                      <td data-head="Use in search keyword:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-43" name="check">
-                          <label for="check-43"></label>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td data-head="Imported field:">Product Link</td>
-                      <td data-head="Theme fields:" class="field">
-                        <div class="form__field-holder field-medium">
-                          <select data-placeholder="Select a field" class="chosen-select select-light">
-                            <option></option>
-                            <option>Standard fields</option>
-                            <option>Product Category</option>
-                            <option>Product URL</option>
-                            <option>Image URL</option>
-                            <option>Description</option>
-                            <option>Review</option>
-                            <option>Custom field</option>
-                          </select>
-                        </div>
-                      </td>
-                      <td data-head="Custom name:" class="field">
-                        <div class="form__field-inline form__field-edit small field-medium">
-                          <div class="form__field-holder">
-                            <input  type="text" value="Image URL" disabled="disabled">
-                          </div>
-                          <button class="btn-icon edit">
-                            <i class="icon-edit-small"></i>
-                          </button>
-                        </div>
-                      </td>
-                      <td class="field-button">
-                        <button class="btn btn-medium btn-green-light text-nowrap modal-open" data-modal="modalEditValues">Edit values</button>
-                      </td>
-                      <td data-head="Use in description:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-51" name="check">
-                          <label for="check-51"></label>
-                        </div>
-                      </td>
-                      <td data-head="Use in search keyword:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-52" name="check">
-                          <label for="check-52"></label>
-                        </div>
-                      </td>
-                      <td data-head="Use in search keyword:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-53" name="check">
-                          <label for="check-53"></label>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td data-head="Imported field:">Price</td>
-                      <td data-head="Theme fields:" class="field">
-                        <div class="form__field-holder field-medium">
-                          <select data-placeholder="Select a field" class="chosen-select select-light">
-                            <option></option>
-                            <option>Standard fields</option>
-                            <option>Product Category</option>
-                            <option>Product URL</option>
-                            <option selected="selected">Image URL</option>
-                            <option>Description</option>
-                            <option>Review</option>
-                            <option>Custom field</option>
-                          </select>
-                        </div>
-                      </td>
-                      <td data-head="Custom name:" class="field">
-                        <div class="form__field-inline form__field-edit small field-medium">
-                          <div class="form__field-holder">
-                            <input  type="text" value="Image URL" disabled="disabled">
-                          </div>
-                          <button class="btn-icon edit">
-                            <i class="icon-edit-small"></i>
-                          </button>
-                        </div>
-                      </td>
-                      <td class="field-button">
-                        <button class="btn btn-medium btn-green-light text-nowrap modal-open" data-modal="modalEditValues">Edit values</button>
-                      </td>
-                      <td data-head="Use in description:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-61" name="check">
-                          <label for="check-61"></label>
-                        </div>
-                      </td>
-                      <td data-head="Use in search keyword:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-62" name="check">
-                          <label for="check-62"></label>
-                        </div>
-                      </td>
-                      <td data-head="Use in search keyword:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-63" name="check">
-                          <label for="check-63"></label>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td data-head="Imported field:">Material</td>
-                      <td data-head="Theme fields:" class="field">
-                        <div class="form__field-holder field-medium">
-                          <select data-placeholder="Select a field" class="chosen-select select-light">
-                            <option></option>
-                            <option>Standard fields</option>
-                            <option>Product Category</option>
-                            <option>Product URL</option>
-                            <option>Image URL</option>
-                            <option>Description</option>
-                            <option>Review</option>
-                            <option selected="selected">Custom field</option>
-                          </select>
-                        </div>
-                      </td>
-                      <td data-head="Custom name:" class="field">
-                        <div class="form__field-inline form__field-edit small field-medium">
-                          <div class="form__field-holder">
-                            <input  type="text" value="Material" disabled="disabled">
-                          </div>
-                          <button class="btn-icon edit">
-                            <i class="icon-edit-small"></i>
-                          </button>
-                        </div>
-                      </td>
-                      <td class="field-button">
-                        <button class="btn btn-medium btn-green-light text-nowrap modal-open" data-modal="modalEditValues">Edit values</button>
-                      </td>
-                      <td data-head="Use in description:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-71" name="check">
-                          <label for="check-71"></label>
-                        </div>
-                      </td>
-                      <td data-head="Use in search keyword:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-72" name="check">
-                          <label for="check-72"></label>
-                        </div>
-                      </td>
-                      <td data-head="Use in search keyword:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-73" name="check">
-                          <label for="check-73"></label>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td data-head="Imported field:">Price</td>
-                      <td data-head="Theme fields:" class="field">
-                        <div class="form__field-holder field-medium">
-                          <select data-placeholder="Select a field" class="chosen-select select-light">
-                            <option></option>
-                            <option>Standard fields</option>
-                            <option>Product Category</option>
-                            <option>Product URL</option>
-                            <option selected="selected">Image URL</option>
-                            <option>Description</option>
-                            <option>Review</option>
-                            <option>Custom field</option>
-                          </select>
-                        </div>
-                      </td>
-                      <td data-head="Custom name:" class="field">
-                        <div class="form__field-inline form__field-edit small field-medium">
-                          <div class="form__field-holder">
-                            <input  type="text" value="Image URL" disabled="disabled">
-                          </div>
-                          <button class="btn-icon edit">
-                            <i class="icon-edit-small"></i>
-                          </button>
-                        </div>
-                      </td>
-                      <td class="field-button">
-                        <button class="btn btn-medium btn-green-light text-nowrap modal-open" data-modal="modalEditValues">Edit values</button>
-                      </td>
-                      <td data-head="Use in description:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-81" name="check">
-                          <label for="check-81"></label>
-                        </div>
-                      </td>
-                      <td data-head="Use in search keyword:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" checked="checked" id="check-82" name="check">
-                          <label for="check-82"></label>
-                        </div>
-                      </td>
-                      <td data-head="Use in search keyword:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" checked="checked" id="check-83" name="check">
-                          <label for="check-83"></label>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td data-head="Imported field:">Material</td>
-                      <td data-head="Theme fields:" class="field">
-                        <div class="form__field-holder field-medium">
-                          <select data-placeholder="Select a field" class="chosen-select select-light">
-                            <option></option>
-                            <option>Standard fields</option>
-                            <option>Product Category</option>
-                            <option>Product URL</option>
-                            <option>Image URL</option>
-                            <option>Description</option>
-                            <option>Review</option>
-                            <option selected="selected">Custom field</option>
-                          </select>
-                        </div>
-                      </td>
-                      <td data-head="Custom name:" class="field">
-                        <div class="form__field-inline form__field-edit small field-medium">
-                          <div class="form__field-holder">
-                            <input  type="text" value="Material" disabled="disabled">
-                          </div>
-                          <button class="btn-icon edit">
-                            <i class="icon-edit-small"></i>
-                          </button>
-                        </div>
-                      </td>
-                      <td class="field-button">
-                        <button class="btn btn-medium btn-green-light text-nowrap modal-open" data-modal="modalEditValues">Edit values</button>
-                      </td>
-                      <td data-head="Use in description:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-91" name="check">
-                          <label for="check-91"></label>
-                        </div>
-                      </td>
-                      <td data-head="Use in search keyword:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-92" name="check">
-                          <label for="check-92"></label>
-                        </div>
-                      </td>
-                      <td data-head="Use in search keyword:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-93" name="check">
-                          <label for="check-93"></label>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div id="tab3" class="tab">
-                <table class="table-feed-import">
-                  <thead>
-                    <tr>
-                      <th>Imported fields</th>
-                      <th>Theme fields</th>
-                      <th>Custom name</th>
-                      <th></th>
-                      <th>Use in description</th>
-                      <th>Use in search keyword</th>
-                      <th>Use in search keyword</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td data-head="Imported field:">Material</td>
-                      <td data-head="Theme fields:" class="field">
-                        <div class="form__field-holder field-medium">
-                          <select data-placeholder="Select a field" class="chosen-select select-light">
-                            <option></option>
-                            <option>Standard fields</option>
-                            <option>Product Category</option>
-                            <option>Product URL</option>
-                            <option>Image URL</option>
-                            <option>Description</option>
-                            <option>Review</option>
-                            <option selected="selected">Custom field</option>
-                          </select>
-                        </div>
-                      </td>
-                      <td data-head="Custom name:" class="field">
-                        <div class="form__field-inline form__field-edit small field-medium">
-                          <div class="form__field-holder">
-                            <input  type="text" value="Material" disabled="disabled">
-                          </div>
-                          <button class="btn-icon edit">
-                            <i class="icon-edit-small"></i>
-                          </button>
-                        </div>
-                      </td>
-                      <td class="field-button">
-                        <button class="btn btn-medium btn-green-light text-nowrap modal-open" data-modal="modalEditValues">Edit values</button>
-                      </td>
-                      <td data-head="Use in description:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-111" name="check">
-                          <label for="check-111"></label>
-                        </div>
-                      </td>
-                      <td data-head="Use in search keyword:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-112" name="check">
-                          <label for="check-112"></label>
-                        </div>
-                      </td>
-                      <td data-head="Use in search keyword:" class="field-check">
-                        <div class="field-checkbox checked-single">
-                          <input type="checkbox" id="check-113" name="check">
-                          <label for="check-113"></label>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="block-table__pagination">
-              <p>1035 Keywords</p>
-              <nav class="pagination">
-                <button class="btn-icon btn-first" disabled="disabled">
-                  <i class="icon-arrow-double"></i>
-                </button>
-                <button class="btn-icon btn-prev" disabled="disabled">
-                  <i class="icon-arrow"></i>
-                </button>
-                <span class="page-item active" aria-current="page">
-                  <span class="page-link">1</span>
-                </span>
-                <span class="page-item">
-                  <a class="page-link" href="#">2</a>
-                </span>
-                <span class="page-item">
-                  <a class="page-link" href="#">3</a>
-                </span>
-                <span class="page-item">
-                  <a class="page-link" href="#">4</a>
-                </span>
-                <span class="page-item">
-                  <a class="page-link" href="#">5</a>
-                </span>
-                <span class="page-item">...</span>
-                <span class="page-item">
-                  <a class="page-link" href="#">25</a>
-                </span>
-                <button class="btn-icon btn-next">
-                  <i class="icon-arrow"></i>
-                </button>
-                <button class="btn-icon btn-last">
-                  <i class="icon-arrow-double"></i>
-                </button>
-              </nav>
-            </div>
-          </div>
-        </main>
-      </div>
     </div>
 
     <!-- modal-edit-values.html -->
     <div id="modalEditValues" class="modal">
-      <div class="modal__inner">
-        <div class="modal__header">
-          <h4>Edit values</h4>
-          <button class="btn-icon modal__close modal-close">
-            <i class="icon-close"></i>
-          </button>
+        <div class="modal__inner">
+            <div class="modal__header">
+                <h4>Edit values</h4>
+                <button class="btn-icon modal__close modal-close">
+                    <i class="icon-close"></i>
+                </button>
+            </div>
+            <div class="modal__content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Brand values</th>
+                            <th>Custom name</th>
+                            <th>Frequency</th>
+                            <th>Hide</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="form__field-inline small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="L’oreal" disabled="disabled">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form__field-inline form__field-edit small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="Dior" disabled="disabled">
+                                    </div>
+                                    <button class="btn-icon edit">
+                                        <i class="icon-edit-small"></i>
+                                    </button>
+                                </div>
+                            </td>
+                            <td>150</td>
+                            <td>
+                                <div class="field-checkbox checked-single">
+                                    <input type="checkbox" id="check-modal-01" name="check">
+                                    <label for="check-modal-01"></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form__field-inline small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="Dior" disabled="disabled">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form__field-inline form__field-edit small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="L’oreal" disabled="disabled">
+                                    </div>
+                                    <button class="btn-icon edit">
+                                        <i class="icon-edit-small"></i>
+                                    </button>
+                                </div>
+                            </td>
+                            <td>150</td>
+                            <td>
+                                <div class="field-checkbox checked-single">
+                                    <input type="checkbox" id="check-modal-02" name="check">
+                                    <label for="check-modal-02"></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form__field-inline small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="L’oreal" disabled="disabled">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form__field-inline form__field-edit small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="Dior" disabled="disabled">
+                                    </div>
+                                    <button class="btn-icon edit">
+                                        <i class="icon-edit-small"></i>
+                                    </button>
+                                </div>
+                                <button class="btn-icon btn-icon-small refresh">
+                                    <i class="icon-refresh"></i>
+                                </button>
+                            </td>
+                            <td>150</td>
+                            <td>
+                                <div class="field-checkbox checked-single">
+                                    <input type="checkbox" id="check-modal-03" name="check">
+                                    <label for="check-modal-03"></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form__field-inline small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="Dior" disabled="disabled">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form__field-inline form__field-edit small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="L’oreal" disabled="disabled">
+                                    </div>
+                                    <button class="btn-icon edit">
+                                        <i class="icon-edit-small"></i>
+                                    </button>
+                                </div>
+                            </td>
+                            <td>150</td>
+                            <td>
+                                <div class="field-checkbox checked-single">
+                                    <input type="checkbox" id="check-modal-04" name="check">
+                                    <label for="check-modal-04"></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form__field-inline small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="L’oreal" disabled="disabled">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form__field-inline form__field-edit small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="Dior" disabled="disabled">
+                                    </div>
+                                    <button class="btn-icon edit">
+                                        <i class="icon-edit-small"></i>
+                                    </button>
+                                </div>
+                            </td>
+                            <td>150</td>
+                            <td>
+                                <div class="field-checkbox checked-single">
+                                    <input type="checkbox" id="check-modal-06" name="check">
+                                    <label for="check-modal-06"></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form__field-inline small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="Dior" disabled="disabled">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form__field-inline form__field-edit small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="L’oreal" disabled="disabled">
+                                    </div>
+                                    <button class="btn-icon edit">
+                                        <i class="icon-edit-small"></i>
+                                    </button>
+                                </div>
+                            </td>
+                            <td>150</td>
+                            <td>
+                                <div class="field-checkbox checked-single">
+                                    <input type="checkbox" id="check-modal-05" name="check">
+                                    <label for="check-modal-05"></label>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <div class="modal__content">
-          <table>
-            <thead>
-              <tr>
-                <th>Brand values</th>
-                <th>Custom name</th>
-                <th>Frequency</th>
-                <th>Hide</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <div class="form__field-inline small">
-                    <div class="form__field-holder">
-                      <input type="text" value="L’oreal" disabled="disabled">
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="form__field-inline form__field-edit small">
-                    <div class="form__field-holder">
-                      <input type="text" value="Dior" disabled="disabled">
-                    </div>
-                    <button class="btn-icon edit">
-                      <i class="icon-edit-small"></i>
-                    </button>
-                  </div>
-                </td>
-                <td>150</td>
-                <td>
-                  <div class="field-checkbox checked-single">
-                    <input type="checkbox" id="check-modal-01" name="check">
-                    <label for="check-modal-01"></label>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="form__field-inline small">
-                    <div class="form__field-holder">
-                      <input type="text" value="Dior" disabled="disabled">
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="form__field-inline form__field-edit small">
-                    <div class="form__field-holder">
-                      <input type="text" value="L’oreal" disabled="disabled">
-                    </div>
-                    <button class="btn-icon edit">
-                      <i class="icon-edit-small"></i>
-                    </button>
-                  </div>
-                </td>
-                <td>150</td>
-                <td>
-                  <div class="field-checkbox checked-single">
-                    <input type="checkbox" id="check-modal-02" name="check">
-                    <label for="check-modal-02"></label>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="form__field-inline small">
-                    <div class="form__field-holder">
-                      <input type="text" value="L’oreal" disabled="disabled">
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="form__field-inline form__field-edit small">
-                    <div class="form__field-holder">
-                      <input type="text" value="Dior" disabled="disabled">
-                    </div>
-                    <button class="btn-icon edit">
-                      <i class="icon-edit-small"></i>
-                    </button>
-                  </div>
-                  <button class="btn-icon btn-icon-small refresh">
-                    <i class="icon-refresh"></i>
-                  </button>
-                </td>
-                <td>150</td>
-                <td>
-                  <div class="field-checkbox checked-single">
-                    <input type="checkbox" id="check-modal-03" name="check">
-                    <label for="check-modal-03"></label>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="form__field-inline small">
-                    <div class="form__field-holder">
-                      <input type="text" value="Dior" disabled="disabled">
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="form__field-inline form__field-edit small">
-                    <div class="form__field-holder">
-                      <input type="text" value="L’oreal" disabled="disabled">
-                    </div>
-                    <button class="btn-icon edit">
-                      <i class="icon-edit-small"></i>
-                    </button>
-                  </div>
-                </td>
-                <td>150</td>
-                <td>
-                  <div class="field-checkbox checked-single">
-                    <input type="checkbox" id="check-modal-04" name="check">
-                    <label for="check-modal-04"></label>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="form__field-inline small">
-                    <div class="form__field-holder">
-                      <input type="text" value="L’oreal" disabled="disabled">
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="form__field-inline form__field-edit small">
-                    <div class="form__field-holder">
-                      <input type="text" value="Dior" disabled="disabled">
-                    </div>
-                    <button class="btn-icon edit">
-                      <i class="icon-edit-small"></i>
-                    </button>
-                  </div>
-                </td>
-                <td>150</td>
-                <td>
-                  <div class="field-checkbox checked-single">
-                    <input type="checkbox" id="check-modal-06" name="check">
-                    <label for="check-modal-06"></label>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="form__field-inline small">
-                    <div class="form__field-holder">
-                      <input type="text" value="Dior" disabled="disabled">
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="form__field-inline form__field-edit small">
-                    <div class="form__field-holder">
-                      <input type="text" value="L’oreal" disabled="disabled">
-                    </div>
-                    <button class="btn-icon edit">
-                      <i class="icon-edit-small"></i>
-                    </button>
-                  </div>
-                </td>
-                <td>150</td>
-                <td>
-                  <div class="field-checkbox checked-single">
-                    <input type="checkbox" id="check-modal-05" name="check">
-                    <label for="check-modal-05"></label>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
     </div>
 
     <!-- modal-configure-exclusion-rules.html -->
     <div id="modalConfigureExclusionRules" class="modal">
-      <div class="modal__inner">
-        <div class="modal__header">
-          <h4>Configure exclusion rules</h4>
-          <button class="btn-icon modal__close modal-close">
-            <i class="icon-close"></i>
-          </button>
-        </div>
-        <div class="modal__content">
-          <p>Configure exclusion rules</p>
-          <form class="form form-exclusion-rules">
-            <div class="form__field-inline">
-              <div class="form__field-holder">
-                <select class="chosen-select-nosearch" data-placeholder="Availability">
-                  <option></option>
-                  <option>Availability</option>
-                  <option>Availability</option>
-                </select>
-              </div>
-              <div class="form__field-holder">
-                <select class="chosen-select-nosearch" data-placeholder="Contains">
-                  <option></option>
-                  <option>Contains</option>
-                  <option>Contains</option>
-                </select>
-              </div>
-              <div class="form__field-holder small">
-                <input type="text" placeholder="In stock">
-              </div>
-            </div>
-            <div class="field-cloning">
-              <div class="row">
-                <div class="form__field">
-                  <div class="form__field-holder">
-                    <span class="text">or</span>
-                    <label class="switch">
-                      <input type="checkbox">
-                      <span></span>
-                    </label>
-                    <span>and</span>
-                  </div>
-                </div>
-                <div class="form__field-inline">
-                  <div class="form__field-holder">
-                    <select data-placeholder="Select a filed">
-                      <option></option>
-                      <option>Select a filed</option>
-                      <option>Select a filed</option>
-                    </select>
-                  </div>
-                  <div class="form__field-holder">
-                    <select data-placeholder="Includes">
-                      <option></option>
-                      <optgroup label="Text">
-                        <option>Is empty</option>
-                        <option>Starts with</option>
-                        <option>End with</option>
-                        <option>Contains</option>
-                        <option>Doesn’t contain</option>
-                        <option>Is equal to</option>
-                      </optgroup>
-                      <optgroup label="Number">
-                        <option>Is higher than</option>
-                        <option>Is lower than</option>
-                        <option>Is equal to</option>
-                      </optgroup>
-                    </select>
-                  </div>
-                  <button class="btn-icon btn-green remove-rules">
+        <div class="modal__inner">
+            <div class="modal__header">
+                <h4>Configure exclusion rules</h4>
+                <button class="btn-icon modal__close modal-close">
                     <i class="icon-close"></i>
-                  </button>
-                </div>
-              </div>
+                </button>
             </div>
-            <div class="list-rules"></div>
-            <div class="action">
-              <button class="btn-icon btn-green add-rules">
-                <i class="icon-add"></i>
-              </button>
-              <button class="btn btn-green modal-close right">Save</button>
+            <div class="modal__content">
+                <p>Configure exclusion rules</p>
+                <form class="form form-exclusion-rules">
+                    <div class="form__field-inline">
+                        <div class="form__field-holder">
+                            <select class="chosen-select-nosearch" data-placeholder="Availability">
+                                <option></option>
+                                <option>Availability</option>
+                                <option>Availability</option>
+                            </select>
+                        </div>
+                        <div class="form__field-holder">
+                            <select class="chosen-select-nosearch" data-placeholder="Contains">
+                                <option></option>
+                                <option>Contains</option>
+                                <option>Contains</option>
+                            </select>
+                        </div>
+                        <div class="form__field-holder small">
+                            <input type="text" placeholder="In stock">
+                        </div>
+                    </div>
+                    <div class="field-cloning">
+                        <div class="row">
+                            <div class="form__field">
+                                <div class="form__field-holder">
+                                    <span class="text">or</span>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span></span>
+                                    </label>
+                                    <span>and</span>
+                                </div>
+                            </div>
+                            <div class="form__field-inline">
+                                <div class="form__field-holder">
+                                    <select data-placeholder="Select a filed">
+                                        <option></option>
+                                        <option>Select a filed</option>
+                                        <option>Select a filed</option>
+                                    </select>
+                                </div>
+                                <div class="form__field-holder">
+                                    <select data-placeholder="Includes">
+                                        <option></option>
+                                        <optgroup label="Text">
+                                            <option>Is empty</option>
+                                            <option>Starts with</option>
+                                            <option>End with</option>
+                                            <option>Contains</option>
+                                            <option>Doesn’t contain</option>
+                                            <option>Is equal to</option>
+                                        </optgroup>
+                                        <optgroup label="Number">
+                                            <option>Is higher than</option>
+                                            <option>Is lower than</option>
+                                            <option>Is equal to</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                <button class="btn-icon btn-green remove-rules">
+                                    <i class="icon-close"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-rules"></div>
+                    <div class="action">
+                        <button class="btn-icon btn-green add-rules">
+                            <i class="icon-add"></i>
+                        </button>
+                        <button class="btn btn-green modal-close right">Save</button>
+                    </div>
+                </form>
             </div>
-          </form>
         </div>
-      </div>
     </div>
 
 
     <div id="modalFeedImportLoading" class="modal modal-feed-import">
-      <div class="modal__inner">
-        <div class="modal__header">
+        <div class="modal__inner">
+            <div class="modal__header">
 
-          <table class="modal-feed-import__table">
-            <thead>
-              <tr>
-                <td>
-                  Attributes
-                </td>
+                <table class="modal-feed-import__table">
+                    <thead>
+                        <tr>
+                            <td>
+                                Attributes
+                            </td>
 
-                <td>
-                  Attribute values
-                </td>
+                            <td>
+                                Attribute values
+                            </td>
 
-                <td>
-                  Name of attributes
-                </td>
+                            <td>
+                                Name of attributes
+                            </td>
 
-                <td>
-                  <button class="btn btn-orange-outlined btn-medium">Refresh list</button>
-                </td>
-              </tr>
-            </thead>
-          </table>
+                            <td>
+                                <button class="btn btn-orange-outlined btn-medium">Refresh list</button>
+                            </td>
+                        </tr>
+                    </thead>
+                </table>
 
-          <button class="btn-icon modal__close modal-close">
-            <i class="icon-cross"></i>
-          </button>
+                <button class="btn-icon modal__close modal-close">
+                    <i class="icon-cross"></i>
+                </button>
+            </div>
+            <div class="modal__content">
+                <div class="modal-feed-import__loading-container">
+                    <img src="images/spinner.gif" alt="spinner" class="modal-feed-import__loading-container-spinner" />
+                    <p class="modal-feed-import__loading-container-title">Attributes are being read</p>
+                    <p class="">You can wait here or close the pop up. You will be notified when all the attributes have been read</p>
+                </div>
+            </div>
         </div>
-        <div class="modal__content">
-          <div class="modal-feed-import__loading-container">
-            <img src="images/spinner.gif" alt="spinner" class="modal-feed-import__loading-container-spinner" />
-            <p class="modal-feed-import__loading-container-title">Attributes are being read</p>
-            <p class="">You can wait here or close the pop up. You will be notified when all the attributes have been read</p>
-          </div>
-        </div>
-      </div>
     </div>
 
 
     <div id="modalFeedImport" class="modal modal-feed-import">
-      <div class="modal__inner">
-        <div class="modal__header">
+        <div class="modal__inner">
+            <div class="modal__header">
 
-          <table class="modal-feed-import__table">
-            <thead>
-              <tr>
-                <td>
-                  Attributes
-                </td>
+                <table class="modal-feed-import__table">
+                    <thead>
+                        <tr>
+                            <td>
+                                Attributes
+                            </td>
 
-                <td>
-                  Attribute values
-                </td>
+                            <td>
+                                Attribute values
+                            </td>
 
-                <td>
-                  Name of attributes
-                </td>
+                            <td>
+                                Name of attributes
+                            </td>
 
-                <td>
-                  <button class="btn btn-orange-outlined btn-medium">Refresh list</button>
-                </td>
-              </tr>
-            </thead>
-          </table>
+                            <td>
+                                <button class="btn btn-orange-outlined btn-medium">Refresh list</button>
+                            </td>
+                        </tr>
+                    </thead>
+                </table>
 
-          <button class="btn-icon modal__close modal-close">
-            <i class="icon-cross"></i>
-          </button>
+                <button class="btn-icon modal__close modal-close">
+                    <i class="icon-cross"></i>
+                </button>
+            </div>
+            <div class="modal__content">
+
+                <table class="modal-feed-import__table">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="line-clamp-1">Material</span>
+                            </td>
+
+                            <td>
+                                <span class="line-clamp-1">100% cotton, Polyester, 50% wool/50% cotton</span>
+                            </td>
+
+                            <td>
+                                <div class="form__field-inline form__field-edit small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="Material" disabled="disabled">
+                                    </div>
+                                    <button class="btn-icon edit">
+                                        <i class="icon-edit-small"></i>
+                                    </button>
+                                </div>
+                            </td>
+
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <span class="line-clamp-1">Color</span>
+                            </td>
+
+                            <td>
+                                <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
+                            </td>
+
+                            <td>
+                                <div class="form__field-inline form__field-edit small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="Material" disabled="disabled">
+                                    </div>
+                                    <button class="btn-icon edit">
+                                        <i class="icon-edit-small"></i>
+                                    </button>
+                                </div>
+                            </td>
+
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <span class="line-clamp-1">Color</span>
+                            </td>
+
+                            <td>
+                                <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
+                            </td>
+
+                            <td>
+                                <div class="form__field-inline form__field-edit small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="Material" disabled="disabled">
+                                    </div>
+                                    <button class="btn-icon edit">
+                                        <i class="icon-edit-small"></i>
+                                    </button>
+                                </div>
+                            </td>
+
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <span class="line-clamp-1">Color</span>
+                            </td>
+
+                            <td>
+                                <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
+                            </td>
+
+                            <td>
+                                <div class="form__field-inline form__field-edit small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="Material" disabled="disabled">
+                                    </div>
+                                    <button class="btn-icon edit">
+                                        <i class="icon-edit-small"></i>
+                                    </button>
+                                </div>
+                            </td>
+
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <span class="line-clamp-1">Color</span>
+                            </td>
+
+                            <td>
+                                <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
+                            </td>
+
+                            <td>
+                                <div class="form__field-inline form__field-edit small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="Material" disabled="disabled">
+                                    </div>
+                                    <button class="btn-icon edit">
+                                        <i class="icon-edit-small"></i>
+                                    </button>
+                                </div>
+                            </td>
+
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <span class="line-clamp-1">Color</span>
+                            </td>
+
+                            <td>
+                                <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
+                            </td>
+
+                            <td>
+                                <div class="form__field-inline form__field-edit small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="Material" disabled="disabled">
+                                    </div>
+                                    <button class="btn-icon edit">
+                                        <i class="icon-edit-small"></i>
+                                    </button>
+                                </div>
+                            </td>
+
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <span class="line-clamp-1">Color</span>
+                            </td>
+
+                            <td>
+                                <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
+                            </td>
+
+                            <td>
+                                <div class="form__field-inline form__field-edit small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="Material" disabled="disabled">
+                                    </div>
+                                    <button class="btn-icon edit">
+                                        <i class="icon-edit-small"></i>
+                                    </button>
+                                </div>
+                            </td>
+
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <span class="line-clamp-1">Color</span>
+                            </td>
+
+                            <td>
+                                <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
+                            </td>
+
+                            <td>
+                                <div class="form__field-inline form__field-edit small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="Material" disabled="disabled">
+                                    </div>
+                                    <button class="btn-icon edit">
+                                        <i class="icon-edit-small"></i>
+                                    </button>
+                                </div>
+                            </td>
+
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <span class="line-clamp-1">Color</span>
+                            </td>
+
+                            <td>
+                                <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
+                            </td>
+
+                            <td>
+                                <div class="form__field-inline form__field-edit small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="Material" disabled="disabled">
+                                    </div>
+                                    <button class="btn-icon edit">
+                                        <i class="icon-edit-small"></i>
+                                    </button>
+                                </div>
+                            </td>
+
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <span class="line-clamp-1">Color</span>
+                            </td>
+
+                            <td>
+                                <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
+                            </td>
+
+                            <td>
+                                <div class="form__field-inline form__field-edit small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="Material" disabled="disabled">
+                                    </div>
+                                    <button class="btn-icon edit">
+                                        <i class="icon-edit-small"></i>
+                                    </button>
+                                </div>
+                            </td>
+
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <span class="line-clamp-1">Color</span>
+                            </td>
+
+                            <td>
+                                <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
+                            </td>
+
+                            <td>
+                                <div class="form__field-inline form__field-edit small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="Material" disabled="disabled">
+                                    </div>
+                                    <button class="btn-icon edit">
+                                        <i class="icon-edit-small"></i>
+                                    </button>
+                                </div>
+                            </td>
+
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <span class="line-clamp-1">Color</span>
+                            </td>
+
+                            <td>
+                                <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
+                            </td>
+
+                            <td>
+                                <div class="form__field-inline form__field-edit small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="Material" disabled="disabled">
+                                    </div>
+                                    <button class="btn-icon edit">
+                                        <i class="icon-edit-small"></i>
+                                    </button>
+                                </div>
+                            </td>
+
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <span class="line-clamp-1">Color</span>
+                            </td>
+
+                            <td>
+                                <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
+                            </td>
+
+                            <td>
+                                <div class="form__field-inline form__field-edit small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="Material" disabled="disabled">
+                                    </div>
+                                    <button class="btn-icon edit">
+                                        <i class="icon-edit-small"></i>
+                                    </button>
+                                </div>
+                            </td>
+
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <span class="line-clamp-1">Color</span>
+                            </td>
+
+                            <td>
+                                <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
+                            </td>
+
+                            <td>
+                                <div class="form__field-inline form__field-edit small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="Material" disabled="disabled">
+                                    </div>
+                                    <button class="btn-icon edit">
+                                        <i class="icon-edit-small"></i>
+                                    </button>
+                                </div>
+                            </td>
+
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <span class="line-clamp-1">Color</span>
+                            </td>
+
+                            <td>
+                                <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
+                            </td>
+
+                            <td>
+                                <div class="form__field-inline form__field-edit small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="Material" disabled="disabled">
+                                    </div>
+                                    <button class="btn-icon edit">
+                                        <i class="icon-edit-small"></i>
+                                    </button>
+                                </div>
+                            </td>
+
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <span class="line-clamp-1">Color</span>
+                            </td>
+
+                            <td>
+                                <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
+                            </td>
+
+                            <td>
+                                <div class="form__field-inline form__field-edit small">
+                                    <div class="form__field-holder">
+                                        <input type="text" value="Material" disabled="disabled">
+                                    </div>
+                                    <button class="btn-icon edit">
+                                        <i class="icon-edit-small"></i>
+                                    </button>
+                                </div>
+                            </td>
+
+                            <td></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <div class="text-center">
+                    <button class="btn btn-orange btn-medium modal-feed-import__load-more-btn">Load more</button>
+                </div>
+
+            </div>
         </div>
-        <div class="modal__content">
-
-          <table class="modal-feed-import__table">
-            <tbody>
-              <tr>
-                <td>
-                  <span class="line-clamp-1">Material</span>
-                </td>
-
-                <td>
-                  <span class="line-clamp-1">100% cotton, Polyester, 50% wool/50% cotton</span>
-                </td>
-
-                <td>
-                  <div class="form__field-inline form__field-edit small">
-                    <div class="form__field-holder">
-                      <input type="text" value="Material" disabled="disabled">
-                    </div>
-                    <button class="btn-icon edit">
-                      <i class="icon-edit-small"></i>
-                    </button>
-                  </div>
-                </td>
-
-                <td></td>
-              </tr>
-
-              <tr>
-                <td>
-                  <span class="line-clamp-1">Color</span>
-                </td>
-
-                <td>
-                  <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
-                </td>
-
-                <td>
-                  <div class="form__field-inline form__field-edit small">
-                    <div class="form__field-holder">
-                      <input type="text" value="Material" disabled="disabled">
-                    </div>
-                    <button class="btn-icon edit">
-                      <i class="icon-edit-small"></i>
-                    </button>
-                  </div>
-                </td>
-
-                <td></td>
-              </tr>
-
-              <tr>
-                <td>
-                  <span class="line-clamp-1">Color</span>
-                </td>
-
-                <td>
-                  <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
-                </td>
-
-                <td>
-                  <div class="form__field-inline form__field-edit small">
-                    <div class="form__field-holder">
-                      <input type="text" value="Material" disabled="disabled">
-                    </div>
-                    <button class="btn-icon edit">
-                      <i class="icon-edit-small"></i>
-                    </button>
-                  </div>
-                </td>
-
-                <td></td>
-              </tr>
-
-              <tr>
-                <td>
-                  <span class="line-clamp-1">Color</span>
-                </td>
-
-                <td>
-                  <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
-                </td>
-
-                <td>
-                  <div class="form__field-inline form__field-edit small">
-                    <div class="form__field-holder">
-                      <input type="text" value="Material" disabled="disabled">
-                    </div>
-                    <button class="btn-icon edit">
-                      <i class="icon-edit-small"></i>
-                    </button>
-                  </div>
-                </td>
-
-                <td></td>
-              </tr>
-
-              <tr>
-                <td>
-                  <span class="line-clamp-1">Color</span>
-                </td>
-
-                <td>
-                  <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
-                </td>
-
-                <td>
-                  <div class="form__field-inline form__field-edit small">
-                    <div class="form__field-holder">
-                      <input type="text" value="Material" disabled="disabled">
-                    </div>
-                    <button class="btn-icon edit">
-                      <i class="icon-edit-small"></i>
-                    </button>
-                  </div>
-                </td>
-
-                <td></td>
-              </tr>
-
-              <tr>
-                <td>
-                  <span class="line-clamp-1">Color</span>
-                </td>
-
-                <td>
-                  <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
-                </td>
-
-                <td>
-                  <div class="form__field-inline form__field-edit small">
-                    <div class="form__field-holder">
-                      <input type="text" value="Material" disabled="disabled">
-                    </div>
-                    <button class="btn-icon edit">
-                      <i class="icon-edit-small"></i>
-                    </button>
-                  </div>
-                </td>
-
-                <td></td>
-              </tr>
-
-              <tr>
-                <td>
-                  <span class="line-clamp-1">Color</span>
-                </td>
-
-                <td>
-                  <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
-                </td>
-
-                <td>
-                  <div class="form__field-inline form__field-edit small">
-                    <div class="form__field-holder">
-                      <input type="text" value="Material" disabled="disabled">
-                    </div>
-                    <button class="btn-icon edit">
-                      <i class="icon-edit-small"></i>
-                    </button>
-                  </div>
-                </td>
-
-                <td></td>
-              </tr>
-
-              <tr>
-                <td>
-                  <span class="line-clamp-1">Color</span>
-                </td>
-
-                <td>
-                  <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
-                </td>
-
-                <td>
-                  <div class="form__field-inline form__field-edit small">
-                    <div class="form__field-holder">
-                      <input type="text" value="Material" disabled="disabled">
-                    </div>
-                    <button class="btn-icon edit">
-                      <i class="icon-edit-small"></i>
-                    </button>
-                  </div>
-                </td>
-
-                <td></td>
-              </tr>
-
-              <tr>
-                <td>
-                  <span class="line-clamp-1">Color</span>
-                </td>
-
-                <td>
-                  <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
-                </td>
-
-                <td>
-                  <div class="form__field-inline form__field-edit small">
-                    <div class="form__field-holder">
-                      <input type="text" value="Material" disabled="disabled">
-                    </div>
-                    <button class="btn-icon edit">
-                      <i class="icon-edit-small"></i>
-                    </button>
-                  </div>
-                </td>
-
-                <td></td>
-              </tr>
-
-              <tr>
-                <td>
-                  <span class="line-clamp-1">Color</span>
-                </td>
-
-                <td>
-                  <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
-                </td>
-
-                <td>
-                  <div class="form__field-inline form__field-edit small">
-                    <div class="form__field-holder">
-                      <input type="text" value="Material" disabled="disabled">
-                    </div>
-                    <button class="btn-icon edit">
-                      <i class="icon-edit-small"></i>
-                    </button>
-                  </div>
-                </td>
-
-                <td></td>
-              </tr>
-
-              <tr>
-                <td>
-                  <span class="line-clamp-1">Color</span>
-                </td>
-
-                <td>
-                  <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
-                </td>
-
-                <td>
-                  <div class="form__field-inline form__field-edit small">
-                    <div class="form__field-holder">
-                      <input type="text" value="Material" disabled="disabled">
-                    </div>
-                    <button class="btn-icon edit">
-                      <i class="icon-edit-small"></i>
-                    </button>
-                  </div>
-                </td>
-
-                <td></td>
-              </tr>
-
-              <tr>
-                <td>
-                  <span class="line-clamp-1">Color</span>
-                </td>
-
-                <td>
-                  <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
-                </td>
-
-                <td>
-                  <div class="form__field-inline form__field-edit small">
-                    <div class="form__field-holder">
-                      <input type="text" value="Material" disabled="disabled">
-                    </div>
-                    <button class="btn-icon edit">
-                      <i class="icon-edit-small"></i>
-                    </button>
-                  </div>
-                </td>
-
-                <td></td>
-              </tr>
-
-              <tr>
-                <td>
-                  <span class="line-clamp-1">Color</span>
-                </td>
-
-                <td>
-                  <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
-                </td>
-
-                <td>
-                  <div class="form__field-inline form__field-edit small">
-                    <div class="form__field-holder">
-                      <input type="text" value="Material" disabled="disabled">
-                    </div>
-                    <button class="btn-icon edit">
-                      <i class="icon-edit-small"></i>
-                    </button>
-                  </div>
-                </td>
-
-                <td></td>
-              </tr>
-
-              <tr>
-                <td>
-                  <span class="line-clamp-1">Color</span>
-                </td>
-
-                <td>
-                  <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
-                </td>
-
-                <td>
-                  <div class="form__field-inline form__field-edit small">
-                    <div class="form__field-holder">
-                      <input type="text" value="Material" disabled="disabled">
-                    </div>
-                    <button class="btn-icon edit">
-                      <i class="icon-edit-small"></i>
-                    </button>
-                  </div>
-                </td>
-
-                <td></td>
-              </tr>
-
-              <tr>
-                <td>
-                  <span class="line-clamp-1">Color</span>
-                </td>
-
-                <td>
-                  <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
-                </td>
-
-                <td>
-                  <div class="form__field-inline form__field-edit small">
-                    <div class="form__field-holder">
-                      <input type="text" value="Material" disabled="disabled">
-                    </div>
-                    <button class="btn-icon edit">
-                      <i class="icon-edit-small"></i>
-                    </button>
-                  </div>
-                </td>
-
-                <td></td>
-              </tr>
-
-              <tr>
-                <td>
-                  <span class="line-clamp-1">Color</span>
-                </td>
-
-                <td>
-                  <span class="line-clamp-1">Black, Blue, White, Green, Black, Blue, White, White, White</span>
-                </td>
-
-                <td>
-                  <div class="form__field-inline form__field-edit small">
-                    <div class="form__field-holder">
-                      <input type="text" value="Material" disabled="disabled">
-                    </div>
-                    <button class="btn-icon edit">
-                      <i class="icon-edit-small"></i>
-                    </button>
-                  </div>
-                </td>
-
-                <td></td>
-              </tr>
-
-            </tbody>
-          </table>
-
-          <div class="text-center">
-            <button class="btn btn-orange btn-medium modal-feed-import__load-more-btn">Load more</button>
-          </div>
-
-        </div>
-      </div>
     </div>
 
     <!-- scripts.html -->
@@ -1647,5 +1650,6 @@
     <script src="scripts/codemirror/codemirror.js"></script>
     <script src="scripts/codemirror/javascript.js"></script>
     <script src="scripts/script.js"></script>
-  </body>
+</body>
+
 </html>

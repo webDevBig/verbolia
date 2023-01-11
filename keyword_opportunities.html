@@ -14,10 +14,9 @@
     <link rel="stylesheet" href="css/critical-style.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/keyword_opportunities__style.css">
-    
-    <script
-src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
-</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
 
 </head>
 
@@ -135,8 +134,8 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
                             </ul>
                         </li>
                         <li class="item">
-                            <a href="keyword_opportunities__main.html" class="item-link active">
-                                <i class="icon-keyword-suggestions"></i> Keyword Opportunities
+                            <a href="traffic_opportunities_main.html" class="item-link">
+                                <i class="icon-keyword-suggestions"></i> Traffic opportunities
 
                             </a>
                         </li>
@@ -167,309 +166,160 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
                     </ul>
                 </nav>
             </div>
-         
-                  <main class="content">
+
+            <main class="content">
                 <!-- content-header.html -->
                 <header class="content__header">
-                    <h1>Keyword opportunities</h1>
+                    <h1>Traffic opportunities</h1>
                     <div class="btn_box" id="recommendations_btn_box">
-                        <button class="btn small-icon btn-transparent update_CSS_btn"> Cancel</button>
-                        <button class="btn btn-orange" id="open_createRule_box">Save</button>
+                        <a class="btn small-icon btn-transparent update_CSS_btn goBack" href="traffic_opportunities_main.html"> Go back</a>
+                        <button class="btn btn-orange" id="open_createRule_box">Start a new traffic opportunities research</button>
                     </div>
                 </header>
                 <!-- table.html -->
                 <div class="block-table">
-                    <div class="header_box">
-                        <p class="title">Settings</p>
-                    </div>
-                    <div class="row">
-                        <div class="clm">
+                    <div class="block">
+                        <div class="header_box">
+                            <p class="title">Language settings</p>
+                            <p class="note">Define the language and country settings used by traffic opportunities research tools.</p>
+                        </div>
+                        <div class="row">
                             <div class="form__field">
-                                <label for="Name">Name</label>
-                                <div class="form__field-holder full-width">
-                                    <input id="Name" type="text" placeholder="" class="name_value">
+                                <label for="Name">Country and language to target when estimating the monthly search volumes</label>
+                                <div class="inputs_box clm">
+                                    <div class="form__field-holder full-width">
+                                        <input id="" type="text" placeholder="" class="name_value" value="en" disabled>
+                                    </div>
+                                    <div class="form__field-holder full-width">
+                                        <input id="client_domain" type="text" placeholder="GB" class="name_value" value="GB" disabled>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="clm">
+                        <div class="row">
                             <div class="form__field">
-                                <label for="client_domain">client domain</label>
-                                <div class="form__field-holder full-width">
-                                    <input id="client_domain" type="text" placeholder="" class="name_value">
+                                <label for="Name">Country and language to target when crawling Google SERP to analyse positions</label>
+                                <div class="inputs_box clm">
+                                    <div class="form__field-holder full-width">
+                                        <input id="" type="text" placeholder="en" class="name_value" value="en" disabled>
+                                    </div>
+                                    <div class="form__field-holder full-width">
+                                        <input id="client_domain" type="text" placeholder="GB" class="name_value" value="GB" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="clm">
+                                <div class="form__field">
+                                    <label for="Name">GOOGLE SEARCH CONSOLE DOMAIN</label>
+                                    <div class="form__field-holder full-width">
+                                        <input id="" type="text" placeholder="e.g. https://www.verbolia.com" class="name_value">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clm">
+                                <div class="form__field">
+                                    <label for="client_domain">GOOGLE SEARCH CONSOLE DOMAIN LANGUAGE SUBFOLDER</label>
+                                    <div class="form__field-holder full-width">
+                                        <input id="client_domain" type="text" placeholder="e.g. /en" class="name_value">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="clm">
-                            <div class="form__field">
-                                <label for="Language">Language</label>
-                                <div class="form__field-holder">
-                                    <div class="dropdown-select wide linking_select chosen-select select-light" id=""><span class="current">Select</span>
-                                        <div class="list">
-                                            <ul>
-                                                <li class="option selected">EN</li>
-                                                <li class="option ">FR</li>
-                                                <li class="option ">UK</li>
-                                            </ul>
+                    <div class="block keyword_sources">
+                        <div class="header_box">
+                            <p class="title">Keyword sources settings</p>
+                            <p class="note">Select keyword sources to start the traffic opportunities research</p>
+                        </div>
+                        <div class="row row_sources">
+                            <div class="clm">
+                                <div class="form-group">
+                                    <input type="checkbox" id="product_feed" checked="">
+                                    <label for="product_feed" class="check_box_text">Product feed</label>
+                                </div>
+                            </div>
+                            <div class="clm">
+                                <div class="form-group">
+                                    <input type="checkbox" id="seedlist" checked="">
+                                    <label for="seedlist" class="check_box_text">Seed keyword list (123)
+                                        <button class="btn-icon btn-tooltip" data-tooltip="<p>Select the sources to start the keyword <br> opportunities search</p>"><i class="icon-info"></i></button></label>
+                                </div>
+                                <div class="chosen-container chosen-container-single chosen-popup open_actions ">
+                                    <a class=" chosen-default chosen-single">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </a>
+                                    <div class="chosen-drop">
+                                        <div class="actions-header">
                                         </div>
+
+                                        <ul class="chosen-results">
+                                            <li class="active-result"><a>Upload file</a></li>
+                                            <li class="active-result"><a>Download file</a></li>
+                                            <li class="active-result"><a>Remove file</a></li>
+
+                                        </ul>
                                     </div>
                                 </div>
-
                             </div>
-                        </div>
-                        <div class="clm">
-                            <div class="form__field">
-                                <label for="region">region</label>
-                                <div class="form__field-holder">
-                                    <div class="dropdown-select wide linking_select chosen-select select-light" id=""><span class="current">Select</span>
-                                        <div class="list">
-                                            <ul>
-                                                <li class="option selected">EN</li>
-                                                <li class="option ">FR</li>
-                                                <li class="option ">UK</li>
-                                            </ul>
+                            <div class="clm">
+                                <div class="form-group">
+                                    <input type="checkbox" id="google_analytics" checked="">
+                                    <label for="google_analytics" class="check_box_text">Google analytics</label>
+                                </div>
+                            </div>
+                            <div class="clm">
+                                <div class="form-group">
+                                    <input type="checkbox" id="SimilarWeb" checked="">
+                                    <label for="SimilarWeb" class="check_box_text">SimilarWeb
+                                        <button class="btn-icon btn-tooltip" data-tooltip="<p>Verbolia connects with SimilarWeb <br> to retrieve keywords from your <br> closest competitors</p>"><i class="icon-info"></i></button></label>
+                                </div>
+                            </div>
+                            <div class="clm">
+                                <div class="form-group">
+                                    <input type="checkbox" id="google_search_console" checked="">
+                                    <label for="google_search_console" class="check_box_text">Google search console</label>
+                                </div>
+                            </div>
+                            <div class="clm">
+                                <div class="form-group">
+                                    <input type="checkbox" id="Categorylist">
+                                    <label for="Categorylist" class="check_box_text">Category list
+                                        <button class="btn-icon btn-tooltip" data-tooltip="<p>Select the sources to start the keyword <br> opportunities search</p>"><i class="icon-info"></i></button></label>
+                                </div>
+                                <div class="chosen-container chosen-container-single chosen-popup open_actions ">
+                                    <a class=" chosen-default chosen-single">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </a>
+                                    <div class="chosen-drop">
+                                        <div class="actions-header">
                                         </div>
+
+                                        <ul class="chosen-results">
+                                            <li class="active-result"><a>Upload file</a></li>
+                                            <li class="active-result"><a>Download file</a></li>
+                                            <li class="active-result"><a>Remove file</a></li>
+
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="clm">
-                            <div class="form__field">
-                                <label for="Domain">Domain</label>
-                                <div class="form__field-holder full-width">
-                                    <input id="Domain" type="text" placeholder="" class="name_value">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clm">
-                            <div class="form__field">
-                                <label for="Culture">Culture</label>
-                                <div class="form__field-holder full-width">
-                                    <input id="Culture" type="text" placeholder="" class="name_value">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="clm">
-                            <div class="form__field">
-                                <label for="hl">hl</label>
-                                <div class="form__field-holder full-width">
-                                    <input id="hl" type="text" placeholder="" class="name_value">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clm">
-                            <div class="form__field">
-                                <label for="Gl">Gl</label>
-                                <div class="form__field-holder full-width">
-                                    <input id="Gl" type="text" placeholder="" class="name_value">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="clm">
-                            <div class="form__field">
-                                <label for="Environment">Environment</label>
-                                <div class="form__field-holder full-width">
-                                    <input id="Environment" type="text" placeholder="" class="name_value">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clm">
-                            <div class="form__field">
-                                <label for="console_domain">console domain</label>
-                                <div class="form__field-holder full-width">
-                                    <input id="console_domain" type="text" placeholder="" class="name_value">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="clm">
-                            <div class="form__field">
-                                <label for="Language_filter">Language filter</label>
-                                <div class="form__field-holder full-width">
-                                    <input id="Language_filter" type="text" placeholder="" class="name_value">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="header_box" style="margin: 16px 0 0;">
-                        <p class="title">Keyword research parameters</p>
-                    </div>
-                    <div class="row">
-                        <div class="clm">
-                            <div class="form__field">
-                                <div><label for="Name" class="bold_label">Sources</label>
-                                    <button class="btn-icon btn-tooltip" data-tooltip="<p>Select the sources to start the keyword <br> opportunities search</p>"><i class="icon-info"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row_sources">
-                        <div class="clm">
-                            <div class="form-group">
-                                <input type="checkbox" id="product_feed" checked="">
-                                <label for="product_feed" class="check_box_text">Product feed</label>
-                            </div>
-                        </div>
-                        <div class="clm">
-                            <div class="form-group">
-                                <input type="checkbox" id="seedlist" checked="">
-                                <label for="seedlist" class="check_box_text">Seedlist</label>
-                            </div>
-                        </div>
-                        <div class="clm">
-                            <div class="form-group">
-                                <input type="checkbox" id="google_analytics" checked="">
-                                <label for="google_analytics" class="check_box_text">Google analytics</label>
-                            </div>
-                        </div>
-                        <div class="clm">
-                            <div class="form-group">
-                                <input type="checkbox" id="SimilarWeb" checked="">
-                                <label for="SimilarWeb" class="check_box_text">SimilarWeb</label>
-                            </div>
-                        </div>
-                        <div class="clm">
-                            <div class="form-group">
-                                <input type="checkbox" id="google_search_console" checked="">
-                                <label for="google_search_console" class="check_box_text">Google search console</label>
-                            </div>
                         </div>
 
-                    </div>
-                    <div class="row row_title">
-                        <div class="clm">
-                            <div class="form__field">
-                                <label for="Name" class="bold_label">Product Matching</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form__field">
-                        <div class="row row_serp"><label for="Name" class="small_label">Keep keyword opportunities with at minimum</label>
-                            <div class="form__field-holder full-width serp_top_form__field">
-                                <input type="text" value="3" id="serp_top_similarity" class="number_input">
-                                <div class="arrow_box">
-                                    <span class="plus"></span>
-                                    <span class="minus"></span>
-                                </div>
-                            </div>
-                            <label for="Name" class="small_label">products</label>
-                        </div>
 
                     </div>
-                    <div class="row row_title">
-                        <div class="clm">
-                            <div class="form__field">
-                                <label for="Name" class="bold_label">Deduplication</label>
-                            </div>
+                    <div class="block">
+                        <div class="header_box">
+                            <p class="title">Keyword generation settings</p>
+                            <p class="note">To generate keywords based on the selected sources, you can activate Ngrams and/or attribute combination. Each of these techniques will help you to discover more traffic opportunities.</p>
                         </div>
-                    </div>
-
-
-                    <div class="row">
-                        <div class="clm">
-                            <div class="form__field">
-                                <div><label for="Name">Product similarity</label>
-                                    <button class="btn-icon btn-tooltip" data-tooltip="<p>Product similarity defines the<br> percentage of common matching <br>products above which the keywords<br> are considered duplicated</p>"><i class="icon-info"></i></button>
-                                </div>
-
-                                <div class="form__field-holder full-width">
-                                    <input type="text" value="90%" id="product_similarity" class="number_input">
-                                    <div class="arrow_box">
-                                        <span class="plus"></span>
-                                        <span class="minus"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clm">
-                            <div class="form__field-group">
-                                <div class="form__field-holder">
-                                    <label for="products_similarity" class="switch switch-showStatus" id="products_matching_switchStatus">
-                                        <input id="products_similarity" type="checkbox" name="manually" checked="checked"><span></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="clm">
-                            <div class="form__field">
-                                <div><label for="Name">keyword similarity</label>
-                                    <button class="btn-icon btn-tooltip" data-tooltip="<p>Keyword similarity defines the<br> percentage of semantic proximity<br> above which the keywords are<br> considered duplicated</p>"><i class="icon-info"></i></button>
-                                </div>
-
-                                <div class="form__field-holder full-width">
-                                    <input type="text" value="90%" id="keyword _similarity" class="number_input">
-                                    <div class="arrow_box">
-                                        <span class="plus"></span>
-                                        <span class="minus"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clm">
-                            <div class="form__field-group">
-                                <div class="form__field-holder">
-                                    <label for="keyword_similarity" class="switch switch-showStatus" id="products_matching_switchStatus">
-                                        <input id="keyword_similarity" type="checkbox" name="manually" checked="checked"><span></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="clm">
-                            <div class="form__field">
-                                <div class="row row_serp"><label for="Name">Serp top</label>
-                                    <div class="form__field-holder full-width serp_top_form__field">
-                                        <input type="text" value="10" id="serp_top_similarity" class="number_input">
-                                        <div class="arrow_box">
-                                            <span class="plus"></span>
-                                            <span class="minus"></span>
-                                        </div>
-                                    </div>
-                                    <label for="Name">similarity</label>
-                                    <button class="btn-icon btn-tooltip" data-tooltip="<p>SERP similarity defines the percantage <br> of identical URLs in the SERP above <br> which the keywords are considered <br> duplicated</p>"><i class="icon-info"></i></button>
-                                </div>
-
-                                <div class="form__field-holder full-width">
-                                    <input type="text" value="90%" id="serp_top" class="number_input">
-                                    <div class="arrow_box">
-                                        <span class="plus"></span>
-                                        <span class="minus"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clm">
-                            <div class="form__field-group">
-                                <div class="form__field-holder">
-                                    <label for="serp_top_switch" class="switch switch-showStatus" id="products_matching_switchStatus">
-                                        <input id="serp_top_switch" type="checkbox" name="manually" checked="checked"><span></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row_empty">
-                        <div class="clm">
-                            <div class="form__field">
-                                <div><label for="Name" class="bold_label">Ngrams</label>
-                                    <button class="btn-icon btn-tooltip" data-tooltip="<p>N-grams are a contiguous sequence of <br> N words or characters, extracted from <br> your sources</p>"><i class="icon-info"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clm">
+                        <div class="row row_empty">
                             <div class="form__field-group">
                                 <div class="form__field-holder">
                                     <label for="Ngrams" class="switch switch-showStatus" id="products_matching_switchStatus">
@@ -477,17 +327,13 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
                                     </label>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row row_empty">
-                        <div class="clm">
                             <div class="form__field">
-                                <div><label for="Name" class="bold_label">Concatenation</label>
-                                    <button class="btn-icon btn-tooltip" data-tooltip="<p>Concatenation aggregates two or more <br> product attributes so that they can be<br> treated as a new keyword. We<br> recommend to limit to 3 attributes to <br>not slow down the process</p>"><i class="icon-info"></i></button>
+                                <div><label for="Name" class="bold_label">Include Ngrams</label>
+                                    <button class="btn-icon btn-tooltip" data-tooltip="<p>N-grams are a contiguous sequence of <br> N words or characters, extracted from <br> your sources</p>"><i class="icon-info"></i></button>
                                 </div>
                             </div>
                         </div>
-                        <div class="clm">
+                        <div class="row row_empty">
                             <div class="form__field-group">
                                 <div class="form__field-holder">
                                     <label for="Concatenation" class="switch switch-showStatus" id="products_matching_switchStatus">
@@ -495,146 +341,174 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
                                     </label>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="form__field">
-                        <div class="row row_serp"><label for="Name" class="small_label">Use</label>
-                            <div class="form__field-holder full-width serp_top_form__field">
-                                <input type="text" value="3" id="serp_top_similarity" class="number_input">
-                                <div class="arrow_box">
-                                    <span class="plus"></span>
-                                    <span class="minus"></span>
-                                </div>
-                            </div>
-                            <label for="Name" class="small_label">attributes</label>
-                        </div>
-
-                    </div>
-                    <div class="row include_row">
-                        <div class="clm">
                             <div class="form__field">
-                                <div class="form__field">
-                                    <div style="display: flex;justify-content: space-between"><label for="Include">Include</label>
-                                        <button class="btn-icon btn-tooltip btn-tooltip_error" data-tooltip="<p>You have selected product attribute <br> that is not used for the product search.<br> For better results, activate this product <br>attribute in the product configuration</p>"><i class="icon-info"></i></button>
-                                    </div>
-                                </div>
-                                <div class="form__field">
-                                    <div class="form__field-holder full-width">
-                                        <select id="searchword-in-field" data-placeholder="" class="chosen-select select-light chosen-select" multiple="multiple">
-                                            <option class="color">Color</option>
-                                            <option>Size</option>
-                                            <option>Size</option>
-                                            <option>Size</option>
-                                            <option>Size</option>
-                                            <option>Size</option>
-                                            <option>Size</option>
-                                            <option>Size</option>
-                                            <option>Size</option>
-
-                                        </select>
-                                    </div>
+                                <div><label for="Name" class="bold_label">Combine attribute values</label>
+                                    <button class="btn-icon btn-tooltip" data-tooltip="<p>Concatenation aggregates two or more <br> product attributes so that they can be<br> treated as a new keyword. We<br> recommend to limit to 3 attributes to <br>not slow down the process</p>"><i class="icon-info"></i></button>
                                 </div>
                             </div>
                         </div>
-                        <div class="clm">
-                            <div class="form__field">
-                                <label for="region">Exclude</label>
-                                <div class="form__field">
-                                    <div class="form__field-holder full-width">
-                                        <select id="searchword-in-field" data-placeholder="" class="chosen-select select-light chosen-select" multiple="multiple">
-                                            <option class="color">Color</option>
-                                            <option>Size</option>
-
-                                        </select>
+                        <div class="if_box show">
+                            <div class="row include_row">
+                                <div class="clm">
+                                    <div class="form__field">
+                                        <div class="form__field">
+                                            <div style="display: flex;justify-content: space-between"><label for="Include">Attributes from your feed to include</label>
+                                                <button class="btn-icon btn-tooltip btn-tooltip_error" data-tooltip="<p>You have selected product attribute <br> that is not used for the product search.<br> For better results, activate this product <br>attribute in the product configuration</p>"><i class="icon-info"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="form__field">
+                                            <div class="form__field-holder full-width">
+                                                <select id="searchword-in-field" data-placeholder="" class="chosen-select select-light chosen-select" multiple="multiple">
+                                                    <option class="color">Color</option>
+                                                    <option>Size</option>
+                                                    <option>Size</option>
+                                                    <option>Size</option>
+                                                    <option>Size</option>
+                                                    <option>Size</option>
+                                                    <option>Size</option>
+                                                    <option>Size</option>
+                                                    <option>Size</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clm">
+                                    <div class="form__field">
+                                        <label for="region">Attributes from your feed to exclude</label>
+                                        <div class="form__field">
+                                            <div class="form__field-holder full-width">
+                                                <select id="searchword-in-field" data-placeholder="" class="chosen-select select-light chosen-select" multiple="multiple">
+                                                    <option class="color">Color</option>
+                                                    <option>Size</option>
+                                                </select>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <p class="text">Exclude attribute value if</p>
+                            <div class="row row_check">
+                                <div class="clm">
+                                    <div class="row row_serp">
+                                        <div class="form-group">
+                                            <input type="checkbox" id="specific_words" checked="">
+                                            <label for="specific_words" class="check_box_text">If it contains specific words</label>
+                                        </div>
+                                        <a class="modal-open " data-modal="modalManageList">Manage list</a>
+                                    </div>
+                                </div>
+                                <div class="clm">
+                                    <div class="form-group">
+                                        <input type="checkbox" id="contains_numbers" checked="">
+                                        <label for="contains_numbers" class="check_box_text">It contains numbers</label>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row row_check">
+                                <div class="clm">
+                                    <div class="form-group">
+                                        <input type="checkbox" id="contains_characters" checked="">
+                                        <label for="contains_characters" class="check_box_text">If it contains special characters
+                                            <button class="btn-icon btn-tooltip" data-tooltip="<p>N-grams are a contiguous sequence of <br> N words or characters, extracted from <br> your sources</p>"><i class="icon-info"></i></button></label>
+                                    </div>
+
+                                </div>
+                                <div class="clm">
+                                    <div class="form-group">
+                                        <input type="checkbox" id="numbers" checked="">
+                                        <label for="numbers" class="check_box_text">It is a number</label>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
+
                     </div>
-
-                    <p class="text">Exclude attribute value to use in concatenation</p>
-                    <div class="row row_check">
-                        <div class="clm">
-                            <div class="row row_serp">
+                    <div class="block block_filtering">
+                        <div class="header_box">
+                            <p class="title">Keywords filtering settings</p>
+                            <p class="note">The result of the traffic opportunities research can contain irrelevant keywords. To clean the list, you can use deduplication (to delete keywords that are too similar, have too similar results), remove keywords based on criteria (keywords with 9 characters, with special caracters...) and define a minimum number of matching products.</p>
+                        </div>
+                        <div class="row row_title">
+                            <div class="form__field">
+                                <label for="Name" class="bold_label">Deduplicate similar keywords</label>
+                            </div>
+                        </div>
+                        <div class="row show">
+                            <div class="clm">
                                 <div class="form-group">
-                                    <input type="checkbox" id="specific_words" checked="">
-                                    <label for="specific_words" class="check_box_text">If it contains specific words</label>
+                                    <input type="checkbox" id="deduplicate" checked="" class="filtering_check">
+                                    <label for="deduplicate" class="check_box_text">Deduplicate keywords if the matching products are too similar</label>
                                 </div>
-                                <button class="btn btn-transparent popup-open modal-open" data-modal="modalManageList">Manage the list</button>
+                            </div>
+                            <div class="clm">
+                                <div class="form__field">
+                                    <div><label for="Name">products Similarity threshold</label>
+                                    </div>
+                                    <div class="form__field-holder full-width">
+                                        <input type="text" value="90%" id="product_similarity" class="number_input">
+                                        <div class="arrow_box">
+                                            <span class="plus"></span>
+                                            <span class="minus"></span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="clm">
-                            <div class="form-group">
-                                <input type="checkbox" id="contains_numbers" checked="">
-                                <label for="contains_numbers" class="check_box_text">It contains numbers</label>
+                        <div class="row">
+                            <div class="clm">
+                                <div class="form-group">
+                                    <input type="checkbox" id="deduplicate2" class="filtering_check">
+                                    <label for="deduplicate2" class="check_box_text">Deduplicate keywords if they are too similar</label>
+                                </div>
+                            </div>
+                            <div class="clm">
+                                <div class="form__field">
+                                    <div><label for="Name">Semantic similarity threshold</label>
+                                    </div>
+                                    <div class="form__field-holder full-width">
+                                        <input type="text" value="90%" id="SERP" class="number_input">
+                                        <div class="arrow_box">
+                                            <span class="plus"></span>
+                                            <span class="minus"></span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                    </div>
-                    <div class="row row_check">
-                        <div class="clm">
-                            <div class="form-group">
-                                <input type="checkbox" id="contains_characters" checked="">
-                                <label for="contains_characters" class="check_box_text">If it contains special characters</label>
+                        <div class="row show">
+                            <div class="clm">
+                                <div class="form-group">
+                                    <input type="checkbox" id="deduplicate3" checked="" class="filtering_check">
+                                    <label for="deduplicate3" class="check_box_text">Deduplicate keywords if their Google SERPs are too similar</label>
+                                </div>
                             </div>
-
-                        </div>
-                        <div class="clm">
-                            <div class="form-group">
-                                <input type="checkbox" id="numbers" checked="">
-                                <label for="numbers" class="check_box_text">It is a number</label>
+                            <div class="clm">
+                                <div class="form__field">
+                                    <div><label for="Name">SERP Similarity threshold</label>
+                                    </div>
+                                    <div class="form__field-holder full-width">
+                                        <input type="text" value="80%" id="SERP" class="number_input">
+                                        <div class="arrow_box">
+                                            <span class="plus"></span>
+                                            <span class="minus"></span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                    </div>
-
-                    <div class="row row_empty">
-                        <div class="clm">
+                        <div class="row row_title">
                             <div class="form__field">
-                                <div><label for="Name" class="bold_label">Use Autosuggest</label>
-                                </div>
+                                <label for="Name" class="bold_label">Remove keyword if</label>
                             </div>
                         </div>
-                        <div class="clm">
-                            <div class="form__field-group">
-                                <div class="form__field-holder">
-                                    <label for="Use_Autosuggest" class="switch switch-showStatus" id="products_matching_switchStatus">
-                                        <input id="Use_Autosuggest" type="checkbox" name="manually" checked="checked"><span></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row_empty">
-                        <div class="clm">
-                            <div class="form__field">
-                                <div><label for="Name" class="bold_label">Accented letter</label>
-                                    <button class="btn-icon btn-tooltip" data-tooltip="<p>Show all the special characters (based <br> on the selected language)</p>"><i class="icon-info"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clm">
-                            <div class="form__field-group">
-                                <div class="form__field-holder">
-                                    <label for="Accented_letter" class="switch switch-showStatus" id="products_matching_switchStatus">
-                                        <input id="Accented_letter" type="checkbox" name="manually" checked="checked"><span></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row_title">
-                        <div class="clm">
-                            <div class="form__field">
-                                <label for="Name" class="bold_label">Remove keyword</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row_check removeKeyword__row">
-                        <div class="clm">
+                        <div class="row row_check removeKeyword__row">
                             <div class="form-group">
                                 <input type="checkbox" id="characters" checked="">
-                                <label for="characters" class="check_box_text">If it contains less than</label>
+                                <label for="characters" class="check_box_text">It contains less than</label>
                             </div>
                             <div class="form__field-holder full-width serp_top_form__field">
                                 <input type="text" value="9" id="" class="number_input">
@@ -645,27 +519,10 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
                             </div>
                             <p class="check_box_text">characters</p>
                         </div>
-                        <div class="clm">
+                        <div class="row row_check removeKeyword__row">
                             <div class="form-group">
                                 <input type="checkbox" id="words" checked="">
-                                <label for="words" class="check_box_text">If it contains more than</label>
-                            </div>
-                            <div class="form__field-holder full-width serp_top_form__field">
-                                <input type="text" value="10" id="" class="number_input">
-                                <div class="arrow_box">
-                                    <span class="plus"></span>
-                                    <span class="minus"></span>
-                                </div>
-                            </div>
-                            <p class="check_box_text">words</p>
-                        </div>
-
-                    </div>
-                    <div class="row row_check">
-                        <div class="clm">
-                            <div class="form-group">
-                                <input type="checkbox" id="repeated_characters" checked="">
-                                <label for="repeated_characters" class="check_box_text">If it contains repeated words longer than</label>
+                                <label for="words" class="check_box_text">It contains repeated words longer than</label>
                             </div>
                             <div class="form__field-holder full-width serp_top_form__field">
                                 <input type="text" value="4" id="" class="number_input">
@@ -676,21 +533,102 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
                             </div>
                             <p class="check_box_text">characters</p>
                         </div>
-                        <div class="clm">
+                        <div class="row row_check removeKeyword__row">
                             <div class="form-group">
-                                <input type="checkbox" id="ranking_DOMAIN" checked="">
-                                <label for="ranking_DOMAIN" class="check_box_text">If DOMAIN is already ranking in top</label>
+                                <input type="checkbox" id="repeated_characters" checked="">
+                                <label for="repeated_characters" class="check_box_text">It contains more than</label>
                             </div>
                             <div class="form__field-holder full-width serp_top_form__field">
-                                <input type="text" value="3" id="" class="number_input">
+                                <input type="text" value="10" id="" class="number_input">
                                 <div class="arrow_box">
                                     <span class="plus"></span>
                                     <span class="minus"></span>
                                 </div>
                             </div>
+                            <p class="check_box_text">words</p>
+                        </div>
+                        <div class="row row_check">
+                            <div class="form-group">
+                                <input type="checkbox" id="ranking_DOMAIN" checked="">
+                                <label for="ranking_DOMAIN" class="check_box_text">Your domain is already ranking in top</label>
+                            </div>
+                            <div class="form__field-holder full-width serp_top_form__field">
+                                <input type="text" value="2" id="" class="number_input">
+                                <div class="arrow_box">
+                                    <span class="plus"></span>
+                                    <span class="minus"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row row_title">
+                            <div class="form__field">
+                                <label for="Name" class="bold_label">Product Matching</label>
+                            </div>
+                        </div>
+                        <div class="form__field">
+                            <div class="row row_serp"><label for="Name" class="small_label">Keep only keyword opportunities with minimum</label>
+                                <div class="form__field-holder full-width serp_top_form__field">
+                                    <input type="text" value="3" id="serp_top_similarity" class="number_input">
+                                    <div class="arrow_box">
+                                        <span class="plus"></span>
+                                        <span class="minus"></span>
+                                    </div>
+                                </div>
+                                <label for="Name" class="small_label">products</label>
+                            </div>
+
                         </div>
 
+
                     </div>
+                    <div class="block output_block">
+                        <div class="header_box">
+                            <p class="title">Output settings</p>
+                            <p class="note">Define the data you want for each keyword returned by the traffic opportunities research.</p>
+                        </div>
+
+                        <div class="row row_check">
+                            <div class="form-group">
+                                <input type="checkbox" id="Output1" checked="">
+                                <label for="Output1" class="check_box_text">Monthly search volume</label>
+                            </div>
+                        </div>
+                        <div class="row row_check">
+                            <div class="form-group">
+                                <input type="checkbox" id="Output2" checked="">
+                                <label for="Output2" class="check_box_text">SERP position of your current best performing page</label>
+                            </div>
+                        </div>
+                        <div class="row row_check">
+                            <div class="form-group">
+                                <input type="checkbox" id="Output3" checked="">
+                                <label for="Output3" class="check_box_text">Number of matching products in your catalog</label>
+                            </div>
+                        </div>
+                        <div class="row row_check">
+                            <div class="form-group">
+                                <input type="checkbox" id="Output4" checked="">
+                                <label for="Output4" class="check_box_text">Most occuring category among matching products</label>
+                            </div>
+                            <div class="form__field">
+                                <div class="form__field-holder">
+                                    <div class="dropdown-select wide linking_select chosen-select select-light" id=""><span class="current">Verbolia category</span>
+                                        <div class="list">
+                                            <ul>
+                                                <li class="option selected">Verbolia category</li>
+                                                <li class="option ">Verbolia category</li>
+                                                <li class="option ">Verbolia category</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
 
 
                 </div>
@@ -768,6 +706,32 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 
     <script src="scripts/jquery.tablesort3s.js"></script>
     <script src="scripts/recommendations-script.js"></script>
+
+    <script>
+        $('#Concatenation').change(function() {
+            if ($('#Concatenation:checked').is(":checked")) {
+                $('.if_box').addClass('show')
+            } else {
+                $('.if_box').removeClass('show')
+            }
+        });
+        $('#Concatenation').change(function() {
+            if ($('#Concatenation:checked').is(":checked")) {
+                $('.if_box').addClass('show')
+            } else {
+                $('.if_box').removeClass('show')
+            }
+        });
+        $(document).on('click', '.filtering_check', function(event) {
+            if ($(this).is(":checked")) {
+                $(this).parents('.row').addClass('show')
+            } else {
+                $(this).parents('.row').removeClass('show')
+            }
+
+        });
+
+    </script>
 
 </body>
 
